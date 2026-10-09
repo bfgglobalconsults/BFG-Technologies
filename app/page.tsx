@@ -27,8 +27,8 @@ export default function Home() {
                   <Image
                     src="/assets/digital-image.jpg"
                     alt="digital"
-                    width={60}
-                    height={60}
+                    width={224}
+                    height={160}
                     className="w-full h-full object-cover"
                   />
                 </span>
@@ -40,8 +40,8 @@ export default function Home() {
                   <Image
                     src="/assets/agency-image.jpg"
                     alt="agency"
-                    width={60}
-                    height={60}
+                    width={224}
+                    height={160}
                     className="w-full h-full object-cover"
                   />
                 </span>
@@ -52,8 +52,8 @@ export default function Home() {
                   <Image
                     src="/assets/business-image.jpg"
                     alt=""
-                    width={60}
-                    height={60}
+                    width={224}
+                    height={160}
                     className="w-full h-full object-cover"
                   />
                 </span>
@@ -488,8 +488,8 @@ export default function Home() {
                   <Image
                     src="/assets/team-office.jpg"
                     alt="Team outdoor"
-                    width={256}
-                    height={256}
+                    width={600}
+                    height={300}
                     className="w-full h-full object-cover"
                   />
                 </div>
