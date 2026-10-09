@@ -41,7 +41,7 @@ const Header = () => {
           </nav>
           <Link href="/contact">
             <button className="px-2 py-2 rounded-md border-2 border-[#FF6B35] text-black font-semibold">
-              Contact Us
+              Contact Sales
             </button>
           </Link>
         </div>
