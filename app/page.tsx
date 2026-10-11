@@ -864,7 +864,7 @@ export default function Home() {
                 </p>
               </div>
               <div className="bg-[#F4F6F8] p-4">
-               <div className="aspect-square bg-[#F4F6F8] rounded-2xl mb-4 overflow-hidden">
+                <div className="aspect-square bg-[#F4F6F8] rounded-2xl mb-4 overflow-hidden">
                   <Image
                     src="/assets/founder2.jpg"
                     alt="Founder"
@@ -904,7 +904,7 @@ export default function Home() {
         </section>
 
         {/* CTA Section */}
-        <section className="py-20 px-6 bg-[#0066CC] text-white my-8 rounded-2xl">
+        {/* <section className="py-20 px-6 bg-[#0066CC] text-white my-8 rounded-2xl">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
               Let&apos;s grow your <br />
@@ -917,7 +917,7 @@ export default function Home() {
               Get Started
             </button>
           </div>
-        </section>
+        </section> */}
       </div>
     </div>
   );

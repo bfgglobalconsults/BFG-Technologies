@@ -1,8 +1,21 @@
-import React from 'react'
+import React from "react";
 
 const Footer = () => {
   return (
     <>
+      {/* CTA Section */}
+      <div className="px-15 bg-white py-20 ">
+      <section className="py-20 px-6 bg-[#0066CC] rounded-2xl text-white">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-4xl md:text-5xl font-bold mb-8">
+            Let&apos;s build something that moves your business forward.
+          </h2>
+          <button className="bg-[#FF6B35] text-white px-10 py-4 rounded-lg hover:bg-orange-600 text-lg font-semibold">
+            Start a Conversation
+          </button>
+        </div>
+      </section>
+</div>
       {/* Footer */}
       <footer className="py-12 px-6 bg-gray-900 text-white">
         <div className="max-w-7xl mx-auto">
@@ -81,6 +94,6 @@ const Footer = () => {
       </footer>
     </>
   );
-}
+};
 
-export default Footer
+export default Footer;

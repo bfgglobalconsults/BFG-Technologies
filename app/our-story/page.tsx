@@ -9,28 +9,40 @@ export default function OurStory() {
 
         {/* Hero Section */}
         <section className="pt-32 pb-20 px-6">
-          <div className="max-w-7xl mx-auto">
-            <div className="grid md:grid-cols-2 gap-12 items-center">
-              <div>
-                <h1 className="text-5xl md:text-6xl text-black font-bold mb-6">
-                  BUILT FOR <span className="text-[#0066CC]">AFRICA.</span>
-                  <br />
-                  DESIGNED FOR <span className="text-[#FF6B35]">GROWTH.</span>
-                </h1>
-                <p className="text-gray-600 text-lg">
-                  We help businesses across Africa unlock their full potential
-                  through strategic digital marketing that drives real,
-                  measurable results.
-                </p>
+          <div className="max-w-7xl mx-auto mt-16">
+            <div className="grid md:grid-cols-2 gap-12">
+              <div className="flex flex-col justify-between">
+                <div>
+                  <h1 className="text-5xl md:text-6xl text-black font-bold mb-6">
+                    BUILT FOR <span className="text-[#0066CC]">AFRICA.</span>
+                    <br />
+                    DESIGNED FOR <span className="text-[#FF6B35]">GROWTH.</span>
+                  </h1>
+                  <p className="text-gray-600 text-lg">
+                    We help businesses across Africa unlock their full potential
+                    through strategic digital marketing that drives real,
+                    measurable results.
+                  </p>
+                </div>
+                <div className="flex items-center gap-6 mt-8">
+                  <span className="text-gray-400 font-semibold">STRATEGY</span>
+                  <span className="text-gray-400">→</span>
+                  <span className="text-[#FF6B35] font-semibold">CREATIVE</span>
+                  <span className="text-gray-400">→</span>
+                  <span className="text-gray-400 font-semibold">CONTENT</span>
+                  <span className="text-gray-400">→</span>
+                  <span className="text-[#0066CC] font-semibold">GROWTH</span>
+                </div>
               </div>
               <div>
-                <div className="rounded-3xl overflow-hidden">
+                {" "}
+                <div className="rounded-3xl ">
                   <Image
-                    src="/placeholder-team-meeting.jpg"
+                    src="/assets/ourstory-image.png"
                     alt="Team meeting"
                     width={600}
-                    height={400}
-                    className="w-full h-auto object-cover"
+                    height={300}
+                    className="w-full h-full object-cover"
                   />
                 </div>
               </div>
@@ -39,10 +51,21 @@ export default function OurStory() {
         </section>
 
         {/* Problem Statement */}
-        <section className="py-20 px-6 bg-gray-50">
-          <div className="max-w-7xl mx-auto">
+        <section className="py-20 px-6 bg-gray-50 relative">
+          <div className="absolute right-0 top-0 bottom-0 w-1/3 opacity-10">
+            <Image
+              src="/assets/01.png"
+              alt=""
+              fill
+              className="object-contain object-right"
+            />
+          </div>
+          <div className="max-w-7xl mx-auto relative z-10">
             <div className="grid md:grid-cols-1 gap-12 items-center">
               <div>
+                <div className="text-[#FF6B35] text-sm font-semibold mb-4 uppercase tracking-wider">
+                  01/ WHY WE EXIST
+                </div>
                 <h2 className="text-4xl md:text-5xl text-black font-bold mb-6">
                   AFRICA DOESN&apos;T HAVE A SHORTAGE OF GREAT BUSINESSES.
                   <br />
@@ -65,19 +88,22 @@ export default function OurStory() {
         {/* Origin Story */}
         <section className="py-20 px-6">
           <div className="max-w-7xl mx-auto">
-            <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div className="grid md:grid-cols-2 gap-12">
               <div>
                 <div className="rounded-3xl overflow-hidden">
                   <Image
-                    src="/placeholder-founders.jpg"
+                    src="/assets/story-image.png"
                     alt="Founders at work"
                     width={600}
-                    height={400}
+                    height={300}
                     className="w-full h-auto object-cover"
                   />
                 </div>
               </div>
               <div>
+                <div className="text-[#0066CC] text-sm font-semibold mb-4 uppercase tracking-wider">
+                  OUR STORY
+                </div>
                 <h2 className="text-4xl md:text-5xl text-black font-bold mb-6">
                   WE STARTED WITH A{" "}
                   <span className="text-[#0066CC]">SIMPLE BELIEF.</span>
@@ -99,6 +125,61 @@ export default function OurStory() {
                   Africa and beyond, pairing sharp strategy with real craft and
                   a stubborn focus on outcomes.
                 </p>
+
+                {/* frameworks */}
+                <div className="mt-4 space-y-3 divide-y  divide-gray-200">
+                  <div className="flex items-start gap-4 py-3">
+                    <div className="text-[#FF6B35] text-2xl font-bold min-w-[60px]">
+                      01
+                    </div>
+                    <div>
+                      <p className="font-bold text-black text-lg">THE IDEA</p>
+                      <p className="text-gray-400 text-sm">
+                        A studio built to close the gap between strong
+                        businesses and the audiences they deserve.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start gap-4 py-3">
+                    <div className="text-[#FF6B35] text-2xl font-bold min-w-[60px]">
+                      02
+                    </div>
+                    <div>
+                      <p className="font-bold text-black text-lg">THE TEAM</p>
+                      <p className="text-gray-400 text-sm">
+                        Senior strategists, creatives and performance leads
+                        working in one team.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start gap-4 py-3">
+                    <div className="text-[#FF6B35] text-2xl font-bold min-w-[60px]">
+                      03
+                    </div>
+                    <div>
+                      <p className="font-bold text-black text-lg">THE WORK</p>
+                      <p className="text-gray-400 text-sm">
+                        Brand systems, campaigns and products built to travel -
+                        and to convert.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start gap-4 py-3">
+                    <div className="text-[#FF6B35] text-2xl font-bold min-w-[60px]">
+                      04
+                    </div>
+                    <div>
+                      <p className="font-bold text-black text-lg">THE VISION</p>
+                      <p className="text-gray-400 text-sm">
+                        A digital marketing partner African businesses can be
+                        proud to grow with.
+                      </p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -125,51 +206,52 @@ export default function OurStory() {
             <h2 className="text-4xl md:text-5xl text-black font-bold mb-12">
               THINK DEEPLY.
               <br />
-              <span className="text-[#0066CC]">MOVE INTENTIONALLY.</span>
+              <span className="text-[#0066CC]">MAKE BODLY.</span>
+              <br />
+              GROW INTENTIONALLY.
             </h2>
 
-            <div className="space-y-8">
-              <div className="flex justify-between gap-4">
-                <div className="text-5xl flex items-center justify-center font-bold text-[#EC550E] flex-shrink-0 mt-1">
+            <div className="space-y-12">
+              <div className="flex items-start gap-8">
+                <div className="text-5xl font-bold text-[#EC550E] flex-shrink-0 w-24">
                   01
                 </div>
-                <div>
-                  <h3 className="text-2xl text-black font-bold mb-2">Strategy</h3>
+                <div className="flex-1">
+                  <h3 className="text-2xl text-black font-bold mb-3">
+                    Strategy
+                  </h3>
+                  <p className="text-gray-600 text-lg">
+                    We start with your business, your customers and the outcomes
+                    that actually matter.
+                  </p>
                 </div>
-                <p className="text-gray-600 text-lg">
-                  We don&apos;t rush. We research, analyze, and design systems
-                  that are built to last.
-                </p>
               </div>
 
-              <div className="flex justify-between gap-4">
-                <div className="text-5xl flex items-center justify-center font-bold text-[#EC550E] flex-shrink-0 mt-1">
+              <div className="flex items-start gap-8">
+                <div className="text-5xl font-bold text-[#EC550E] flex-shrink-0 w-24">
                   02
                 </div>
-                <div>
-                  <h3 className="text-2xl text-black font-bold mb-2">
-                    Execution
-                  </h3>
+                <div className="flex-1">
+                  <h3 className="text-2xl text-black font-bold mb-3">CRAFT</h3>
+                  <p className="text-gray-600 text-lg">
+                    We turn strategy into clear, compelling digital experiences
+                    and content.
+                  </p>
                 </div>
-                <p className="text-gray-600 text-lg">
-                  Every campaign, every touchpoint is built with care and
-                  attention to detail.
-                </p>
               </div>
 
-              <div className="flex justify-between gap-4">
-                <div className="text-5xl flex items-center justify-center font-bold text-[#EC550E] flex-shrink-0 mt-1">
+              <div className="flex items-start gap-8">
+                <div className="text-5xl font-bold text-[#EC550E] flex-shrink-0 w-24">
                   03
                 </div>
-                <div>
-                  <h3 className="text-black text-2xl font-bold mb-2">
-                    Measurement
+                <div className="flex-1">
+                  <h3 className="text-black text-2xl font-bold mb-3">
+                    PERFORMANCE
                   </h3>
+                  <p className="text-gray-600 text-lg">
+                    We measure what matters and keep improving.
+                  </p>
                 </div>
-                <p className="text-gray-600 text-lg">
-                  Results aren&apos;t optional. We track, optimize, and improve
-                  based on real data.
-                </p>
               </div>
             </div>
           </div>
@@ -178,22 +260,28 @@ export default function OurStory() {
         {/* Team Section */}
         <section className="py-20 px-6 bg-gray-50">
           <div className="max-w-7xl mx-auto">
-            <h2 className="text-4xl md:text-5xl text-black font-bold mb-4">
-              PEOPLE MAKE <br />
-              THE <span className="text-[#0066CC]">DIFFERENCE.</span>
-            </h2>
-            <p className="text-gray-600 text-lg mb-12">
-              Meet the team behind the strategy.
-            </p>
+            <div className="text-[#0066CC] text-sm font-semibold mb-4 uppercase tracking-wider">
+              THE PEOPLE BEHIND BFG
+            </div>
+            <div className="flex  justify-between">
+              <h2 className="text-4xl md:text-5xl text-black font-bold mb-4">
+                PEOPLE MAKE <br />
+                THE <span className="text-[#0066CC]">DIFFERENCE.</span>
+              </h2>
+              <p className="w-[40%] text-gray-600 text-lg mb-12">
+                A small, senior team that stays hands-on with every partnership.
+                The people you meet are the people who do the work.
+              </p>
+            </div>
 
             <div className="mb-12">
-              <div className="rounded-3xl overflow-hidden">
+              <div className="rounded-3xl h-[600px] overflow-hidden">
                 <Image
-                  src="/placeholder-full-team.jpg"
+                  src="/assets/people-image.jpg"
                   alt="Full team"
                   width={1200}
                   height={600}
-                  className="w-full h-auto object-cover"
+                  className="w-full h-full object-cover object-center"
                 />
               </div>
             </div>
@@ -210,7 +298,9 @@ export default function OurStory() {
                   />
                 </div>
                 <div className="p-6">
-                  <h3 className="font-bold text-xl mb-1">FOUNDER NAME</h3>
+                  <h3 className="font-bold text-xl text-black mb-1">
+                    TEAM NAME
+                  </h3>
                   <p className="text-gray-600 mb-2">Co-Founder</p>
                   <p className="text-sm text-gray-500">
                     Brief bio or area of expertise
@@ -229,7 +319,9 @@ export default function OurStory() {
                   />
                 </div>
                 <div className="p-6">
-                  <h3 className="font-bold text-xl mb-1">FOUNDER NAME</h3>
+                  <h3 className="font-bold text-xl text-black mb-1">
+                    TEAM NAME
+                  </h3>
                   <p className="text-gray-600 mb-2">Co-Founder</p>
                   <p className="text-sm text-gray-500">
                     Brief bio or area of expertise
@@ -248,7 +340,9 @@ export default function OurStory() {
                   />
                 </div>
                 <div className="p-6">
-                  <h3 className="font-bold text-xl mb-1">FOUNDER NAME</h3>
+                  <h3 className="font-bold text-xl text-black mb-1">
+                    TEAM NAME
+                  </h3>
                   <p className="text-gray-600 mb-2">Co-Founder</p>
                   <p className="text-sm text-gray-500">
                     Brief bio or area of expertise
@@ -262,7 +356,7 @@ export default function OurStory() {
         {/* Focus Section */}
         <section className="py-20 px-6">
           <div className="max-w-7xl mx-auto">
-            <div className="grid md:grid-cols-2 gap-12">
+            <div className="grid md:grid-cols gap-12">
               <div>
                 <h2 className="text-4xl text-black md:text-5xl font-bold mb-6">
                   WHAT WE STAND FOR.
@@ -270,6 +364,25 @@ export default function OurStory() {
                   <span className="text-[#0066CC]">AS AN ORGANIZATION.</span>
                 </h2>
               </div>
+              <div className="divide-y divide-gray-200 space-y-6">
+                <div className="flex justify-between pb-2">
+                  <p className="text-md text-black">OUR MISSION</p>
+                  <p className="w-[60%] text-lg text-black font-semibold">
+                    “To help businesses use digital marketing to become more
+                    visible, more connected and more effective.”
+                  </p>
+                </div>
+                <div className="flex justify-between">
+                  <p className="text-md text-black">OUR VISION</p>
+                  <p className="w-[60%] text-lg text-black font-semibold">
+                    “To build a digital marketing agency that helps African
+                    businesses connect, grow and thrive in an increasingly
+                    digital world.”
+                  </p>
+                </div>
+              </div>
+              {/* vision, mission  */}
+
               {/* <div>
                 <div className="space-y-6">
                   <div className="flex items-start gap-3">
@@ -299,7 +412,7 @@ export default function OurStory() {
         </section>
 
         {/* CTA Section */}
-        <section className="py-20 px-6 bg-[#0066CC] text-white rounded-3xl my-6">
+        {/* <section className="py-20 px-6 bg-[#0066CC] text-white rounded-3xl my-6">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-4xl md:text-5xl font-bold mb-8">
               Let&apos;s build something that moves your business forward.
@@ -308,7 +421,7 @@ export default function OurStory() {
               Start a Conversation
             </button>
           </div>
-        </section>
+        </section> */}
       </div>
     </div>
   );
