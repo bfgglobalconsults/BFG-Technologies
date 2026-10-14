@@ -1,21 +1,38 @@
-import React from "react";
+"use client";
+
+import { useState } from "react";
+import ContactModal from "./ContactModal";
 
 const Footer = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   return (
     <>
       {/* CTA Section */}
       <div className="px-15 bg-white py-20 ">
-      <section className="py-20 px-6 bg-[#0066CC] rounded-2xl text-white">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl md:text-5xl font-bold mb-8">
-            Let&apos;s build something that moves your business forward.
-          </h2>
-          <button className="bg-[#FF6B35] text-white px-10 py-4 rounded-lg hover:bg-orange-600 text-lg font-semibold">
-            Start a Conversation
-          </button>
-        </div>
-      </section>
-</div>
+        <section className="py-20 px-6 bg-[#0066CC] rounded-2xl text-white">
+          <div className="max-w-4xl mx-auto text-center">
+            <div className="text-white text-sm font-semibold mb-4 uppercase tracking-wider">
+              READY TO GROW
+            </div>
+            <h2 className="text-4xl md:text-5xl font-bold mb-8">
+              Let&apos;s build something that moves your business forward.
+            </h2>
+            <button
+              onClick={() => setIsModalOpen(true)}
+              className="bg-[#FF6B35] text-white px-10 py-4 rounded-lg hover:bg-orange-600 text-lg font-semibold"
+            >
+              Start a Conversation
+            </button>
+          </div>
+        </section>
+      </div>
+
+      <ContactModal
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+      />
+
       {/* Footer */}
       <footer className="py-12 px-6 bg-gray-900 text-white">
         <div className="max-w-7xl mx-auto">

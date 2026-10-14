@@ -848,7 +848,7 @@ export default function Home() {
               <div className="bg-[#F4F6F8] p-4">
                 <div className="aspect-square bg-[#F4F6F8] rounded-2xl mb-4 overflow-hidden">
                   <Image
-                    src="/assets/founder1.jpg"
+                    src="/assets/Festus.png"
                     alt="Founder"
                     width={400}
                     height={400}
@@ -856,17 +856,17 @@ export default function Home() {
                   />
                 </div>
                 <h3 className="font-bold text-black text-2xl mb-1">
-                  John Smith
+                  Festus BELLO
                 </h3>
-                <p className="text-gray-600 mb-2">CEO & Founder</p>
-                <p className="inline-block text-sm text-black bg-[#037BD11A] p-2 rounded-3xl">
+                <p className="text-gray-600 mb-2">Founder and CEO</p>
+                {/* <p className="inline-block text-sm text-black bg-[#037BD11A] p-2 rounded-3xl">
                   digital marketing
-                </p>
+                </p> */}
               </div>
               <div className="bg-[#F4F6F8] p-4">
                 <div className="aspect-square bg-[#F4F6F8] rounded-2xl mb-4 overflow-hidden">
                   <Image
-                    src="/assets/founder2.jpg"
+                    src="/assets/Bayo.jpeg"
                     alt="Founder"
                     width={400}
                     height={400}
@@ -874,17 +874,17 @@ export default function Home() {
                   />
                 </div>
                 <h3 className="font-bold text-black text-2xl mb-1">
-                  Sam Johnson
+                  Bayo Adebayo
                 </h3>
-                <p className="text-gray-600 mb-2">Creative Director</p>
-                <p className="inline-block text-sm text-black bg-[#037BD11A] p-2 rounded-3xl">
+                <p className="text-gray-600 mb-2">Digital Marketing Lead</p>
+                {/* <p className="inline-block text-sm text-black bg-[#037BD11A] p-2 rounded-3xl">
                   Growth expert
-                </p>
+                </p> */}
               </div>
               <div className="bg-[#F4F6F8] p-4">
                 <div className="aspect-square bg-[#F4F6F8] rounded-2xl mb-4 overflow-hidden">
                   <Image
-                    src="/assets/founder3.jpg"
+                    src="/assets/Faith.jpeg"
                     alt="Founder"
                     width={400}
                     height={400}
@@ -892,12 +892,30 @@ export default function Home() {
                   />
                 </div>
                 <h3 className="font-bold text-black text-2xl mb-1">
-                  Michael Chen
+                  Faith Chidera
                 </h3>
-                <p className="text-gray-600 mb-2">Tech Lead</p>
-                <p className="inline-block text-black text-sm p-2 bg-[#037BD11A] rounded-3xl">
+                <p className="text-gray-600 mb-2">Project & Sales Support</p>
+                {/* <p className="inline-block text-black text-sm p-2 bg-[#037BD11A] rounded-3xl">
                   Growth expert
-                </p>
+                </p> */}
+              </div>
+              <div className="bg-[#F4F6F8] p-4">
+                <div className="aspect-square bg-[#F4F6F8] rounded-2xl mb-4 overflow-hidden">
+                  <Image
+                    src="/assets/Peter.png"
+                    alt="Founder"
+                    width={400}
+                    height={400}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <h3 className="font-bold text-black text-2xl mb-1">
+                  Peter Itodo
+                </h3>
+                <p className="text-gray-600 mb-2">Creative and Media Support</p>
+                {/* <p className="inline-block text-black text-sm p-2 bg-[#037BD11A] rounded-3xl">
+                  Growth expert
+                </p> */}
               </div>
             </div>
           </div>

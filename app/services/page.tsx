@@ -2,26 +2,54 @@ import Image from "next/image";
 
 export default function ServicesPage() {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white px-15">
       {/* Hero Section */}
-      <section className="pt-32 pb-20 px-6">
+
+      {/* Main Content Section */}
+      <section className="pt-20 py-22 px-6">
         <div className="max-w-7xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div className="flex gap-3 items-center text-[#14212DB2] px-6 py-16">
+            <span className="w-10 h-1 bg-[#EC550E] mb-4"></span>
+            <h1 className="text-md font-semibold mb-4">OUR SERVICES</h1>
+          </div>
+          <div className="grid md:grid-cols-2 gap-12">
             <div>
-              <h1 className="text-5xl md:text-6xl font-bold mb-6">
+              <h1 className="text-5xl md:text-6xl text-black font-bold mb-6">
                 DIGITAL WORK DESIGNED TO MOVE YOUR BUSINESS{" "}
                 <span className="text-[#FF6B35]">FORWARD.</span>
               </h1>
             </div>
-            <div>
-              <Image
-                src="/assets/services-hero.jpg"
-                alt="Team collaboration"
-                width={600}
-                height={400}
-                className="rounded-2xl w-full h-auto object-cover"
-              />
+            <div className="flex flex-col justify-end">
+              <p className="text-gray-600 text-lg max-w-3xl">
+                From strategy and visibility to audience connection and
+                measurable results, our services are designed to support the
+                different stages of digital growth.
+              </p>
+              <hr className="my-6 text-gray-600" />
+              <div className="flex justify-between mt-4">
+                <div className="flex items-center">
+                  <span className="text-4xl font-bold text-[#037BD1]">10</span>
+                  <span className="text-xl font-semibold text-gray-400 ml-2">
+                    SERVICES
+                  </span>
+                </div>
+                <div className="flex items-center">
+                  <span className="text-4xl font-bold text-[#037BD1]">3</span>
+                  <span className="text-xl font-semibold text-gray-400 ml-2">
+                    GROWTH STAGES
+                  </span>
+                </div>
+              </div>
             </div>
+          </div>
+          <div className="mt-8">
+            <Image
+              src="/assets/services-hero.jpg"
+              alt="Team collaboration"
+              width={1200}
+              height={600}
+              className="rounded-2xl w-full h-[400px] object-cover"
+            />
           </div>
         </div>
       </section>
@@ -29,15 +57,18 @@ export default function ServicesPage() {
       {/* From Getting Seen to Getting Results */}
       <section className="py-20 px-6 bg-gray-50">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">
+          <div className="text-[#FF6B35] text-sm font-semibold mb-4 uppercase tracking-wider">
+            HOW WE HELP
+          </div>
+          <h2 className="text-4xl md:text-5xl text-black font-bold mb-4">
             FROM GETTING SEEN TO
           </h2>
-          <h2 className="text-4xl md:text-5xl font-bold text-[#0066CC] mb-12">
-            GETTING RESULTS.
+          <h2 className="text-4xl md:text-5xl font-bold text-black mb-12">
+            GETTING <span className="text-[#0066CC]">RESULTS.</span>
           </h2>
           <p className="text-gray-600 text-lg max-w-3xl">
             Whether you need more visibility, stronger connections, or proven
-            systems that convert - we've got the tools, the talent, and the
+            systems that convert - we&apos;ve got the tools, the talent, and the
             track record to help you grow.
           </p>
         </div>
@@ -46,33 +77,53 @@ export default function ServicesPage() {
       {/* Three Stages Section */}
       <section className="py-20 px-6">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">
+          <div className="text-[#0066CC] text-sm font-semibold mb-4 uppercase tracking-wider">
+            THE GROWTH SYSTEM
+          </div>
+          <h2 className="text-4xl md:text-5xl text-black font-bold mb-4">
             THREE STAGES. ONE
           </h2>
-          <h2 className="text-4xl md:text-5xl font-bold text-[#0066CC] mb-16">
-            INTEGRATED GROWTH SYSTEM.
+          <h2 className="text-4xl md:text-5xl font-bold text-black mb-16">
+            CONNECTED GROWTH SYSTEM.
           </h2>
 
           <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-white p-8 rounded-2xl border-2 border-gray-200">
-              <div className="text-[#FF6B35] font-bold mb-4">01</div>
-              <h3 className="text-2xl font-bold mb-4">GROW VISIBILITY</h3>
-              <p className="text-gray-600">Get found where it matters most.</p>
-            </div>
-
-            <div className="bg-white p-8 rounded-2xl border-2 border-gray-200">
-              <div className="text-[#FF6B35] font-bold mb-4">02</div>
-              <h3 className="text-2xl font-bold mb-4">BUILD CONNECTION</h3>
+              <div className="text-[#14212D33] text-3xl  font-bold mb-4">
+                01
+              </div>
+              <h3 className="text-2xl text-black font-bold mb-4">
+                GROW VISIBILITY
+              </h3>
               <p className="text-gray-600">
-                Turn attention into relationships.
+                Build the strategic foundation and visibility needed to reach
+                the right audience and create demand.
               </p>
             </div>
 
             <div className="bg-white p-8 rounded-2xl border-2 border-gray-200">
-              <div className="text-[#FF6B35] font-bold mb-4">03</div>
-              <h3 className="text-2xl font-bold mb-4">DRIVE RESULTS</h3>
+              <div className="text-[#14212D33] text-3xl  font-bold mb-4">
+                02
+              </div>
+              <h3 className="text-2xl text-black font-bold mb-4">
+                BUILD CONNECTION
+              </h3>
               <p className="text-gray-600">
-                Convert interest into measurable outcomes.
+                Turn attention into an active presence meaningful conversations
+                and stronger relationships.
+              </p>
+            </div>
+
+            <div className="bg-white p-8 rounded-2xl border-2 border-gray-200">
+              <div className="text-[#14212D33] text-3xl  font-bold mb-4">
+                03
+              </div>
+              <h3 className="text-2xl text-black font-bold mb-4">
+                DRIVE RESULTS
+              </h3>
+              <p className="text-gray-600">
+                Measure what matters and use performance data to make better
+                business decisions
               </p>
             </div>
           </div>
@@ -82,6 +133,9 @@ export default function ServicesPage() {
       {/* Be Seen Section */}
       <section className="py-20 px-6 bg-gray-50">
         <div className="max-w-7xl mx-auto">
+          <div className="text-[#0066CC] text-sm font-semibold mb-4 uppercase tracking-wider">
+            01 / GROW VISIBILITY
+          </div>
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
             BE SEEN BY THE
           </h2>
@@ -90,31 +144,49 @@ export default function ServicesPage() {
           </h2>
 
           <div className="space-y-6">
-            <div className="bg-white p-8 rounded-2xl">
-              <h3 className="text-2xl font-bold mb-3">Digital Strategy</h3>
+            <div className="flex justify-between bg-white p-8 rounded-2xl">
+              <div className="flex gap-8">
+                <div className="text-[#FF6B35] text-2xl font-bold mb-4">01</div>
+                <h3 className="text-2xl text-uppercase font-bold mb-3">
+                  Digital Strategy
+                </h3>
+              </div>
               <p className="text-gray-600">
                 Clear digital direction built around your business goals.
               </p>
             </div>
 
-            <div className="bg-white p-8 rounded-2xl">
-              <h3 className="text-2xl font-bold mb-3">
-                Paid Ads & Performance Marketing
-              </h3>
+            <div className="flex justify-between bg-white p-8 rounded-2xl">
+              <div className="flex gap-8">
+                <div className="text-[#FF6B35] text-2xl font-bold mb-4">02</div>
+                <h3 className="text-2xl text-uppercase font-bold mb-3">
+                  Paid Ads & Performance Marketing
+                </h3>
+              </div>
               <p className="text-gray-600">
                 Targeted campaigns that reach the right audience.
               </p>
             </div>
 
-            <div className="bg-white p-8 rounded-2xl">
-              <h3 className="text-2xl font-bold mb-3">SEO & Search</h3>
+            <div className="flex justify-between bg-white p-8 rounded-2xl">
+              <div className="flex gap-8">
+                <div className="text-[#FF6B35] text-2xl font-bold mb-4">03</div>
+                <h3 className="text-2xl text-uppercase font-bold mb-3">
+                  SEO & Search
+                </h3>
+              </div>
               <p className="text-gray-600">
                 Improve visibility where customers are searching.
               </p>
             </div>
 
-            <div className="bg-white p-8 rounded-2xl">
-              <h3 className="text-2xl font-bold mb-3">Digital Campaigns</h3>
+            <div className="flex justify-between bg-white p-8 rounded-2xl">
+              <div className="flex gap-8">
+                <div className="text-[#FF6B35] text-2xl font-bold mb-4">04</div>
+                <h3 className="text-2xl text-uppercase font-bold mb-3">
+                  Digital Campaigns
+                </h3>
+              </div>
               <p className="text-gray-600">
                 Focused campaigns designed for attention and action.
               </p>
@@ -126,34 +198,63 @@ export default function ServicesPage() {
       {/* Turn Attention Section */}
       <section className="py-20 px-6">
         <div className="max-w-7xl mx-auto">
+          <div className="text-[#0066CC] text-sm font-semibold mb-4 uppercase tracking-wider">
+            02 / BUILD CONNECTION
+          </div>
+
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            TURN ATTENTION INTO
+            TURN ATTENTION
           </h2>
           <h2 className="text-4xl md:text-5xl font-bold text-[#0066CC] mb-16">
-            CONNECTION.
+            INTO CONNECTION.
           </h2>
 
           <div className="space-y-6">
-            <div className="bg-gray-50 p-8 rounded-2xl">
-              <h3 className="text-2xl font-bold mb-3">Social Media</h3>
+            <div className="flex justify-between bg-white p-8 rounded-2xl">
+              {" "}
+              <div className="flex gap-8">
+                <div className="text-[#FF6B35] text-2xl font-bold mb-4">01</div>
+                <h3 className="text-2xl text-uppercase font-bold mb-3">
+                  Social Media
+                </h3>
+              </div>
               <p className="text-gray-600">
                 Build an active presence and meaningful connections.
               </p>
             </div>
 
-            <div className="bg-gray-50 p-8 rounded-2xl">
-              <h3 className="text-2xl font-bold mb-3">Content Marketing</h3>
+            <div className="flex justify-between bg-white p-8 rounded-2xl">
+              <div className="flex gap-8">
+                <div className="text-[#FF6B35] text-2xl font-bold mb-4">02</div>
+                <h3 className="text-2xl text-uppercase font-bold mb-3">
+                  Content Marketing
+                </h3>
+              </div>
               <p className="text-gray-600">
                 Content that keeps your brand relevant and engaging.
               </p>
             </div>
 
-            <div className="bg-gray-50 p-8 rounded-2xl">
-              <h3 className="text-2xl font-bold mb-3">
-                Personal & Influencer Marketing
-              </h3>
+            <div className="flex justify-between bg-white p-8 rounded-2xl">
+              <div className="flex gap-8">
+                <div className="text-[#FF6B35] text-2xl font-bold mb-4">03</div>
+                <h3 className="text-2xl  font-bold mb-3">Personal Branding</h3>
+              </div>
               <p className="text-gray-600">
                 Leverage digital influence to reach the right audiences.
+              </p>
+            </div>
+
+            <div className="flex justify-between bg-white p-8 rounded-2xl">
+              <div className="flex gap-8">
+                <div className="text-[#FF6B35] text-2xl font-bold mb-4">04</div>
+                <h3 className="text-2xl text-uppercase font-bold mb-3">
+                  Influencer Marketing
+                </h3>
+              </div>
+              <p className="text-gray-600">
+                Connecting brands with creators who can reach the right
+                audiences.
               </p>
             </div>
           </div>
@@ -161,33 +262,36 @@ export default function ServicesPage() {
       </section>
 
       {/* Turn Digital Activity Section */}
-      <section className="py-20 px-6 bg-black text-white">
+      <section className="py-20 rounded-xl px-6 bg-black text-white">
         <div className="max-w-7xl mx-auto">
+          <div className="text-[#FF6B35] text-sm font-semibold mb-4 uppercase tracking-wider">
+            03 / DRIVE RESULTS
+          </div>
           <h2 className="text-4xl md:text-5xl font-bold mb-16">
             TURN DIGITAL ACTIVITY INTO <br />
-            <span className="text-[#FF6B35]">REAL BUSINESS OUTCOMES.</span>
+            <span className="text-[#FF6B35]">BUSINESS RESULTS.</span>
           </h2>
 
           <p className="text-gray-400 text-lg mb-12 max-w-3xl">
-            Growth isn't just about traffic - it's about turning that traffic
-            into leads, customers, and revenue. We help you build systems that
-            convert consistently and scale intelligently.
+            Measure what matters, strengthen customer relationships and use
+            performance data to make better decisions.
           </p>
 
           <div className="grid md:grid-cols-2 gap-8">
             <div>
-              <div className="text-[#FF6B35] font-bold mb-4">01</div>
-              <h3 className="text-2xl font-bold mb-3">PREDICTABLE GROWTH</h3>
+              <div className="text-white text-3xl font-bold mb-4">01</div>
+              <h3 className="text-2xl font-bold mb-3">EMAIL MARKETING </h3>
               <p className="text-gray-400">
-                Systems and strategies that deliver consistent results.
+                Turning direct communication into stronger customer
+                relationships.
               </p>
             </div>
 
             <div>
-              <div className="text-[#FF6B35] font-bold mb-4">02</div>
-              <h3 className="text-2xl font-bold mb-3">MEASURABLE ROI</h3>
+              <div className="text-white text-3xl font-bold mb-4">02</div>
+              <h3 className="text-2xl font-bold mb-3">ANALYTICS & INSIGHTS</h3>
               <p className="text-gray-400">
-                Track what matters and optimize for business outcomes.
+                Using data to understand performance and improve decisions.
               </p>
             </div>
           </div>
@@ -197,7 +301,7 @@ export default function ServicesPage() {
       {/* Think Deeply Section */}
       <section className="py-20 px-6">
         <div className="max-w-7xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div className="grid md:grid-cols-1 gap-12 items-center">
             <div>
               <h2 className="text-4xl md:text-5xl font-bold mb-4">
                 THINK DEEPLY.
@@ -205,44 +309,28 @@ export default function ServicesPage() {
               <h2 className="text-4xl md:text-5xl font-bold text-[#0066CC] mb-6">
                 MAKE BOLDLY.
               </h2>
-              <h2 className="text-4xl md:text-5xl font-bold mb-8">
+              <h2 className="text-4xl md:text-5xl font-bold mb-8 divide-y mb-4">
                 GROW INTENTIONALLY.
               </h2>
-              <p className="text-gray-600 text-lg mb-6">
-                Our approach isn't about quick fixes or vanity metrics.
-              </p>
-              <p className="text-gray-600 text-lg">
-                It's about building a marketing engine that works for your
-                business - today and in the long term. We blend strategic
-                thinking with hands-on execution to deliver growth that's both
-                sustainable and scalable.
-              </p>
-            </div>
-            <div>
-              <Image
-                src="/assets/services-thinking.jpg"
-                alt="Strategic thinking"
-                width={600}
-                height={400}
-                className="rounded-2xl w-full h-auto object-cover"
-              />
+              <div className="divide-y divide-gray-200 space-y-6">
+                <div className="flex justify-between pb-2">
+                  <p className="text-md text-black">OUR MISSION</p>
+                  <p className="w-[60%] text-lg text-black font-semibold">
+                    “To help businesses use digital marketing to become more
+                    visible, more connected and more effective.”
+                  </p>
+                </div>
+                <div className="flex justify-between">
+                  <p className="text-md text-black">OUR VISION</p>
+                  <p className="w-[60%] text-lg text-black font-semibold">
+                    “To build a digital marketing agency that helps African
+                    businesses connect, grow and thrive in an increasingly
+                    digital world.”
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
-
-      {/* CTA Section */}
-      <section className="py-20 px-6 bg-[#0066CC] text-white">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Let's build something that moves your business forward.
-          </h2>
-          <p className="text-blue-200 text-lg mb-8">
-            Ready to grow? Let's talk strategy.
-          </p>
-          <button className="bg-[#FF6B35] text-white px-10 py-4 rounded-full hover:bg-orange-600 text-lg font-semibold">
-            Get Started
-          </button>
         </div>
       </section>
     </div>

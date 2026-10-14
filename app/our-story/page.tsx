@@ -10,6 +10,10 @@ export default function OurStory() {
         {/* Hero Section */}
         <section className="pt-32 pb-20 px-6">
           <div className="max-w-7xl mx-auto mt-16">
+            <div className="flex gap-3 items-center text-[#14212DB2] px-6 py-16">
+              <span className="w-10 h-1 bg-[#EC550E] mb-4"></span>
+              <h1 className="text-md font-semibold mb-4">OUR STORY</h1>
+            </div>
             <div className="grid md:grid-cols-2 gap-12">
               <div className="flex flex-col justify-between">
                 <div>
@@ -290,7 +294,7 @@ export default function OurStory() {
               <div className="bg-white rounded-2xl overflow-hidden">
                 <div className="aspect-square bg-gray-200">
                   <Image
-                    src="/placeholder-team1.jpg"
+                    src="/assets/Festus.png"
                     alt="Team member"
                     width={400}
                     height={400}
@@ -299,19 +303,19 @@ export default function OurStory() {
                 </div>
                 <div className="p-6">
                   <h3 className="font-bold text-xl text-black mb-1">
-                    TEAM NAME
+                    FESTUS BELLO
                   </h3>
-                  <p className="text-gray-600 mb-2">Co-Founder</p>
-                  <p className="text-sm text-gray-500">
+                  <p className="text-gray-600 mb-2">Founder and CEO</p>
+                  {/* <p className="text-sm text-gray-500">
                     Brief bio or area of expertise
-                  </p>
+                  </p> */}
                 </div>
               </div>
 
               <div className="bg-white rounded-2xl overflow-hidden">
                 <div className="aspect-square bg-gray-200">
                   <Image
-                    src="/placeholder-team2.jpg"
+                    src="/assets/Bayo.jpeg"
                     alt="Team member"
                     width={400}
                     height={400}
@@ -320,19 +324,19 @@ export default function OurStory() {
                 </div>
                 <div className="p-6">
                   <h3 className="font-bold text-xl text-black mb-1">
-                    TEAM NAME
+                    Bayo Adebayo
                   </h3>
-                  <p className="text-gray-600 mb-2">Co-Founder</p>
-                  <p className="text-sm text-gray-500">
+                  <p className="text-gray-600 mb-2">Digital Marketing Lead</p>
+                  {/* <p className="text-sm text-gray-500">
                     Brief bio or area of expertise
-                  </p>
+                  </p> */}
                 </div>
               </div>
 
               <div className="bg-white rounded-2xl overflow-hidden">
                 <div className="aspect-square bg-gray-200">
                   <Image
-                    src="/placeholder-team3.jpg"
+                    src="/assets/Faith.jpeg"
                     alt="Team member"
                     width={400}
                     height={400}
@@ -341,12 +345,35 @@ export default function OurStory() {
                 </div>
                 <div className="p-6">
                   <h3 className="font-bold text-xl text-black mb-1">
-                    TEAM NAME
+                    Fauth Chidera
                   </h3>
-                  <p className="text-gray-600 mb-2">Co-Founder</p>
-                  <p className="text-sm text-gray-500">
+                  <p className="text-gray-600 mb-2">Project & Sales Support</p>
+                  {/* <p className="text-sm text-gray-500">
                     Brief bio or area of expertise
+                  </p> */}
+                </div>
+              </div>
+
+              <div className="bg-white rounded-2xl overflow-hidden">
+                <div className="aspect-square bg-gray-200">
+                  <Image
+                    src="/assets/Peter.png"
+                    alt="Team member"
+                    width={400}
+                    height={400}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="p-6">
+                  <h3 className="font-bold text-xl text-black mb-1">
+                    Peter Itodo
+                  </h3>
+                  <p className="text-gray-600 mb-2">
+                    Creative and Media Support
                   </p>
+                  {/* <p className="text-sm text-gray-500">
+                    Brief bio or area of expertise
+                  </p> */}
                 </div>
               </div>
             </div>
