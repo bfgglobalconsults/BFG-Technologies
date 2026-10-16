@@ -58,7 +58,6 @@ export default function OurStory() {
                 </div>
               </div>
               <div>
-                {" "}
                 <div className="rounded-3xl ">
                   <Image
                     src="/assets/ourstory-image.png"
@@ -69,8 +68,8 @@ export default function OurStory() {
                   />
                 </div>
               </div>
-            </div>
-          </div>
+            </motion.div>
+          </motion.div>
         </section>
 
         {/* Problem Statement */}
@@ -303,7 +302,7 @@ export default function OurStory() {
                 </div>
               </div>
             </div>
-          </motion.div>
+          </div>
         </motion.section>
 
         {/* Team Section */}
@@ -493,7 +492,7 @@ export default function OurStory() {
               </div> */}
             </div>
           </div>
-        </section>
+        </motion.section>
 
         {/* CTA Section */}
         {/* <section className="py-20 px-6 bg-[#0066CC] text-white rounded-3xl my-6">
