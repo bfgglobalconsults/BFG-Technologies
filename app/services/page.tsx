@@ -1,18 +1,46 @@
+"use client";
+
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 export default function ServicesPage() {
+  const fadeIn = {
+    initial: { opacity: 0, y: 20 },
+    animate: { opacity: 1, y: 0 },
+    transition: { duration: 0.6 },
+  };
+
+  const staggerContainer = {
+    animate: {
+      transition: {
+        staggerChildren: 0.15,
+      },
+    },
+  };
+
   return (
     <div className="min-h-screen bg-white px-15">
       {/* Hero Section */}
 
       {/* Main Content Section */}
-      <section className="pt-20 py-22 px-6">
+      <motion.section
+        className="pt-20 py-22 px-6"
+        initial="initial"
+        whileInView="animate"
+        viewport={{ once: true }}
+        variants={{
+          animate: { transition: { staggerChildren: 0.2 } },
+        }}
+      >
         <div className="max-w-7xl mx-auto">
-          <div className="flex gap-3 items-center text-[#14212DB2] px-6 py-16">
+          <motion.div
+            className="flex gap-3 items-center text-[#14212DB2] px-6 py-16"
+            variants={fadeIn}
+          >
             <span className="w-10 h-1 bg-[#EC550E] mb-4"></span>
             <h1 className="text-md font-semibold mb-4">OUR SERVICES</h1>
-          </div>
-          <div className="grid md:grid-cols-2 gap-12">
+          </motion.div>
+          <motion.div className="grid md:grid-cols-2 gap-12" variants={fadeIn}>
             <div>
               <h1 className="text-5xl md:text-6xl text-black font-bold mb-6">
                 DIGITAL WORK DESIGNED TO MOVE YOUR BUSINESS{" "}
@@ -41,8 +69,8 @@ export default function ServicesPage() {
                 </div>
               </div>
             </div>
-          </div>
-          <div className="mt-8">
+          </motion.div>
+          <motion.div className="mt-8" variants={fadeIn}>
             <Image
               src="/assets/services-hero.jpg"
               alt="Team collaboration"
@@ -50,12 +78,18 @@ export default function ServicesPage() {
               height={600}
               className="rounded-2xl w-full h-[400px] object-cover"
             />
-          </div>
+          </motion.div>
         </div>
-      </section>
+      </motion.section>
 
       {/* From Getting Seen to Getting Results */}
-      <section className="py-20 px-6 bg-gray-50">
+      <motion.section
+        className="py-20 px-6 bg-gray-50"
+        initial="initial"
+        whileInView="animate"
+        viewport={{ once: true }}
+        variants={fadeIn}
+      >
         <div className="max-w-7xl mx-auto">
           <div className="text-[#FF6B35] text-sm font-semibold mb-4 uppercase tracking-wider">
             HOW WE HELP
@@ -72,22 +106,36 @@ export default function ServicesPage() {
             track record to help you grow.
           </p>
         </div>
-      </section>
+      </motion.section>
 
       {/* Three Stages Section */}
-      <section className="py-20 px-6">
-        <div className="max-w-7xl mx-auto">
+      <motion.section
+        className="py-20 px-6"
+        initial="initial"
+        whileInView="animate"
+        viewport={{ once: true }}
+      >
+        <motion.div className="max-w-7xl mx-auto" variants={staggerContainer}>
           <div className="text-[#0066CC] text-sm font-semibold mb-4 uppercase tracking-wider">
             THE GROWTH SYSTEM
           </div>
-          <h2 className="text-4xl md:text-5xl text-black font-bold mb-4">
+          <motion.h2
+            className="text-4xl md:text-5xl text-black font-bold mb-4"
+            variants={fadeIn}
+          >
             THREE STAGES. ONE
-          </h2>
-          <h2 className="text-4xl md:text-5xl font-bold text-black mb-16">
+          </motion.h2>
+          <motion.h2
+            className="text-4xl md:text-5xl font-bold text-black mb-16"
+            variants={fadeIn}
+          >
             CONNECTED GROWTH SYSTEM.
-          </h2>
+          </motion.h2>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <motion.div
+            className="grid md:grid-cols-3 gap-8"
+            variants={staggerContainer}
+          >
             <div className="bg-white p-8 rounded-2xl border-2 border-gray-200">
               <div className="text-[#14212D33] text-3xl  font-bold mb-4">
                 01
@@ -126,12 +174,18 @@ export default function ServicesPage() {
                 business decisions
               </p>
             </div>
-          </div>
-        </div>
-      </section>
+          </motion.div>
+        </motion.div>
+      </motion.section>
 
       {/* Be Seen Section */}
-      <section className="py-20 px-6 bg-gray-50">
+      <motion.section
+        className="py-20 px-6 bg-gray-50"
+        initial="initial"
+        whileInView="animate"
+        viewport={{ once: true }}
+        variants={fadeIn}
+      >
         <div className="max-w-7xl mx-auto">
           <div className="text-[#0066CC] text-sm font-semibold mb-4 uppercase tracking-wider">
             01 / GROW VISIBILITY
@@ -193,10 +247,16 @@ export default function ServicesPage() {
             </div>
           </div>
         </div>
-      </section>
+      </motion.section>
 
       {/* Turn Attention Section */}
-      <section className="py-20 px-6">
+      <motion.section
+        className="py-20 px-6"
+        initial="initial"
+        whileInView="animate"
+        viewport={{ once: true }}
+        variants={fadeIn}
+      >
         <div className="max-w-7xl mx-auto">
           <div className="text-[#0066CC] text-sm font-semibold mb-4 uppercase tracking-wider">
             02 / BUILD CONNECTION
@@ -259,10 +319,16 @@ export default function ServicesPage() {
             </div>
           </div>
         </div>
-      </section>
+      </motion.section>
 
       {/* Turn Digital Activity Section */}
-      <section className="py-20 rounded-xl px-6 bg-black text-white">
+      <motion.section
+        className="py-20 rounded-xl px-6 bg-black text-white"
+        initial="initial"
+        whileInView="animate"
+        viewport={{ once: true }}
+        variants={fadeIn}
+      >
         <div className="max-w-7xl mx-auto">
           <div className="text-[#FF6B35] text-sm font-semibold mb-4 uppercase tracking-wider">
             03 / DRIVE RESULTS
@@ -296,10 +362,16 @@ export default function ServicesPage() {
             </div>
           </div>
         </div>
-      </section>
+      </motion.section>
 
       {/* Think Deeply Section */}
-      <section className="py-20 px-6">
+      <motion.section
+        className="py-20 px-6"
+        initial="initial"
+        whileInView="animate"
+        viewport={{ once: true }}
+        variants={fadeIn}
+      >
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-1 gap-12 items-center">
             <div>
@@ -332,7 +404,7 @@ export default function ServicesPage() {
             </div>
           </div>
         </div>
-      </section>
+      </motion.section>
     </div>
   );
 }

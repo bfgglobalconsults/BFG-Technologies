@@ -1,14 +1,39 @@
+"use client";
+
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 export default function Home() {
+  const fadeIn = {
+    initial: { opacity: 0, y: 20 },
+    animate: { opacity: 1, y: 0 },
+    transition: { duration: 0.6 },
+  };
+
+  const staggerContainer = {
+    animate: {
+      transition: {
+        staggerChildren: 0.1,
+      },
+    },
+  };
+
   return (
     <div className="px-15 bg-white">
       <div className="min-h-screen bg-white">
         {/* Hero Section */}
         <section className="pt-32 pb-20 px-6">
-          <div className="max-w-7xl mx-auto text-center">
+          <motion.div 
+            className="max-w-7xl mx-auto text-center"
+            initial="initial"
+            animate="animate"
+            variants={staggerContainer}
+          >
             {/* Trusted by Founders */}
-            <div className="flex items-center justify-center gap-2 my-6">
+            <motion.div 
+              className="flex items-center justify-center gap-2 my-6"
+              variants={fadeIn}
+            >
               <div className="flex -space-x-2">
                 <div className="w-12 h-12 rounded-full bg-gray-800 border-2 border-[#FF6B35]"></div>
                 <div className="w-12 h-12 rounded-full bg-gray-700 border-2 border-[#FF6B35]"></div>
@@ -17,10 +42,13 @@ export default function Home() {
               <span className="text-gray-600 text-sm ml-2">
                 Trusted by founders.
               </span>
-            </div>
+            </motion.div>
 
             {/* Main Headline */}
-            <h1 className="text-5xl md:text-7xl font-bold text-black mb-6 leading-tight">
+            <motion.h1 
+              className="text-5xl md:text-7xl font-bold text-black mb-6 leading-tight"
+              variants={fadeIn}
+            >
               <span className="flex items-center justify-center gap-3">
                 <span className="">Digital</span>
                 <span className="inline-block w-16 h-16 md:w-28 md:h-20 rounded-full overflow-hidden border-4 border-[#FF6B35]">
@@ -58,17 +86,25 @@ export default function Home() {
                   />
                 </span>
               </span>
-            </h1>
+            </motion.h1>
 
             {/* Subheading */}
-            <p className="text-gray-600 text-base md:text-lg mb-8 max-w-2xl mx-auto">
+            <motion.p 
+              className="text-gray-600 text-base md:text-lg mb-8 max-w-2xl mx-auto"
+              variants={fadeIn}
+            >
               We partner with startups, SMEs, and established businesses to
               increase visibility, generate qualified leads, and drive
               sustainable growth across Africa and beyond.
-            </p>
+            </motion.p>
 
             {/* CTA Button */}
-            <button className="bg-white border-2 border-[#FF6B35] text-[#FF6B35] px-8 py-3 rounded-lg hover:bg-[#FF6B35] hover:text-white transition-colors font-semibold inline-flex items-center gap-2">
+            <motion.button 
+              className="bg-white border-2 border-[#FF6B35] text-[#FF6B35] px-8 py-3 rounded-lg hover:bg-[#FF6B35] hover:text-white transition-colors font-semibold inline-flex items-center gap-2"
+              variants={fadeIn}
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
               Explore Our Growth Services
               <span>↗</span>
             </button>

@@ -1,7 +1,16 @@
+"use client";
+
 import Image from "next/image";
 import Header from "../components/Header";
+import { motion } from "framer-motion";
 
 export default function OurStory() {
+  const fadeIn = {
+    initial: { opacity: 0, y: 20 },
+    animate: { opacity: 1, y: 0 },
+    transition: { duration: 0.6 },
+  };
+
   return (
     <div className="px-15 bg-white">
       <div className="min-h-screen bg-white">
@@ -9,12 +18,22 @@ export default function OurStory() {
 
         {/* Hero Section */}
         <section className="pt-32 pb-20 px-6">
-          <div className="max-w-7xl mx-auto mt-16">
-            <div className="flex gap-3 items-center text-[#14212DB2] px-6 py-16">
+          <motion.div 
+            className="max-w-7xl mx-auto mt-16"
+            initial="initial"
+            animate="animate"
+            variants={{
+              animate: { transition: { staggerChildren: 0.2 } }
+            }}
+          >
+            <motion.div 
+              className="flex gap-3 items-center text-[#14212DB2] px-6 py-16"
+              variants={fadeIn}
+            >
               <span className="w-10 h-1 bg-[#EC550E] mb-4"></span>
               <h1 className="text-md font-semibold mb-4">OUR STORY</h1>
-            </div>
-            <div className="grid md:grid-cols-2 gap-12">
+            </motion.div>
+            <motion.div className="grid md:grid-cols-2 gap-12" variants={fadeIn}>
               <div className="flex flex-col justify-between">
                 <div>
                   <h1 className="text-5xl md:text-6xl text-black font-bold mb-6">
@@ -55,7 +74,13 @@ export default function OurStory() {
         </section>
 
         {/* Problem Statement */}
-        <section className="py-20 px-6 bg-gray-50 relative">
+        <motion.section 
+          className="py-20 px-6 bg-gray-50 relative"
+          initial="initial"
+          whileInView="animate"
+          viewport={{ once: true }}
+          variants={fadeIn}
+        >
           <div className="absolute right-0 top-0 bottom-0 w-1/3 opacity-10">
             <Image
               src="/assets/01.png"
@@ -87,10 +112,16 @@ export default function OurStory() {
               </div>
             </div>
           </div>
-        </section>
+        </motion.section>
 
         {/* Origin Story */}
-        <section className="py-20 px-6">
+        <motion.section 
+          className="py-20 px-6"
+          initial="initial"
+          whileInView="animate"
+          viewport={{ once: true }}
+          variants={fadeIn}
+        >
           <div className="max-w-7xl mx-auto">
             <div className="grid md:grid-cols-2 gap-12">
               <div>
@@ -187,10 +218,16 @@ export default function OurStory() {
               </div>
             </div>
           </div>
-        </section>
+        </motion.section>
 
         {/* Philosophy Section */}
-        <section className="py-20 px-6 bg-black text-white">
+        <motion.section 
+          className="py-20 px-6 bg-black text-white"
+          initial="initial"
+          whileInView="animate"
+          viewport={{ once: true }}
+          variants={fadeIn}
+        >
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-4xl md:text-5xl font-bold mb-8">
               Growth starts with understanding the{" "}
@@ -202,10 +239,18 @@ export default function OurStory() {
               <p className="text-gray-400">- BFG Technologies Team</p>
             </div>
           </div>
-        </section>
+        </motion.section>
 
         {/* Core Values */}
-        <section className="py-20 px-6">
+        <motion.section 
+          className="py-20 px-6"
+          initial="initial"
+          whileInView="animate"
+          viewport={{ once: true }}
+          variants={{
+            animate: { transition: { staggerChildren: 0.2 } }
+          }}
+        >
           <div className="max-w-7xl mx-auto">
             <h2 className="text-4xl md:text-5xl text-black font-bold mb-12">
               THINK DEEPLY.
@@ -258,11 +303,17 @@ export default function OurStory() {
                 </div>
               </div>
             </div>
-          </div>
-        </section>
+          </motion.div>
+        </motion.section>
 
         {/* Team Section */}
-        <section className="py-20 px-6 bg-gray-50">
+        <motion.section 
+          className="py-20 px-6 bg-gray-50"
+          initial="initial"
+          whileInView="animate"
+          viewport={{ once: true }}
+          variants={fadeIn}
+        >
           <div className="max-w-7xl mx-auto">
             <div className="text-[#0066CC] text-sm font-semibold mb-4 uppercase tracking-wider">
               THE PEOPLE BEHIND BFG
@@ -378,10 +429,16 @@ export default function OurStory() {
               </div>
             </div>
           </div>
-        </section>
+        </motion.section>
 
         {/* Focus Section */}
-        <section className="py-20 px-6">
+        <motion.section 
+          className="py-20 px-6"
+          initial="initial"
+          whileInView="animate"
+          viewport={{ once: true }}
+          variants={fadeIn}
+        >
           <div className="max-w-7xl mx-auto">
             <div className="grid md:grid-cols gap-12">
               <div>
