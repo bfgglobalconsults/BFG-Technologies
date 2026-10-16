@@ -23,14 +23,14 @@ export default function Home() {
       <div className="min-h-screen bg-white">
         {/* Hero Section */}
         <section className="pt-32 pb-20 px-6">
-          <motion.div 
+          <motion.div
             className="max-w-7xl mx-auto text-center"
             initial="initial"
             animate="animate"
             variants={staggerContainer}
           >
             {/* Trusted by Founders */}
-            <motion.div 
+            <motion.div
               className="flex items-center justify-center gap-2 my-6"
               variants={fadeIn}
             >
@@ -45,7 +45,7 @@ export default function Home() {
             </motion.div>
 
             {/* Main Headline */}
-            <motion.h1 
+            <motion.h1
               className="text-5xl md:text-7xl font-bold text-black mb-6 leading-tight"
               variants={fadeIn}
             >
@@ -89,7 +89,7 @@ export default function Home() {
             </motion.h1>
 
             {/* Subheading */}
-            <motion.p 
+            <motion.p
               className="text-gray-600 text-base md:text-lg mb-8 max-w-2xl mx-auto"
               variants={fadeIn}
             >
@@ -99,7 +99,7 @@ export default function Home() {
             </motion.p>
 
             {/* CTA Button */}
-            <motion.button 
+            <motion.button
               className="bg-white border-2 border-[#FF6B35] text-[#FF6B35] px-8 py-3 rounded-lg hover:bg-[#FF6B35] hover:text-white transition-colors font-semibold inline-flex items-center gap-2"
               variants={fadeIn}
               whileHover={{ scale: 1.05 }}
@@ -107,8 +107,8 @@ export default function Home() {
             >
               Explore Our Growth Services
               <span>↗</span>
-            </button>
-          </div>
+            </motion.button>
+          </motion.div>
         </section>
 
         {/* Everything You Need */}
