@@ -18,22 +18,25 @@ export default function OurStory() {
 
         {/* Hero Section */}
         <section className="pt-32 pb-20 px-6">
-          <motion.div 
+          <motion.div
             className="max-w-7xl mx-auto mt-16"
             initial="initial"
             animate="animate"
             variants={{
-              animate: { transition: { staggerChildren: 0.2 } }
+              animate: { transition: { staggerChildren: 0.2 } },
             }}
           >
-            <motion.div 
+            <motion.div
               className="flex gap-3 items-center text-[#14212DB2] px-6 py-16"
               variants={fadeIn}
             >
               <span className="w-10 h-1 bg-[#EC550E] mb-4"></span>
               <h1 className="text-md font-semibold mb-4">OUR STORY</h1>
             </motion.div>
-            <motion.div className="grid md:grid-cols-2 gap-12" variants={fadeIn}>
+            <motion.div
+              className="grid md:grid-cols-2 gap-12"
+              variants={fadeIn}
+            >
               <div className="flex flex-col justify-between">
                 <div>
                   <h1 className="text-5xl md:text-6xl text-black font-bold mb-6">
@@ -73,14 +76,14 @@ export default function OurStory() {
         </section>
 
         {/* Problem Statement */}
-        <motion.section 
-          className="py-20 px-6 bg-gray-50 relative"
+        <motion.section
+          className="py-20 px-6 bg-white relative"
           initial="initial"
           whileInView="animate"
           viewport={{ once: true }}
           variants={fadeIn}
         >
-          <div className="absolute right-0 top-0 bottom-0 w-1/3 opacity-10">
+          <div className="absolute right-0 top-0 bottom-0 w-6 opacity-10">
             <Image
               src="/assets/01.png"
               alt=""
@@ -94,7 +97,7 @@ export default function OurStory() {
                 <div className="text-[#FF6B35] text-sm font-semibold mb-4 uppercase tracking-wider">
                   01/ WHY WE EXIST
                 </div>
-                <h2 className="text-4xl md:text-5xl text-black font-bold mb-6">
+                <h2 className="text-4xl md:text-5xl/16 text-black font-bold mb-6">
                   AFRICA DOESN&apos;T HAVE A SHORTAGE OF GREAT BUSINESSES.
                   <br />
                   IT HAS A{" "}
@@ -114,8 +117,8 @@ export default function OurStory() {
         </motion.section>
 
         {/* Origin Story */}
-        <motion.section 
-          className="py-20 px-6"
+        <motion.section
+          className="py-20 bg-gray-50 px-6"
           initial="initial"
           whileInView="animate"
           viewport={{ once: true }}
@@ -220,20 +223,23 @@ export default function OurStory() {
         </motion.section>
 
         {/* Philosophy Section */}
-        <motion.section 
+        <motion.section
           className="py-20 px-6 bg-black text-white"
           initial="initial"
           whileInView="animate"
           viewport={{ once: true }}
           variants={fadeIn}
         >
-          <div className="max-w-4xl mx-auto text-center">
+          <div className="max-w-4xl ">
+            <div className="text-[#EC550E] text-sm font-semibold mb-4 uppercase tracking-wider">
+              WHAT WE BELIEVE
+            </div>
             <h2 className="text-4xl md:text-5xl font-bold mb-8">
               Growth starts with understanding the{" "}
               <span className="text-[#EC550E]">people</span> behind the
               business.
             </h2>
-            <div className="flex items-center justify-center gap-4">
+            <div className="flex items-center gap-4">
               <div className="w-12 h-12 rounded-full bg-white"></div>
               <p className="text-gray-400">- BFG Technologies Team</p>
             </div>
@@ -241,17 +247,17 @@ export default function OurStory() {
         </motion.section>
 
         {/* Core Values */}
-        <motion.section 
+        <motion.section
           className="py-20 px-6"
           initial="initial"
           whileInView="animate"
           viewport={{ once: true }}
           variants={{
-            animate: { transition: { staggerChildren: 0.2 } }
+            animate: { transition: { staggerChildren: 0.2 } },
           }}
         >
           <div className="max-w-7xl mx-auto">
-            <h2 className="text-4xl md:text-5xl text-black font-bold mb-12">
+            <h2 className="text-4xl md:text-5xl/16 text-black font-bold mb-12">
               THINK DEEPLY.
               <br />
               <span className="text-[#0066CC]">MAKE BODLY.</span>
@@ -259,8 +265,8 @@ export default function OurStory() {
               GROW INTENTIONALLY.
             </h2>
 
-            <div className="space-y-12">
-              <div className="flex items-start gap-8">
+            <div className="space-y-12 divide-y">
+              <div className="flex items-start gap-8 pb-4">
                 <div className="text-5xl font-bold text-[#EC550E] flex-shrink-0 w-24">
                   01
                 </div>
@@ -268,27 +274,27 @@ export default function OurStory() {
                   <h3 className="text-2xl text-black font-bold mb-3">
                     Strategy
                   </h3>
-                  <p className="text-gray-600 text-lg">
-                    We start with your business, your customers and the outcomes
-                    that actually matter.
-                  </p>
                 </div>
+                <p className="text-gray-600 text-lg">
+                  We start with your business, your customers and the outcomes
+                  that actually matter.
+                </p>
               </div>
 
-              <div className="flex items-start gap-8">
+              <div className="flex items-start gap-8 pb-4">
                 <div className="text-5xl font-bold text-[#EC550E] flex-shrink-0 w-24">
                   02
                 </div>
                 <div className="flex-1">
                   <h3 className="text-2xl text-black font-bold mb-3">CRAFT</h3>
-                  <p className="text-gray-600 text-lg">
-                    We turn strategy into clear, compelling digital experiences
-                    and content.
-                  </p>
                 </div>
+                <p className="text-gray-600 text-lg">
+                  We turn strategy into clear, compelling digital experiences
+                  and content.
+                </p>
               </div>
 
-              <div className="flex items-start gap-8">
+              <div className="flex items-start gap-8 pb-4">
                 <div className="text-5xl font-bold text-[#EC550E] flex-shrink-0 w-24">
                   03
                 </div>
@@ -296,17 +302,17 @@ export default function OurStory() {
                   <h3 className="text-black text-2xl font-bold mb-3">
                     PERFORMANCE
                   </h3>
-                  <p className="text-gray-600 text-lg">
-                    We measure what matters and keep improving.
-                  </p>
                 </div>
+                <p className="text-gray-600 text-lg">
+                  We measure what matters and keep improving.
+                </p>
               </div>
             </div>
           </div>
         </motion.section>
 
         {/* Team Section */}
-        <motion.section 
+        <motion.section
           className="py-20 px-6 bg-gray-50"
           initial="initial"
           whileInView="animate"
@@ -318,12 +324,12 @@ export default function OurStory() {
               THE PEOPLE BEHIND BFG
             </div>
             <div className="flex  justify-between">
-              <h2 className="text-4xl md:text-5xl text-black font-bold mb-4">
+              <h2 className="text-4xl md:text-5xl/16 text-black font-bold mb-4">
                 PEOPLE MAKE <br />
                 THE <span className="text-[#0066CC]">DIFFERENCE.</span>
               </h2>
               <p className="w-[40%] text-gray-600 text-lg mb-12">
-                A small, senior team that stays hands-on with every partnership.
+                A team that stays hands-on with every partnership.
                 The people you meet are the people who do the work.
               </p>
             </div>
@@ -431,7 +437,7 @@ export default function OurStory() {
         </motion.section>
 
         {/* Focus Section */}
-        <motion.section 
+        <motion.section
           className="py-20 px-6"
           initial="initial"
           whileInView="animate"
@@ -441,7 +447,7 @@ export default function OurStory() {
           <div className="max-w-7xl mx-auto">
             <div className="grid md:grid-cols gap-12">
               <div>
-                <h2 className="text-4xl text-black md:text-5xl font-bold mb-6">
+                <h2 className="text-4xl text-black md:text-5xl/16 font-bold mb-6">
                   WHAT WE STAND FOR.
                   <br />
                   <span className="text-[#0066CC]">AS AN ORGANIZATION.</span>

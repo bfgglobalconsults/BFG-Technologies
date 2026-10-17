@@ -450,7 +450,7 @@ export default function Home() {
                 </a>
               </div>
 
-              <div className="bg-white shadow-lg p-8 rounded-2xl">
+              {/* <div className="bg-white shadow-lg p-8 rounded-2xl">
                 <div className="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 mb-4">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -474,9 +474,9 @@ export default function Home() {
                 >
                   Learn more <span>→</span>
                 </a>
-              </div>
+              </div> */}
 
-              <div className="bg-white shadow-lg p-8 rounded-2xl">
+              {/* <div className="bg-white shadow-lg p-8 rounded-2xl">
                 <div className="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 mb-4">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -500,7 +500,7 @@ export default function Home() {
                 >
                   Learn more <span>→</span>
                 </a>
-              </div>
+              </div> */}
             </div>
           </div>
         </section>

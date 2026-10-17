@@ -10,7 +10,7 @@ const Footer = () => {
     <>
       {/* CTA Section */}
       <div className="px-15 bg-white py-20 ">
-        <section className="py-20 px-6 bg-[#0066CC] rounded-2xl text-white">
+        <section className="py-20 px-6 bg-[#037BD1] rounded-4xl text-white">
           <div className="max-w-4xl mx-auto text-center">
             <div className="text-white text-sm font-semibold mb-4 uppercase tracking-wider">
               READY TO GROW

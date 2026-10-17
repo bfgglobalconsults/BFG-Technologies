@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 export default function ServicesPage() {
   const fadeIn = {
@@ -42,7 +43,7 @@ export default function ServicesPage() {
           </motion.div>
           <motion.div className="grid md:grid-cols-2 gap-12" variants={fadeIn}>
             <div>
-              <h1 className="text-5xl md:text-6xl text-black font-bold mb-6">
+              <h1 className="text-5xl md:text-6xl/16 text-black font-bold mb-6">
                 DIGITAL WORK DESIGNED TO MOVE YOUR BUSINESS{" "}
                 <span className="text-[#FF6B35]">FORWARD.</span>
               </h1>
@@ -110,7 +111,7 @@ export default function ServicesPage() {
 
       {/* Three Stages Section */}
       <motion.section
-        className="py-20 px-6"
+        className="py-20 px-6 bg-gray-50"
         initial="initial"
         whileInView="animate"
         viewport={{ once: true }}
@@ -180,7 +181,7 @@ export default function ServicesPage() {
 
       {/* Be Seen Section */}
       <motion.section
-        className="py-20 px-6 bg-gray-50"
+        className="py-20 px-6 bg-white"
         initial="initial"
         whileInView="animate"
         viewport={{ once: true }}
@@ -190,51 +191,85 @@ export default function ServicesPage() {
           <div className="text-[#0066CC] text-sm font-semibold mb-4 uppercase tracking-wider">
             01 / GROW VISIBILITY
           </div>
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">
+          <h2 className="text-4xl md:text-5xl text-black font-bold mb-4">
             BE SEEN BY THE
           </h2>
           <h2 className="text-4xl md:text-5xl font-bold text-[#0066CC] mb-16">
             PEOPLE WHO MATTER.
           </h2>
 
-          <div className="space-y-6">
-            <div className="flex justify-between bg-white p-8 rounded-2xl">
+          <div className="space-y-6 text-black divide-y divide-gray-200">
+            <div className="flex justify-between p-8">
               <div className="flex gap-8">
                 <div className="text-[#FF6B35] text-2xl font-bold mb-4">01</div>
-                <h3 className="text-2xl text-uppercase font-bold mb-3">
+                <h3 className="text-2xl text-black text-uppercase font-bold mb-3">
                   Digital Strategy
                 </h3>
               </div>
               <p className="text-gray-600">
-                Clear digital direction built around your business goals.
+                Building a clear digital direction around your business goals.
               </p>
+              <Link href="">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  height="24"
+                  fill="rgba(20,33,45,0.6980392156862745)"
+                >
+                  <path d="M16.0037 9.41421L7.39712 18.0208L5.98291 16.6066L14.5895 8H7.00373V6H18.0037V17H16.0037V9.41421Z"></path>
+                </svg>
+              </Link>
             </div>
 
-            <div className="flex justify-between bg-white p-8 rounded-2xl">
+            <div className="flex justify-between  p-8">
               <div className="flex gap-8">
                 <div className="text-[#FF6B35] text-2xl font-bold mb-4">02</div>
                 <h3 className="text-2xl text-uppercase font-bold mb-3">
-                  Paid Ads & Performance Marketing
+                  Paid Ads
                 </h3>
               </div>
               <p className="text-gray-600">
-                Targeted campaigns that reach the right audience.
+                Reaching the right audience through targeted advertising
+                campaigns.
               </p>
+              <Link href="">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  height="24"
+                  fill="rgba(20,33,45,0.6980392156862745)"
+                >
+                  <path d="M16.0037 9.41421L7.39712 18.0208L5.98291 16.6066L14.5895 8H7.00373V6H18.0037V17H16.0037V9.41421Z"></path>
+                </svg>
+              </Link>
             </div>
 
-            <div className="flex justify-between bg-white p-8 rounded-2xl">
+            <div className="flex justify-between  p-8">
               <div className="flex gap-8">
                 <div className="text-[#FF6B35] text-2xl font-bold mb-4">03</div>
                 <h3 className="text-2xl text-uppercase font-bold mb-3">
-                  SEO & Search
+                  SEO Search
                 </h3>
               </div>
               <p className="text-gray-600">
-                Improve visibility where customers are searching.
+                Improving your visibility where customers are searching.
               </p>
+              <Link href="">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  height="24"
+                  fill="rgba(20,33,45,0.6980392156862745)"
+                >
+                  <path d="M16.0037 9.41421L7.39712 18.0208L5.98291 16.6066L14.5895 8H7.00373V6H18.0037V17H16.0037V9.41421Z"></path>
+                </svg>
+              </Link>
             </div>
 
-            <div className="flex justify-between bg-white p-8 rounded-2xl">
+            <div className="flex justify-between  p-8">
               <div className="flex gap-8">
                 <div className="text-[#FF6B35] text-2xl font-bold mb-4">04</div>
                 <h3 className="text-2xl text-uppercase font-bold mb-3">
@@ -242,8 +277,20 @@ export default function ServicesPage() {
                 </h3>
               </div>
               <p className="text-gray-600">
-                Focused campaigns designed for attention and action.
+                Creating focused campaigns designed to generate attention and
+                action.
               </p>
+              <Link href="">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  height="24"
+                  fill="rgba(20,33,45,0.6980392156862745)"
+                >
+                  <path d="M16.0037 9.41421L7.39712 18.0208L5.98291 16.6066L14.5895 8H7.00373V6H18.0037V17H16.0037V9.41421Z"></path>
+                </svg>
+              </Link>
             </div>
           </div>
         </div>
@@ -257,7 +304,7 @@ export default function ServicesPage() {
         viewport={{ once: true }}
         variants={fadeIn}
       >
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-7xl text-black mx-auto">
           <div className="text-[#0066CC] text-sm font-semibold mb-4 uppercase tracking-wider">
             02 / BUILD CONNECTION
           </div>
@@ -269,53 +316,97 @@ export default function ServicesPage() {
             INTO CONNECTION.
           </h2>
 
-          <div className="space-y-6">
-            <div className="flex justify-between bg-white p-8 rounded-2xl">
+          <div className="space-y-6 divide-y divide-gray-200">
+            <div className="flex justify-between bg-white p-8">
               {" "}
               <div className="flex gap-8">
                 <div className="text-[#FF6B35] text-2xl font-bold mb-4">01</div>
                 <h3 className="text-2xl text-uppercase font-bold mb-3">
-                  Social Media
+                  SOCIAL MEDIA
                 </h3>
               </div>
               <p className="text-gray-600">
                 Build an active presence and meaningful connections.
               </p>
+              <Link href="">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  height="24"
+                  fill="rgba(20,33,45,0.6980392156862745)"
+                >
+                  <path d="M16.0037 9.41421L7.39712 18.0208L5.98291 16.6066L14.5895 8H7.00373V6H18.0037V17H16.0037V9.41421Z"></path>
+                </svg>
+              </Link>
             </div>
 
-            <div className="flex justify-between bg-white p-8 rounded-2xl">
+            <div className="flex justify-between bg-white p-8">
               <div className="flex gap-8">
                 <div className="text-[#FF6B35] text-2xl font-bold mb-4">02</div>
                 <h3 className="text-2xl text-uppercase font-bold mb-3">
-                  Content Marketing
+                  CONTENT MARKETING
                 </h3>
               </div>
               <p className="text-gray-600">
                 Content that keeps your brand relevant and engaging.
               </p>
+              <Link href="">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  height="24"
+                  fill="rgba(20,33,45,0.6980392156862745)"
+                >
+                  <path d="M16.0037 9.41421L7.39712 18.0208L5.98291 16.6066L14.5895 8H7.00373V6H18.0037V17H16.0037V9.41421Z"></path>
+                </svg>
+              </Link>
             </div>
 
-            <div className="flex justify-between bg-white p-8 rounded-2xl">
+            <div className="flex justify-between bg-white p-8">
               <div className="flex gap-8">
                 <div className="text-[#FF6B35] text-2xl font-bold mb-4">03</div>
-                <h3 className="text-2xl  font-bold mb-3">Personal Branding</h3>
+                <h3 className="text-2xl  font-bold mb-3">PERSONAL BRANDING</h3>
               </div>
               <p className="text-gray-600">
                 Leverage digital influence to reach the right audiences.
               </p>
+              <Link href="">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  height="24"
+                  fill="rgba(20,33,45,0.6980392156862745)"
+                >
+                  <path d="M16.0037 9.41421L7.39712 18.0208L5.98291 16.6066L14.5895 8H7.00373V6H18.0037V17H16.0037V9.41421Z"></path>
+                </svg>
+              </Link>
             </div>
 
             <div className="flex justify-between bg-white p-8 rounded-2xl">
               <div className="flex gap-8">
                 <div className="text-[#FF6B35] text-2xl font-bold mb-4">04</div>
                 <h3 className="text-2xl text-uppercase font-bold mb-3">
-                  Influencer Marketing
+                  INFLUENCER MARKETING
                 </h3>
               </div>
               <p className="text-gray-600">
                 Connecting brands with creators who can reach the right
                 audiences.
               </p>
+              <Link href="">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  height="24"
+                  fill="rgba(20,33,45,0.6980392156862745)"
+                >
+                  <path d="M16.0037 9.41421L7.39712 18.0208L5.98291 16.6066L14.5895 8H7.00373V6H18.0037V17H16.0037V9.41421Z"></path>
+                </svg>
+              </Link>
             </div>
           </div>
         </div>
@@ -347,18 +438,48 @@ export default function ServicesPage() {
             <div>
               <div className="text-white text-3xl font-bold mb-4">01</div>
               <h3 className="text-2xl font-bold mb-3">EMAIL MARKETING </h3>
-              <p className="text-gray-400">
+              <p className="text-gray-400 mb-2">
                 Turning direct communication into stronger customer
                 relationships.
               </p>
+              <Link href="" className="my-4">
+                <div className="flex gap-3">
+                  <p className="text-[#EC550E]">EXPLORE SERVICE</p>
+
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    height="24"
+                    fill="rgba(236,85,14,1)"
+                  >
+                    <path d="M16.0037 9.41421L7.39712 18.0208L5.98291 16.6066L14.5895 8H7.00373V6H18.0037V17H16.0037V9.41421Z"></path>
+                  </svg>
+                </div>
+              </Link>
             </div>
 
             <div>
               <div className="text-white text-3xl font-bold mb-4">02</div>
               <h3 className="text-2xl font-bold mb-3">ANALYTICS & INSIGHTS</h3>
-              <p className="text-gray-400">
+              <p className="text-gray-400 mb-2">
                 Using data to understand performance and improve decisions.
               </p>
+              <Link href="" className="my-4">
+                <div className="flex gap-3">
+                  <p className="text-[#EC550E]">EXPLORE SERVICE</p>
+
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    height="24"
+                    fill="rgba(236,85,14,1)"
+                  >
+                    <path d="M16.0037 9.41421L7.39712 18.0208L5.98291 16.6066L14.5895 8H7.00373V6H18.0037V17H16.0037V9.41421Z"></path>
+                  </svg>
+                </div>
+              </Link>
             </div>
           </div>
         </div>
@@ -372,7 +493,7 @@ export default function ServicesPage() {
         viewport={{ once: true }}
         variants={fadeIn}
       >
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-7xl text-black mx-auto">
           <div className="grid md:grid-cols-1 gap-12 items-center">
             <div>
               <h2 className="text-4xl md:text-5xl font-bold mb-4">
