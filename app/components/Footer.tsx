@@ -34,7 +34,7 @@ const Footer = () => {
       />
 
       {/* Footer */}
-      <footer className="py-12 px-6 bg-gray-900 text-white">
+      {/* <footer className="py-12 px-6 bg-gray-900 text-white">
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-4 gap-8 mb-8">
             <div>
@@ -108,7 +108,7 @@ const Footer = () => {
             <p>© 2026 BFG Technologies. All rights reserved.</p>
           </div>
         </div>
-      </footer>
+      </footer> */}
     </>
   );
 };
