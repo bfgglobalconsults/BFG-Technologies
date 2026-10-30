@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import AnimatedCounter from "./components/AnimatedCounter";
 
 export default function Home() {
   const fadeIn = {
@@ -100,15 +101,17 @@ export default function Home() {
             </motion.p>
 
             {/* CTA Button */}
-            <motion.button
-              className="bg-white border-2 border-[#FF6B35] text-[#FF6B35] px-8 py-3 rounded-lg hover:bg-[#FF6B35] hover:text-white transition-colors font-semibold inline-flex items-center gap-2"
-              variants={fadeIn}
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              Explore Our Growth Services
-              <span>↗</span>
-            </motion.button>
+            <Link href="/services">
+              <motion.button
+                className="bg-white border-2 border-[#FF6B35] text-[#FF6B35] px-8 py-3 rounded-lg hover:bg-[#FF6B35] hover:text-white transition-colors font-semibold inline-flex items-center gap-2"
+                variants={fadeIn}
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                Explore Our Growth Services
+                <span>↗</span>
+              </motion.button>
+            </Link>
           </motion.div>
         </section>
 
@@ -609,7 +612,7 @@ export default function Home() {
                     <path d="M5 3V19H21V21H3V3H5ZM19.9393 5.93934L22.0607 8.06066L16 14.1213L13 11.121L9.06066 15.0607L6.93934 12.9393L13 6.87868L16 9.879L19.9393 5.93934Z"></path>
                   </svg>
                 </div>
-                <div className="text-5xl font-bold mb-2">05+</div>
+                <AnimatedCounter end={5} suffix="+" />
                 <div className="text-gray-600">Years Active</div>
               </div>
 
@@ -625,7 +628,7 @@ export default function Home() {
                     <path d="M5 3V19H21V21H3V3H5ZM19.9393 5.93934L22.0607 8.06066L16 14.1213L13 11.121L9.06066 15.0607L6.93934 12.9393L13 6.87868L16 9.879L19.9393 5.93934Z"></path>
                   </svg>
                 </div>
-                <div className="text-5xl font-bold mb-2">100+</div>
+                <AnimatedCounter end={100} suffix="+" />
                 <div className="text-gray-600">Campaigns Run</div>
               </div>
 
@@ -641,7 +644,7 @@ export default function Home() {
                     <path d="M5 3V19H21V21H3V3H5ZM19.9393 5.93934L22.0607 8.06066L16 14.1213L13 11.121L9.06066 15.0607L6.93934 12.9393L13 6.87868L16 9.879L19.9393 5.93934Z"></path>
                   </svg>
                 </div>
-                <div className="text-5xl font-bold mb-2">50+</div>
+                <AnimatedCounter end={50} suffix="+" />
                 <div className="text-gray-600">Clients Served</div>
               </div>
             </div>
@@ -667,10 +670,11 @@ export default function Home() {
                     Real campaigns, real results. A snapshot of the brands
                     we&apos;ve helped grow across the continent and beyond.
                   </p>
-
-                  <button className="bg-transparent border-2 border-[#FF6B35] text-black hover:text-white px-6 py-2 rounded-lg hover:bg-[#FF6B35] transition-colors font-semibold whitespace-nowrap my-4">
-                    View Full Portfolio
-                  </button>
+                  <Link href="/portfolio">
+                    <button className="bg-transparent border-2 border-[#FF6B35] text-black hover:text-white px-6 py-2 rounded-lg hover:bg-[#FF6B35] transition-colors font-semibold whitespace-nowrap my-4">
+                      View Full Portfolio
+                    </button>
+                  </Link>
                 </div>
               </div>
             </div>
