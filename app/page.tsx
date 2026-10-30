@@ -37,9 +37,27 @@ export default function Home() {
               variants={fadeIn}
             >
               <div className="flex -space-x-2 justify-center md:justify-normal">
-                <div className="w-12 h-12 rounded-full bg-gray-800 border-2 border-[#FF6B35]"></div>
-                <div className="w-12 h-12 rounded-full bg-gray-700 border-2 border-[#FF6B35]"></div>
-                <div className="w-12 h-12 rounded-full bg-gray-600 border-2 border-[#FF6B35]"></div>
+                <Image
+                  src="https://randomuser.me/api/portraits/men/32.jpg"
+                  alt="Founder"
+                  width={48}
+                  height={48}
+                  className="w-12 h-12 rounded-full border-2 border-[#FF6B35] object-cover"
+                />
+                <Image
+                  src="https://randomuser.me/api/portraits/women/44.jpg"
+                  alt="Founder"
+                  width={48}
+                  height={48}
+                  className="w-12 h-12 rounded-full border-2 border-[#FF6B35] object-cover"
+                />
+                <Image
+                  src="https://randomuser.me/api/portraits/men/54.jpg"
+                  alt="Founder"
+                  width={48}
+                  height={48}
+                  className="w-12 h-12 rounded-full border-2 border-[#FF6B35] object-cover"
+                />
               </div>
               <span className="text-gray-600 text-sm ml-2">
                 Trusted by founders.
@@ -48,42 +66,42 @@ export default function Home() {
 
             {/* Main Headline */}
             <motion.h1
-              className="text-5xl md:text-7xl font-bold text-black mb-6 leading-tight"
+              className="text-4xl sm:text-5xl md:text-7xl font-bold text-black mb-6 leading-tight"
               variants={fadeIn}
             >
-              <span className="flex flex-wrap items-center justify-center gap-2 sm:gap-3">
-                <span className="">Digital</span>
-                <span className="inline-block w-12 h-12 sm:w-16 sm:h-16 md:w-28 md:h-20 rounded-full overflow-hidden border-2 sm:border-4 border-[#FF6B35]">
+              <span className="flex flex-wrap items-center justify-center gap-2 sm:gap-3 mb-2">
+                <span>Digital</span>
+                <span className="inline-block w-14 h-10 sm:w-16 sm:h-13 md:w-24 md:h-20 lg:w-28 lg:h-20 rounded-full overflow-hidden border-2 sm:border-4 border-[#FF6B35] flex-shrink-0">
                   <Image
                     src="/assets/digital-image.jpg"
                     alt="digital"
-                    width={224}
-                    height={160}
+                    width={112}
+                    height={112}
                     className="w-full h-full object-cover"
                   />
                 </span>
                 <span className="text-[#FF6B35]">Marketing</span>
               </span>
-              <span className="flex flex-wrap items-center justify-center gap-2 sm:gap-3">
+              <span className="flex flex-wrap items-center justify-center gap-2 sm:gap-3 mb-2">
                 <span>Agency For</span>
-                <span className="inline-block w-12 h-12 sm:w-16 sm:h-16 md:w-28 md:h-20 rounded-full overflow-hidden border-2 sm:border-4 border-gray-300">
+                <span className="inline-block w-14 h-10 sm:w-16 sm:h-13 md:w-24 md:h-20 lg:w-28 lg:h-20 rounded-full overflow-hidden border-2 sm:border-4 border-gray-300 flex-shrink-0">
                   <Image
                     src="/assets/agency-image.jpg"
                     alt="agency"
-                    width={224}
-                    height={160}
+                    width={112}
+                    height={112}
                     className="w-full h-full object-cover"
                   />
                 </span>
               </span>
-              <span className="flex items-center justify-center gap-3">
-                <span className="">African Businesses</span>
-                <span className="inline-block w-16 h-16 md:w-28 md:h-20 rounded-full overflow-hidden border-4 border-[#0066CC]">
+              <span className="flex flex-wrap items-center justify-center gap-2 sm:gap-3">
+                <span>African Businesses</span>
+                <span className="inline-block w-14 h-10 sm:w-16 sm:h-13 md:w-24 md:h-20 lg:w-28 lg:h-20 rounded-full overflow-hidden border-2 sm:border-4 border-[#0066CC] flex-shrink-0">
                   <Image
                     src="/assets/business-image.jpg"
-                    alt=""
-                    width={224}
-                    height={160}
+                    alt="business"
+                    width={112}
+                    height={112}
                     className="w-full h-full object-cover"
                   />
                 </span>
@@ -579,10 +597,10 @@ export default function Home() {
                     </p>
                   </div>
                 </div>
-<Link href="/our-story">
-                <button className="bg-transparent border-2 border-[#FF6B35] text-black hover:text-white px-8 py-3 rounded-lg hover:bg-[#FF6B35] transition-colors font-semibold">
-                  Meet BFG Technologies
-                </button>
+                <Link href="/our-story">
+                  <button className="bg-transparent border-2 border-[#FF6B35] text-black hover:text-white px-8 py-3 rounded-lg hover:bg-[#FF6B35] transition-colors font-semibold">
+                    Meet BFG Technologies
+                  </button>
                 </Link>
               </div>
             </div>
