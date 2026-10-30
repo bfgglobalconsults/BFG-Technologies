@@ -211,7 +211,7 @@ export default function OurStory() {
                   <span className="text-[#0066CC]">SIMPLE BELIEF.</span>
                 </h2>
                 <p className="text-gray-600 text-sm md:text-base mb-4 md:mb-6 leading-relaxed">
-                  BFG Technology began with a belief we couldn&apos;t shake: the
+                  BFG Technologies began with a belief we couldn&apos;t shake: the
                   businesses with the most to offer are rarely the ones people
                   hear about. Great work was everywhere — great visibility was
                   not.

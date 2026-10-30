@@ -140,10 +140,10 @@ export default function Home() {
           </div>
           <div className="flex flex-col md:flex-row justify-normal md:justify-between gap-[30px]">
             <div>
-              <h2 className="text-5xl md:text-6xl text-black font-bold">
+              <h2 className="text-5xl md:text-6xl text-black font-bold uppercase">
                 Everything you need
               </h2>
-              <h2 className="text-5xl md:text-6xl text-[#FF6B35] font-bold mb-16">
+              <h2 className="text-5xl md:text-6xl text-[#FF6B35] font-bold mb-16 uppercase">
                 to grow.
               </h2>
             </div>
@@ -559,14 +559,13 @@ export default function Home() {
                   02/ WHO WE ARE
                 </div>
 
-                <h2 className="text-5xl text-black md:text-6xl font-bold mb-8">
+                <h2 className="text-5xl text-black md:text-6xl font-bold mb-8 uppercase">
                   <span>Built for Africa. Designed for </span>
                   <span className="text-[#0066CC]">growth.</span>
                 </h2>
 
                 <p className="text-[#14212DB2] text-lg mb-8 leading-relaxed">
-                  BFG Technologies is a digital marketing agency from Dar es
-                  Salaam, helping businesses build growth systems that bring in
+                  BFG Technologies is a digital marketing agency focused on helping businesses build growth systems that bring in
                   consistent leads, loyal customers, and long-term results that
                   actually matter - and create measurable growth.
                 </p>
@@ -692,7 +691,7 @@ export default function Home() {
               03/ IMPACT
             </div>
 
-            <h2 className="text-4xl md:text-6xl font-bold mb-16 max-w-3xl">
+            <h2 className="text-4xl md:text-6xl font-bold mb-16 max-w-3xl uppercase">
               Numbers that speak for themselves.
             </h2>
 
@@ -757,7 +756,7 @@ export default function Home() {
               </div>
               <div className="flex flex-col justify-normal md:flex-row gap-10 md:gap-30 md:justify-between">
                 <div>
-                  <h2 className="text-5xl md:text-6xl text-black font-bold">
+                  <h2 className="text-5xl md:text-6xl text-black font-bold uppercase">
                     Client Stories that{" "}
                     <span className=" text-[#FF6B35]">Deliver</span>
                   </h2>
@@ -905,8 +904,7 @@ export default function Home() {
             </div>
 
             {/* Second Row */}
-            <div className="grid md:grid-cols-2 gap-6">
-              {/* Case Study Card 4 */}
+            {/* <div className="grid md:grid-cols-2 gap-6">
               <div className="bg-[#EAE8E8] rounded-2xl overflow-hidden group hover:bg-[#037BD1] transition-colors">
                 <div className="aspect-[4/3] bg-gray-700 overflow-hidden">
                   <Image
@@ -948,7 +946,6 @@ export default function Home() {
                 </div>
               </div>
 
-              {/* Case Study Card 5 */}
               <div className="bg-[#EAE8E8] rounded-2xl overflow-hidden group hover:bg-[#037BD1] transition-colors">
                 <div className="aspect-[4/3] bg-gray-700 overflow-hidden">
                   <Image
@@ -987,7 +984,7 @@ export default function Home() {
                   </a>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </section>
 
@@ -1005,7 +1002,7 @@ export default function Home() {
             <div className="text-[#FF6B35] text-sm font-semibold mb-6 uppercase tracking-wider">
               05/ TEAM
             </div>
-            <h2 className="text-4xl md:text-6xl text-black font-bold mb-16">
+            <h2 className="text-4xl md:text-6xl text-black font-bold mb-16 uppercase">
               The people <br />
               behind the growth.
             </h2>
