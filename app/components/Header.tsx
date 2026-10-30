@@ -5,10 +5,12 @@ import BFGLogo from "../../public/assets/BFG-logo.png";
 import Link from "next/link";
 import Image from "next/image";
 import ContactModal from "./ContactModal";
+import { usePathname } from "next/navigation";
 
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const pathname = usePathname();
 
   return (
     <>
@@ -31,21 +33,50 @@ const Header = () => {
           <nav className="hidden md:flex items-center gap-8">
             <Link
               href="/our-story"
-              className="text-gray-600 hover:text-gray-900"
+              className={`text-gray-600 hover:text-[#0066CC] transition-colors relative group ${
+                pathname === "/our-story" ? "text-[#0066CC] font-semibold" : ""
+              }`}
             >
               Our Story
+              <span
+                className={`absolute left-0 bottom-[-8px] h-0.5 bg-[#0066CC] transition-all ${
+                  pathname === "/our-story"
+                    ? "w-full"
+                    : "w-0 group-hover:w-full"
+                }`}
+              ></span>
             </Link>
             <Link
               href="/services"
-              className="text-gray-600 hover:text-gray-900"
+              className={`text-gray-600 hover:text-[#0066CC] transition-colors relative group ${
+                pathname === "/services" || pathname?.startsWith("/services/")
+                  ? "text-[#0066CC] font-semibold"
+                  : ""
+              }`}
             >
               Services
+              <span
+                className={`absolute left-0 bottom-[-8px] h-0.5 bg-[#0066CC] transition-all ${
+                  pathname === "/services" || pathname?.startsWith("/services/")
+                    ? "w-full"
+                    : "w-0 group-hover:w-full"
+                }`}
+              ></span>
             </Link>
             <Link
               href="/portfolio"
-              className="text-gray-600 hover:text-gray-900"
+              className={`text-gray-600 hover:text-[#0066CC] transition-colors relative group ${
+                pathname === "/portfolio" ? "text-[#0066CC] font-semibold" : ""
+              }`}
             >
               Portfolio
+              <span
+                className={`absolute left-0 bottom-[-8px] h-0.5 bg-[#0066CC] transition-all ${
+                  pathname === "/portfolio"
+                    ? "w-full"
+                    : "w-0 group-hover:w-full"
+                }`}
+              ></span>
             </Link>
           </nav>
 
@@ -105,28 +136,44 @@ const Header = () => {
               <Link
                 href="/"
                 onClick={() => setIsMobileMenuOpen(false)}
-                className="text-lg text-gray-900 font-medium py-4 border-b border-gray-200"
+                className={`text-lg font-medium py-4 border-b border-gray-200 transition-colors ${
+                  pathname === "/"
+                    ? "text-[#0066CC] font-semibold"
+                    : "text-gray-900 hover:text-[#0066CC]"
+                }`}
               >
                 Home
               </Link>
               <Link
                 href="/our-story"
                 onClick={() => setIsMobileMenuOpen(false)}
-                className="text-lg text-gray-900 font-medium py-4 border-b border-gray-200"
+                className={`text-lg font-medium py-4 border-b border-gray-200 transition-colors ${
+                  pathname === "/our-story"
+                    ? "text-[#0066CC] font-semibold"
+                    : "text-gray-900 hover:text-[#0066CC]"
+                }`}
               >
                 Our Story
               </Link>
               <Link
                 href="/services"
                 onClick={() => setIsMobileMenuOpen(false)}
-                className="text-lg text-gray-900 font-medium py-4 border-b border-gray-200"
+                className={`text-lg font-medium py-4 border-b border-gray-200 transition-colors ${
+                  pathname === "/services" || pathname?.startsWith("/services/")
+                    ? "text-[#0066CC] font-semibold"
+                    : "text-gray-900 hover:text-[#0066CC]"
+                }`}
               >
                 Services
               </Link>
               <Link
                 href="/portfolio"
                 onClick={() => setIsMobileMenuOpen(false)}
-                className="text-lg text-gray-900 font-medium py-4 border-b border-gray-200"
+                className={`text-lg font-medium py-4 border-b border-gray-200 transition-colors ${
+                  pathname === "/portfolio"
+                    ? "text-[#0066CC] font-semibold"
+                    : "text-gray-900 hover:text-[#0066CC]"
+                }`}
               >
                 Portfolio
               </Link>
