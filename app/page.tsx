@@ -777,12 +777,12 @@ export default function Home() {
             </div>
 
             <div className="grid md:grid-cols-3 gap-6 mb-12">
-              {/* Case Study Card 1 */}
+              {/* Case Study Card 1 - IWE Advisory */}
               <div className="bg-[#EAE8E8] rounded-2xl overflow-hidden group hover:bg-[#037BD1] transition-colors">
                 <div className="aspect-[4/3] bg-gray-700 overflow-hidden">
                   <Image
-                    src="/placeholder-case1.jpg"
-                    alt="Business professionals handshake"
+                    src="/assets/portfolio-1.png"
+                    alt="IWE Advisory"
                     width={400}
                     height={300}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
@@ -790,41 +790,41 @@ export default function Home() {
                 </div>
                 <div className="p-6">
                   <h3 className="text-2xl font-bold mb-2 group-hover:text-white transition-colors">
-                    CLIENT NAME
+                    IWE ADVISORY
                   </h3>
                   <p className="text-gray-400 text-sm mb-4 group-hover:text-gray-200 transition-colors">
-                    FINTECH / DIGITAL CAMPAIGN
+                    ADVISORY / BRAND LAUNCH
                   </p>
                   <div className="border-t border-gray-700 group-hover:border-gray-400 pt-4 mb-4 transition-colors">
                     <p className="text-gray-500 text-sm mb-2 group-hover:text-gray-300 transition-colors">
                       PROJECT
                     </p>
                     <h4 className="font-bold text-lg mb-3 group-hover:text-white transition-colors">
-                      Brand & Digital Growth Cards
+                      UK Brand & Website Launch
                     </h4>
                     <p className="text-gray-500 text-sm mb-2 group-hover:text-gray-300 transition-colors">
                       OUTCOME
                     </p>
                     <p className="text-black mb-4 group-hover:text-white transition-colors">
-                      Increased digital engagement and improved brand
-                      visibility.
+                      Complete corporate website launched with full digital
+                      brand presence established for UK market entry.
                     </p>
                   </div>
-                  <a
-                    href="#"
+                  <Link
+                    href="/portfolio"
                     className="text-[#FF6B35] font-semibold inline-flex items-center gap-2 hover:gap-3 transition-all"
                   >
                     VIEW CASE STUDY <span>→</span>
-                  </a>
+                  </Link>
                 </div>
               </div>
 
-              {/* Case Study Card 2 */}
+              {/* Case Study Card 2 - FJ Global Properties */}
               <div className="bg-[#EAE8E8] rounded-2xl overflow-hidden group hover:bg-[#037BD1] transition-colors">
                 <div className="aspect-[4/3] bg-gray-700 overflow-hidden">
                   <Image
-                    src="/placeholder-case2.jpg"
-                    alt="Business meeting"
+                    src="/assets/portfolio-2.png"
+                    alt="FJ Global Properties"
                     width={400}
                     height={300}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
@@ -832,41 +832,41 @@ export default function Home() {
                 </div>
                 <div className="p-6">
                   <h3 className="text-2xl font-bold mb-2 group-hover:text-white transition-colors">
-                    CLIENT NAME
+                    FJ GLOBAL PROPERTIES
                   </h3>
                   <p className="text-gray-400 text-sm mb-4 group-hover:text-gray-200 transition-colors">
-                    FINTECH / DIGITAL CAMPAIGN
+                    REAL ESTATE / INVESTOR OUTREACH
                   </p>
                   <div className="border-t border-gray-700 group-hover:border-gray-400 pt-4 mb-4 transition-colors">
                     <p className="text-gray-500 text-sm mb-2 group-hover:text-gray-300 transition-colors">
                       PROJECT
                     </p>
                     <h4 className="font-bold text-lg mb-3 group-hover:text-white transition-colors">
-                      Brand & Digital Growth Cards
+                      2026 London Investment Outreach Campaign
                     </h4>
                     <p className="text-gray-500 text-sm mb-2 group-hover:text-gray-300 transition-colors">
                       OUTCOME
                     </p>
                     <p className="text-black mb-4 group-hover:text-white transition-colors">
-                      Increased digital engagement and improved brand
-                      visibility.
+                      Targeted investment outreach campaign connecting with
+                      qualified investors through strategic digital channels.
                     </p>
                   </div>
-                  <a
-                    href="#"
+                  <Link
+                    href="/portfolio"
                     className="text-[#FF6B35] font-semibold inline-flex items-center gap-2 hover:gap-3 transition-all"
                   >
                     VIEW CASE STUDY <span>→</span>
-                  </a>
+                  </Link>
                 </div>
               </div>
 
-              {/* Case Study Card 3 */}
+              {/* Case Study Card 3 - BFG Global Consulting */}
               <div className="bg-[#EAE8E8] rounded-2xl overflow-hidden group hover:bg-[#037BD1] transition-colors">
                 <div className="aspect-[4/3] bg-gray-700 overflow-hidden">
                   <Image
-                    src="/placeholder-case3.jpg"
-                    alt="Office meeting"
+                    src="/assets/portfolio-3.png"
+                    alt="BFG Global Consulting"
                     width={400}
                     height={300}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
@@ -874,32 +874,32 @@ export default function Home() {
                 </div>
                 <div className="p-6">
                   <h3 className="text-2xl font-bold mb-2 group-hover:text-white transition-colors">
-                    CLIENT NAME
+                    BFG GLOBAL CONSULTING
                   </h3>
                   <p className="text-gray-400 text-sm mb-4 group-hover:text-gray-200 transition-colors">
-                    FINTECH / DIGITAL CAMPAIGN
+                    CONSULTING / MARKET RESEARCH
                   </p>
                   <div className="border-t border-gray-700 group-hover:border-gray-400 pt-4 mb-4 transition-colors">
                     <p className="text-gray-500 text-sm mb-2 group-hover:text-gray-300 transition-colors">
                       PROJECT
                     </p>
                     <h4 className="font-bold text-lg mb-3 group-hover:text-white transition-colors">
-                      Brand & Digital Growth Cards
+                      2026 Market Research Campaign
                     </h4>
                     <p className="text-gray-500 text-sm mb-2 group-hover:text-gray-300 transition-colors">
                       OUTCOME
                     </p>
                     <p className="text-black mb-4 group-hover:text-white transition-colors">
-                      Increased digital engagement and improved brand
-                      visibility.
+                      1,000+ survey responses generated through digital
+                      acquisition campaign for market intelligence.
                     </p>
                   </div>
-                  <a
-                    href="#"
+                  <Link
+                    href="/portfolio"
                     className="text-[#FF6B35] font-semibold inline-flex items-center gap-2 hover:gap-3 transition-all"
                   >
                     VIEW CASE STUDY <span>→</span>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
