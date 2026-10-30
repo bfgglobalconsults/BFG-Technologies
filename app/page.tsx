@@ -66,7 +66,7 @@ export default function Home() {
 
             {/* Main Headline */}
             <motion.h1
-              className="text-4xl sm:text-5xl md:text-7xl font-bold text-black mb-6 leading-tight"
+              className="text-4xl sm:text-5xl md:text-7xl font-bold text-black mb-6 leading-tight uppercase"
               variants={fadeIn}
             >
               <span className="flex flex-wrap items-center justify-center gap-2 sm:gap-3 mb-2">
@@ -139,15 +139,14 @@ export default function Home() {
             01/ SERVICES
           </div>
           <div className="flex flex-col md:flex-row justify-normal md:justify-between gap-[30px]">
-            <div>
+            <div className="">
               <h2 className="text-5xl md:text-6xl text-black font-bold uppercase">
-                Everything you need
-              </h2>
+                Everything  you need </h
               <h2 className="text-5xl md:text-6xl text-[#FF6B35] font-bold mb-16 uppercase">
-                to grow.
+               to grow.
               </h2>
             </div>
-            <div>
+            <div className="">
               <p className="text-[#14212DB2] text-md">
                 Full-funnel digital marketing -- from first impression to loyal
                 customer. Pick a lane, or let us build the whole roadmap.
@@ -565,7 +564,8 @@ export default function Home() {
                 </h2>
 
                 <p className="text-[#14212DB2] text-lg mb-8 leading-relaxed">
-                  BFG Technologies is a digital marketing agency focused on helping businesses build growth systems that bring in
+                  BFG Technologies is a digital marketing agency focused on
+                  helping businesses build growth systems that bring in
                   consistent leads, loyal customers, and long-term results that
                   actually matter - and create measurable growth.
                 </p>
