@@ -141,7 +141,7 @@ export default function Home() {
           <div className="flex flex-col md:flex-row justify-normal md:justify-between gap-[30px]">
             <div className="">
               <h2 className="text-5xl md:text-6xl text-black font-bold uppercase">
-                Everything  you need </h
+                Everything  you need </h2>
               <h2 className="text-5xl md:text-6xl text-[#FF6B35] font-bold mb-16 uppercase">
                to grow.
               </h2>
