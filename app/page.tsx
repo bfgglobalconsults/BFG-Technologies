@@ -579,12 +579,91 @@ export default function Home() {
                     </p>
                   </div>
                 </div>
-
+<Link href="/our-story">
                 <button className="bg-transparent border-2 border-[#FF6B35] text-black hover:text-white px-8 py-3 rounded-lg hover:bg-[#FF6B35] transition-colors font-semibold">
                   Meet BFG Technologies
                 </button>
+                </Link>
               </div>
             </div>
+          </div>
+        </section>
+
+        {/* CEO Statement Section */}
+        <section className="py-20 px-6 bg-white">
+          <div className="max-w-6xl mx-auto">
+            <motion.div
+              initial="initial"
+              whileInView="animate"
+              viewport={{ once: true }}
+              variants={staggerContainer}
+              className="grid md:grid-cols-2 gap-12 items-center"
+            >
+              <motion.div variants={fadeIn}>
+                <div className="relative">
+                  <div className="w-full h-[400px] md:h-[500px] rounded-2xl overflow-hidden">
+                    <Image
+                      src="/assets/Festus.png"
+                      alt="CEO"
+                      width={600}
+                      height={500}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <div className="absolute -bottom-6 -right-6 bg-[#FF6B35] text-white p-6 rounded-xl shadow-lg">
+                    <p className="font-bold text-lg">CEO</p>
+                    <p className="text-sm">BFG Technologies</p>
+                  </div>
+                </div>
+              </motion.div>
+
+              <motion.div variants={fadeIn} className="space-y-6">
+                <div className="inline-block">
+                  <span className="text-[#0066CC] font-semibold text-sm uppercase tracking-wider">
+                    Our Vision
+                  </span>
+                </div>
+
+                <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
+                  Building influential brands across Africa
+                </h2>
+
+                <div className="space-y-4 text-gray-600 text-lg leading-relaxed">
+                  <p>
+                    BFG Technologies is an African-focused digital marketing
+                    agency helping businesses, entrepreneurs, executives and
+                    public figures build influential brands and turn digital
+                    attention into measurable growth.
+                  </p>
+
+                  <p>
+                    We combine strategy, human creativity, data and technology
+                    to help our clients become more visible, connect
+                    meaningfully with the audiences that matter and convert that
+                    attention into customers, opportunities and lasting
+                    influence.
+                  </p>
+                </div>
+
+                <div className="pt-4">
+                  <Link
+                    href="/our-story"
+                    className="inline-flex items-center gap-2 text-[#0066CC] font-semibold hover:gap-3 transition-all"
+                  >
+                    Learn more about our story
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      width="20"
+                      height="20"
+                      fill="currentColor"
+                    >
+                      <path d="M16.0037 9.41421L7.39712 18.0208L5.98291 16.6066L14.5895 8H7.00373V6H18.0037V17H16.0037V9.41421Z"></path>
+                    </svg>
+                  </Link>
+                </div>
+              </motion.div>
+            </motion.div>
           </div>
         </section>
 
