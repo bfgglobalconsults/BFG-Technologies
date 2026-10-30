@@ -6,7 +6,7 @@ export default function PortfolioPage() {
     <div className="px-6  bg-white">
       <div className="min-h-screen bg-white">
         {/* Hero Section */}
-        <section className="pt-32 pb-20 px-6">
+        <section className="pt-18 md:pt-20 py-12 md:py-22 px-4 md:px-6">
           <div className="max-w-7xl mx-auto">
             <div className="flex gap-3 items-center px-6 py-16 text-[#14212DB2]">
               <span className="w-10 h-1 bg-[#EC550E] mb-4"></span>
@@ -14,7 +14,7 @@ export default function PortfolioPage() {
             </div>
             <div className="grid md:grid-cols-2 gap-12">
               <div>
-                <h1 className="text-5xl md:text-6xl text-black font-bold mb-6">
+                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-black font-bold mb-4 md:mb-6">
                   WORK THAT MOVES BUSINESS{" "}
                   <span className="text-[#FF6B35]">FORWARD.</span>
                 </h1>
