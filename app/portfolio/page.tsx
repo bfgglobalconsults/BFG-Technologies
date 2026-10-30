@@ -3,6 +3,7 @@ import Link from "next/link";
 
 export default function PortfolioPage() {
   return (
+    <div className="px-6  bg-white">
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
       <section className="pt-32 pb-20 px-6">
@@ -393,6 +394,7 @@ export default function PortfolioPage() {
           </div>
         </div>
       </section>
+    </div>
     </div>
   );
 }

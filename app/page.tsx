@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 export default function Home() {
   const fadeIn = {
@@ -19,7 +20,7 @@ export default function Home() {
   };
 
   return (
-    <div className="px-15 bg-white">
+    <div className="px-6 md:px-15 bg-white">
       <div className="min-h-screen bg-white">
         {/* Hero Section */}
         <section className="pt-32 pb-20 px-6">
@@ -31,10 +32,10 @@ export default function Home() {
           >
             {/* Trusted by Founders */}
             <motion.div
-              className="flex items-center justify-center gap-2 my-6"
+              className="flex-col md:flex items-center justify-center gap-2 my-6"
               variants={fadeIn}
             >
-              <div className="flex -space-x-2">
+              <div className="flex -space-x-2 justify-center md:justify-normal">
                 <div className="w-12 h-12 rounded-full bg-gray-800 border-2 border-[#FF6B35]"></div>
                 <div className="w-12 h-12 rounded-full bg-gray-700 border-2 border-[#FF6B35]"></div>
                 <div className="w-12 h-12 rounded-full bg-gray-600 border-2 border-[#FF6B35]"></div>
@@ -49,9 +50,9 @@ export default function Home() {
               className="text-5xl md:text-7xl font-bold text-black mb-6 leading-tight"
               variants={fadeIn}
             >
-              <span className="flex items-center justify-center gap-3">
+              <span className="flex flex-wrap items-center justify-center gap-2 sm:gap-3">
                 <span className="">Digital</span>
-                <span className="inline-block w-16 h-16 md:w-28 md:h-20 rounded-full overflow-hidden border-4 border-[#FF6B35]">
+                <span className="inline-block w-12 h-12 sm:w-16 sm:h-16 md:w-28 md:h-20 rounded-full overflow-hidden border-2 sm:border-4 border-[#FF6B35]">
                   <Image
                     src="/assets/digital-image.jpg"
                     alt="digital"
@@ -62,9 +63,9 @@ export default function Home() {
                 </span>
                 <span className="text-[#FF6B35]">Marketing</span>
               </span>
-              <span className="flex items-center justify-center gap-3">
+              <span className="flex flex-wrap items-center justify-center gap-2 sm:gap-3">
                 <span>Agency For</span>
-                <span className="inline-block w-16 h-16 md:w-28 md:h-20 rounded-full overflow-hidden border-4 border-gray-300">
+                <span className="inline-block w-12 h-12 sm:w-16 sm:h-16 md:w-28 md:h-20 rounded-full overflow-hidden border-2 sm:border-4 border-gray-300">
                   <Image
                     src="/assets/agency-image.jpg"
                     alt="agency"
@@ -112,11 +113,11 @@ export default function Home() {
         </section>
 
         {/* Everything You Need */}
-        <section className="py-20 px-6 bg-white">
+        <section className="py-6 md:py-20 px-2 md:px-6 bg-white">
           <div className="text-[#FF6B35] text-sm font-semibold mb-4 uppercase tracking-wider">
             01/ SERVICES
           </div>
-          <div className="flex gap-30 justify-between">
+          <div className="flex flex-col md:flex-row justify-normal md:justify-between gap-[30px]">
             <div>
               <h2 className="text-5xl md:text-6xl text-black font-bold">
                 Everything you need
@@ -135,7 +136,7 @@ export default function Home() {
         </section>
 
         {/* Grow Visibility Section */}
-        <section className="py-20 px-6 bg-[#F4F6F8] shadow-lg rounded-3xl mx-6 my-12">
+        <section className="py-6 md:py-20 px-2 md:px-6 bg-[#F4F6F8] shadow-lg rounded-3xl mx-6 my-12">
           <div className="max-w-7xl mx-auto">
             <div className="flex items-start gap-3 mb-6">
               <div className="w-10 h-10 rounded-full bg-[#FF6B35]/10 flex items-center justify-center text-[#FF6B35]">
@@ -169,12 +170,12 @@ export default function Home() {
                 <p className="text-gray-600 mb-6">
                   Building a clear digital direction around your business goals.
                 </p>
-                <a
-                  href="#"
+                <Link
+                  href="/services/grow-visibility"
                   className="text-[#FF6B35] font-semibold inline-flex items-center gap-1"
                 >
                   Learn more <span>→</span>
-                </a>
+                </Link>
               </div>
 
               <div className="bg-white p-8 rounded-2xl shadow-lg">
@@ -194,12 +195,12 @@ export default function Home() {
                   Reaching the right audience through targeted advertising
                   campaigns.
                 </p>
-                <a
-                  href="#"
+                <Link
+                  href="/services/grow-visibility"
                   className="text-[#FF6B35] font-semibold inline-flex items-center gap-1"
                 >
                   Learn more <span>→</span>
-                </a>
+                </Link>
               </div>
 
               <div className="bg-white shadow-lg p-8 rounded-2xl">
@@ -220,12 +221,12 @@ export default function Home() {
                 <p className="text-gray-600 mb-6">
                   Improving your visibility where customers are searching.
                 </p>
-                <a
-                  href="#"
+                <Link
+                  href="/services/grow-visibility"
                   className="text-[#FF6B35] font-semibold inline-flex items-center gap-1"
                 >
                   Learn more <span>→</span>
-                </a>
+                </Link>
               </div>
 
               <div className="bg-white shadow-lg p-8 rounded-2xl">
@@ -247,12 +248,12 @@ export default function Home() {
                   Creating focused campaigns designed to generate attention and
                   action.
                 </p>
-                <a
-                  href="#"
+                <Link
+                  href="/services/grow-visibility"
                   className="text-[#FF6B35] font-semibold inline-flex items-center gap-1"
                 >
                   Learn more <span>→</span>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -292,12 +293,12 @@ export default function Home() {
                   Building an active presence and meaningful audience
                   connections.
                 </p>
-                <a
-                  href="#"
+                <Link
+                  href="/services/build-connection"
                   className="text-[#FF6B35] font-semibold inline-flex items-center gap-1"
                 >
                   Learn more <span>→</span>
-                </a>
+                </Link>
               </div>
 
               <div className="bg-white text-gray-900 p-8 rounded-2xl">
@@ -317,12 +318,12 @@ export default function Home() {
                   Creating useful content that keeps your brand relevant and
                   engaging.
                 </p>
-                <a
-                  href="#"
+                <Link
+                  href="/services/build-connection"
                   className="text-[#FF6B35] font-semibold inline-flex items-center gap-1"
                 >
                   Learn more <span>→</span>
-                </a>
+                </Link>
               </div>
 
               <div className="bg-white text-gray-900 p-8 rounded-2xl">
@@ -342,12 +343,12 @@ export default function Home() {
                   Helping individuals build a clear and recognizable digital
                   presence.
                 </p>
-                <a
-                  href="#"
+                <Link
+                  href="/services/build-connection"
                   className="text-[#FF6B35] font-semibold inline-flex items-center gap-1"
                 >
                   Learn more <span>→</span>
-                </a>
+                </Link>
               </div>
 
               <div className="bg-white text-gray-900 p-8 rounded-2xl">
@@ -369,12 +370,12 @@ export default function Home() {
                   Connecting brands with creators who can reach the right
                   audiences.
                 </p>
-                <a
-                  href="#"
+                <Link
+                  href="/services/build-connection"
                   className="text-[#FF6B35] font-semibold inline-flex items-center gap-1"
                 >
                   Learn more <span>→</span>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -416,12 +417,12 @@ export default function Home() {
                   Turning direct communication into stronger customer
                   relationships.
                 </p>
-                <a
-                  href="#"
+                <Link
+                  href="/services/drive-results"
                   className="text-[#FF6B35] font-semibold inline-flex items-center gap-1"
                 >
                   Learn more <span>→</span>
-                </a>
+                </Link>
               </div>
 
               <div className="bg-white p-8 rounded-2xl shadow-lg">
@@ -442,12 +443,12 @@ export default function Home() {
                 <p className="text-gray-600 mb-6">
                   Using data to understand performance and improve decisions.
                 </p>
-                <a
-                  href="#"
+                <Link
+                  href="/services/drive-results"
                   className="text-[#FF6B35] font-semibold inline-flex items-center gap-1"
                 >
                   Learn more <span>→</span>
-                </a>
+                </Link>
               </div>
 
               {/* <div className="bg-white shadow-lg p-8 rounded-2xl">
@@ -654,7 +655,7 @@ export default function Home() {
               <div className="text-[#FF6B35] text-sm font-semibold mb-6 uppercase tracking-wider">
                 04/ SELECTED WORK
               </div>
-              <div className="flex gap-30 justify-between">
+              <div className="flex flex-col justify-normal md:flex-row gap-10 md:gap-30 md:justify-between">
                 <div>
                   <h2 className="text-5xl md:text-6xl text-black font-bold">
                     Client Stories that{" "}
@@ -676,7 +677,7 @@ export default function Home() {
 
             <div className="grid md:grid-cols-3 gap-6 mb-12">
               {/* Case Study Card 1 */}
-              <div className="bg-[#EAE8E8] rounded-2xl overflow-hidden group hover:bg-gray-300 transition-colors">
+              <div className="bg-[#EAE8E8] rounded-2xl overflow-hidden group hover:bg-[#037BD1] transition-colors">
                 <div className="aspect-[4/3] bg-gray-700 overflow-hidden">
                   <Image
                     src="/placeholder-case1.jpg"
@@ -687,17 +688,23 @@ export default function Home() {
                   />
                 </div>
                 <div className="p-6">
-                  <h3 className="text-2xl font-bold mb-2">CLIENT NAME</h3>
-                  <p className="text-gray-400 text-sm mb-4">
+                  <h3 className="text-2xl font-bold mb-2 group-hover:text-white transition-colors">
+                    CLIENT NAME
+                  </h3>
+                  <p className="text-gray-400 text-sm mb-4 group-hover:text-gray-200 transition-colors">
                     FINTECH / DIGITAL CAMPAIGN
                   </p>
-                  <div className="border-t border-gray-700 pt-4 mb-4">
-                    <p className="text-gray-500 text-sm mb-2">PROJECT</p>
-                    <h4 className="font-bold text-lg mb-3">
+                  <div className="border-t border-gray-700 group-hover:border-gray-400 pt-4 mb-4 transition-colors">
+                    <p className="text-gray-500 text-sm mb-2 group-hover:text-gray-300 transition-colors">
+                      PROJECT
+                    </p>
+                    <h4 className="font-bold text-lg mb-3 group-hover:text-white transition-colors">
                       Brand & Digital Growth Cards
                     </h4>
-                    <p className="text-gray-500 text-sm mb-2">OUTCOME</p>
-                    <p className="text-black mb-4">
+                    <p className="text-gray-500 text-sm mb-2 group-hover:text-gray-300 transition-colors">
+                      OUTCOME
+                    </p>
+                    <p className="text-black mb-4 group-hover:text-white transition-colors">
                       Increased digital engagement and improved brand
                       visibility.
                     </p>
@@ -712,7 +719,7 @@ export default function Home() {
               </div>
 
               {/* Case Study Card 2 */}
-              <div className="bg-[#EAE8E8] rounded-2xl overflow-hidden group hover:bg-gray-300 transition-colors">
+              <div className="bg-[#EAE8E8] rounded-2xl overflow-hidden group hover:bg-[#037BD1] transition-colors">
                 <div className="aspect-[4/3] bg-gray-700 overflow-hidden">
                   <Image
                     src="/placeholder-case2.jpg"
@@ -723,17 +730,23 @@ export default function Home() {
                   />
                 </div>
                 <div className="p-6">
-                  <h3 className="text-2xl font-bold mb-2">CLIENT NAME</h3>
-                  <p className="text-gray-400 text-sm mb-4">
+                  <h3 className="text-2xl font-bold mb-2 group-hover:text-white transition-colors">
+                    CLIENT NAME
+                  </h3>
+                  <p className="text-gray-400 text-sm mb-4 group-hover:text-gray-200 transition-colors">
                     FINTECH / DIGITAL CAMPAIGN
                   </p>
-                  <div className="border-t border-gray-700 pt-4 mb-4">
-                    <p className="text-gray-500 text-sm mb-2">PROJECT</p>
-                    <h4 className="font-bold text-lg mb-3">
+                  <div className="border-t border-gray-700 group-hover:border-gray-400 pt-4 mb-4 transition-colors">
+                    <p className="text-gray-500 text-sm mb-2 group-hover:text-gray-300 transition-colors">
+                      PROJECT
+                    </p>
+                    <h4 className="font-bold text-lg mb-3 group-hover:text-white transition-colors">
                       Brand & Digital Growth Cards
                     </h4>
-                    <p className="text-gray-500 text-sm mb-2">OUTCOME</p>
-                    <p className="text-black mb-4">
+                    <p className="text-gray-500 text-sm mb-2 group-hover:text-gray-300 transition-colors">
+                      OUTCOME
+                    </p>
+                    <p className="text-black mb-4 group-hover:text-white transition-colors">
                       Increased digital engagement and improved brand
                       visibility.
                     </p>
@@ -748,7 +761,7 @@ export default function Home() {
               </div>
 
               {/* Case Study Card 3 */}
-              <div className="bg-[#EAE8E8] rounded-2xl overflow-hidden group hover:bg-gray-300 transition-colors">
+              <div className="bg-[#EAE8E8] rounded-2xl overflow-hidden group hover:bg-[#037BD1] transition-colors">
                 <div className="aspect-[4/3] bg-gray-700 overflow-hidden">
                   <Image
                     src="/placeholder-case3.jpg"
@@ -759,17 +772,23 @@ export default function Home() {
                   />
                 </div>
                 <div className="p-6">
-                  <h3 className="text-2xl font-bold mb-2">CLIENT NAME</h3>
-                  <p className="text-gray-400 text-sm mb-4">
+                  <h3 className="text-2xl font-bold mb-2 group-hover:text-white transition-colors">
+                    CLIENT NAME
+                  </h3>
+                  <p className="text-gray-400 text-sm mb-4 group-hover:text-gray-200 transition-colors">
                     FINTECH / DIGITAL CAMPAIGN
                   </p>
-                  <div className="border-t border-gray-700 pt-4 mb-4">
-                    <p className="text-gray-500 text-sm mb-2">PROJECT</p>
-                    <h4 className="font-bold text-lg mb-3">
+                  <div className="border-t border-gray-700 group-hover:border-gray-400 pt-4 mb-4 transition-colors">
+                    <p className="text-gray-500 text-sm mb-2 group-hover:text-gray-300 transition-colors">
+                      PROJECT
+                    </p>
+                    <h4 className="font-bold text-lg mb-3 group-hover:text-white transition-colors">
                       Brand & Digital Growth Cards
                     </h4>
-                    <p className="text-gray-500 text-sm mb-2">OUTCOME</p>
-                    <p className="text-black mb-4">
+                    <p className="text-gray-500 text-sm mb-2 group-hover:text-gray-300 transition-colors">
+                      OUTCOME
+                    </p>
+                    <p className="text-black mb-4 group-hover:text-white transition-colors">
                       Increased digital engagement and improved brand
                       visibility.
                     </p>
@@ -787,7 +806,7 @@ export default function Home() {
             {/* Second Row */}
             <div className="grid md:grid-cols-2 gap-6">
               {/* Case Study Card 4 */}
-              <div className="bg-[#EAE8E8] rounded-2xl overflow-hidden group hover:bg-gray-300 transition-colors">
+              <div className="bg-[#EAE8E8] rounded-2xl overflow-hidden group hover:bg-[#037BD1] transition-colors">
                 <div className="aspect-[4/3] bg-gray-700 overflow-hidden">
                   <Image
                     src="/placeholder-case4.jpg"
@@ -798,17 +817,23 @@ export default function Home() {
                   />
                 </div>
                 <div className="p-6">
-                  <h3 className="text-2xl font-bold mb-2">CLIENT NAME</h3>
-                  <p className="text-gray-400 text-sm mb-4">
+                  <h3 className="text-2xl font-bold mb-2 group-hover:text-white transition-colors">
+                    CLIENT NAME
+                  </h3>
+                  <p className="text-gray-400 text-sm mb-4 group-hover:text-gray-200 transition-colors">
                     FINTECH / DIGITAL CAMPAIGN
                   </p>
-                  <div className="border-t border-gray-700 pt-4 mb-4">
-                    <p className="text-gray-500 text-sm mb-2">PROJECT</p>
-                    <h4 className="font-bold text-lg mb-3">
+                  <div className="border-t border-gray-700 group-hover:border-gray-400 pt-4 mb-4 transition-colors">
+                    <p className="text-gray-500 text-sm mb-2 group-hover:text-gray-300 transition-colors">
+                      PROJECT
+                    </p>
+                    <h4 className="font-bold text-lg mb-3 group-hover:text-white transition-colors">
                       Brand & Digital Growth Cards
                     </h4>
-                    <p className="text-gray-500 text-sm mb-2">OUTCOME</p>
-                    <p className="text-black mb-4">
+                    <p className="text-gray-500 text-sm mb-2 group-hover:text-gray-300 transition-colors">
+                      OUTCOME
+                    </p>
+                    <p className="text-black mb-4 group-hover:text-white transition-colors">
                       Increased digital engagement and improved brand
                       visibility.
                     </p>
@@ -823,7 +848,7 @@ export default function Home() {
               </div>
 
               {/* Case Study Card 5 */}
-              <div className="bg-[#EAE8E8] rounded-2xl overflow-hidden group hover:bg-gray-300 transition-colors">
+              <div className="bg-[#EAE8E8] rounded-2xl overflow-hidden group hover:bg-[#037BD1] transition-colors">
                 <div className="aspect-[4/3] bg-gray-700 overflow-hidden">
                   <Image
                     src="/placeholder-case5.jpg"
@@ -834,13 +859,17 @@ export default function Home() {
                   />
                 </div>
                 <div className="p-6">
-                  <h3 className="text-2xl font-bold mb-2">CLIENT NAME</h3>
-                  <p className="text-gray-400 text-sm mb-4">
+                  <h3 className="text-2xl font-bold mb-2 group-hover:text-white transition-colors">
+                    CLIENT NAME
+                  </h3>
+                  <p className="text-gray-400 text-sm mb-4 group-hover:text-gray-200 transition-colors">
                     FINTECH / DIGITAL CAMPAIGN
                   </p>
-                  <div className="border-t border-gray-700 pt-4 mb-4">
-                    <p className="text-gray-500 text-sm mb-2">PROJECT</p>
-                    <h4 className="font-bold text-lg mb-3">
+                  <div className="border-t border-gray-700 group-hover:border-gray-400 pt-4 mb-4 transition-colors">
+                    <p className="text-gray-500 text-sm mb-2 group-hover:text-gray-300 transition-colors">
+                      PROJECT
+                    </p>
+                    <h4 className="font-bold text-lg mb-3 group-hover:text-white transition-colors">
                       Brand & Digital Growth Cards
                     </h4>
                     <p className="text-gray-500 text-sm mb-2">OUTCOME</p>

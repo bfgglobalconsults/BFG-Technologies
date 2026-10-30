@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import toast from "react-hot-toast";
 
 interface ContactModalProps {
   isOpen: boolean;
@@ -8,6 +9,42 @@ interface ContactModalProps {
 }
 
 export default function ContactModal({ isOpen, onClose }: ContactModalProps) {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+
+    const form = e.currentTarget;
+    const formData = new FormData(form);
+
+    try {
+      const response = await fetch("https://formspree.io/f/mdeedrwr", {
+        method: "POST",
+        body: formData,
+        headers: {
+          Accept: "application/json",
+        },
+      });
+
+      if (response.ok) {
+        toast.success("Thanks for reaching out! We'll get back to you soon.", {
+          duration: 4000,
+        });
+        form.reset();
+        setTimeout(() => {
+          onClose();
+        }, 1000);
+      } else {
+        toast.error("Oops! Something went wrong. Please try again.");
+      }
+    } catch {
+      toast.error("Oops! Something went wrong. Please try again.");
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
   if (!isOpen) return null;
 
   return (
@@ -30,7 +67,10 @@ export default function ContactModal({ isOpen, onClose }: ContactModalProps) {
           </p>
         </div>
 
-        <form className="bg-white rounded-2xl p-8 space-y-6">
+        <form
+          onSubmit={handleSubmit}
+          className="bg-white rounded-2xl p-8 space-y-6"
+        >
           <div className="grid md:grid-cols-2 gap-6">
             <div>
               <label className="block text-gray-700 font-semibold mb-2">
@@ -38,7 +78,9 @@ export default function ContactModal({ isOpen, onClose }: ContactModalProps) {
               </label>
               <input
                 type="text"
+                name="name"
                 placeholder="Jordan Avery"
+                required
                 className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#0066CC]"
               />
             </div>
@@ -49,7 +91,9 @@ export default function ContactModal({ isOpen, onClose }: ContactModalProps) {
               </label>
               <input
                 type="email"
+                name="email"
                 placeholder="you@company.com"
+                required
                 className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#0066CC]"
               />
             </div>
@@ -62,6 +106,7 @@ export default function ContactModal({ isOpen, onClose }: ContactModalProps) {
               </label>
               <input
                 type="tel"
+                name="phone"
                 placeholder="+234 000 0000 0000"
                 className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#0066CC]"
               />
@@ -71,8 +116,11 @@ export default function ContactModal({ isOpen, onClose }: ContactModalProps) {
               <label className="block text-gray-700 font-semibold mb-2">
                 Service you&apos;re interested in
               </label>
-              <select className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#0066CC] text-gray-500">
-                <option>select service</option>
+              <select
+                name="service"
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#0066CC] text-gray-500"
+              >
+                <option value="">select service</option>
                 <option>Digital Strategy</option>
                 <option>SEO & Search</option>
                 <option>Paid Ads</option>
@@ -89,8 +137,11 @@ export default function ContactModal({ isOpen, onClose }: ContactModalProps) {
               <label className="block text-gray-700 font-semibold mb-2">
                 Country
               </label>
-              <select className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#0066CC] text-gray-500">
-                <option>select country</option>
+              <select
+                name="country"
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#0066CC] text-gray-500"
+              >
+                <option value="">select country</option>
                 <option>Tanzania</option>
                 <option>Kenya</option>
                 <option>Nigeria</option>
@@ -106,6 +157,7 @@ export default function ContactModal({ isOpen, onClose }: ContactModalProps) {
               </label>
               <input
                 type="text"
+                name="company"
                 placeholder="enter company name"
                 className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#0066CC]"
               />
@@ -117,17 +169,20 @@ export default function ContactModal({ isOpen, onClose }: ContactModalProps) {
               Message
             </label>
             <textarea
+              name="message"
               rows={4}
               placeholder="Tell us about your goals, timeline and what success looks like"
+              required
               className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#0066CC] resize-none"
             />
           </div>
 
           <button
             type="submit"
-            className="bg-[#FF6B35] text-white px-8 py-4 rounded-full hover:bg-orange-600 font-semibold inline-flex items-center gap-2"
+            disabled={isSubmitting}
+            className="bg-[#FF6B35] text-white px-8 py-4 rounded-full hover:bg-orange-600 font-semibold inline-flex items-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed"
           >
-            Talk to us <span>→</span>
+            {isSubmitting ? "Sending..." : "Talk to us"} <span>→</span>
           </button>
         </form>
       </div>
