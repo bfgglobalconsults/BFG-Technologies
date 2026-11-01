@@ -1,12 +1,26 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 export default function PortfolioPage() {
+  const fadeIn = {
+    initial: { opacity: 0, y: 20 },
+    animate: { opacity: 1, y: 0 },
+    transition: { duration: 0.6 },
+  };
+
   return (
     <div className="px-6  bg-white">
       <div className="min-h-screen bg-white">
         {/* Hero Section */}
-        <section className="pt-18 md:pt-20 py-12 md:py-22 px-4 md:px-6">
+        <motion.section
+          className="pt-18 md:pt-20 py-12 md:py-22 px-4 md:px-6"
+          initial="initial"
+          animate="animate"
+          variants={fadeIn}
+        >
           <div className="max-w-7xl mx-auto">
             <div className="flex gap-3 items-center px-6 py-16 text-[#14212DB2]">
               <span className="w-10 h-1 bg-[#EC550E] mb-4"></span>
@@ -54,10 +68,16 @@ export default function PortfolioPage() {
               />
             </div>
           </div>
-        </section>
+        </motion.section>
 
         {/* Every Project Starts With A Question */}
-        <section className="py-20 px-6 bg-gray-50">
+        <motion.section
+          className="py-20 px-6 bg-gray-50"
+          initial="initial"
+          whileInView="animate"
+          viewport={{ once: true, margin: "-100px" }}
+          variants={fadeIn}
+        >
           <div className="max-w-7xl mx-auto">
             <div className="text-[#FF6B35] text-sm font-semibold mb-4 uppercase tracking-wider">
               THE WORK
@@ -77,9 +97,15 @@ export default function PortfolioPage() {
               <div></div>
             </div>
           </div>
-        </section>
+        </motion.section>
 
-        <section className="py-20 px-6 bg-[#F4F6F8]">
+        <motion.section
+          className="py-20 px-6 bg-[#F4F6F8]"
+          initial="initial"
+          whileInView="animate"
+          viewport={{ once: true, margin: "-100px" }}
+          variants={fadeIn}
+        >
           <section className="">
             <div className="max-w-7xl mx-auto">
               <div className="text-[#0066CC] text-sm font-semibold mb-4 uppercase tracking-wider">
@@ -372,10 +398,16 @@ export default function PortfolioPage() {
               </div>
             </div>
           </section>
-        </section>
+        </motion.section>
 
         {/* Results Section */}
-        <section className="py-20 px-6 bg-black text-white">
+        <motion.section
+          className="py-20 px-6 bg-black text-white"
+          initial="initial"
+          whileInView="animate"
+          viewport={{ once: true, margin: "-100px" }}
+          variants={fadeIn}
+        >
           <div className="max-w-7xl mx-auto">
             <div className="text-[#FF6B35] text-sm font-semibold mb-4 uppercase tracking-wider">
               THE OUTCOME
@@ -412,10 +444,16 @@ export default function PortfolioPage() {
               </div>
             </div>
           </div>
-        </section>
+        </motion.section>
 
         {/* The Work Section */}
-        <section className="py-20 px-6">
+        <motion.section
+          className="py-20 px-6"
+          initial="initial"
+          whileInView="animate"
+          viewport={{ once: true, margin: "-100px" }}
+          variants={fadeIn}
+        >
           <div className="max-w-7xl text-black mx-auto">
             <div className="text-[#0066CC] text-sm font-semibold mb-4 uppercase tracking-wider">
               CLIENT STORIES
@@ -550,7 +588,7 @@ export default function PortfolioPage() {
               </div>
             </div>
           </div>
-        </section>
+        </motion.section>
       </div>
     </div>
   );

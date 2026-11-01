@@ -134,29 +134,42 @@ export default function Home() {
         </section>
 
         {/* Everything You Need */}
-        <section className="py-6 md:py-20 px-2 md:px-6 bg-white">
+        <motion.section
+          className="py-6 md:py-20 px-2 md:px-6 bg-white"
+          initial="initial"
+          whileInView="animate"
+          viewport={{ once: true, margin: "-100px" }}
+          variants={fadeIn}
+        >
           <div className="text-[#FF6B35] text-sm font-semibold mb-4 uppercase tracking-wider">
             01/ SERVICES
           </div>
           <div className="flex flex-col md:flex-row justify-normal md:justify-between gap-[30px]">
             <div className="">
               <h2 className="text-5xl md:text-6xl text-black font-bold uppercase">
-                Everything  you need </h2>
+                Everything you need
+              </h2>
               <h2 className="text-5xl md:text-6xl text-[#FF6B35] font-bold mb-16 uppercase">
-               to grow.
+                to grow.
               </h2>
             </div>
-            <div className="">
+            <div className="flex items-end">
               <p className="text-[#14212DB2] text-md">
                 Full-funnel digital marketing -- from first impression to loyal
                 customer. Pick a lane, or let us build the whole roadmap.
               </p>
             </div>
           </div>
-        </section>
+        </motion.section>
 
         {/* Grow Visibility Section */}
-        <section className="py-6 md:py-20 px-2 md:px-6 bg-[#F4F6F8] shadow-lg rounded-3xl mx-6 my-12">
+        <motion.section
+          className="py-6 md:py-20 px-2 md:px-6 bg-[#F4F6F8] shadow-lg rounded-3xl mx-6 my-12"
+          initial="initial"
+          whileInView="animate"
+          viewport={{ once: true, margin: "-100px" }}
+          variants={fadeIn}
+        >
           <div className="max-w-7xl mx-auto">
             <div className="flex items-start gap-3 mb-6">
               <div className="w-10 h-10 rounded-full bg-[#FF6B35]/10 flex items-center justify-center text-[#FF6B35]">
@@ -277,10 +290,16 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </section>
+        </motion.section>
 
         {/* Build Connection Section */}
-        <section className="py-20 px-6 bg-[#0066CC] text-white rounded-3xl mx-6 my-12">
+        <motion.section
+          className="py-20 px-6 bg-[#0066CC] text-white rounded-3xl mx-6 my-12"
+          initial="initial"
+          whileInView="animate"
+          viewport={{ once: true, margin: "-100px" }}
+          variants={fadeIn}
+        >
           <div className="max-w-7xl mx-auto">
             <div className="flex items-start gap-3 mb-6">
               <div className="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center">
@@ -399,10 +418,16 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </section>
+        </motion.section>
 
         {/* Drive Results Section */}
-        <section className="py-20 px-6 bg-[#F4F6F8] shadow-lg rounded-3xl mx-6 my-12">
+        <motion.section
+          className="py-20 px-6 bg-[#F4F6F8] shadow-lg rounded-3xl mx-6 my-12"
+          initial="initial"
+          whileInView="animate"
+          viewport={{ once: true, margin: "-100px" }}
+          variants={fadeIn}
+        >
           <div className="max-w-7xl mx-auto">
             <div className="flex items-start gap-3 mb-6">
               <div className="w-10 h-10 rounded-full bg-[#FF6B35]/10 flex items-center justify-center text-[#FF6B35]">
@@ -524,10 +549,16 @@ export default function Home() {
               </div> */}
             </div>
           </div>
-        </section>
+        </motion.section>
 
         {/* Who We Are Section */}
-        <section className="py-20 px-6 bg-white text-[#14212DB2]">
+        <motion.section
+          className="py-20 px-6 bg-white text-[#14212DB2]"
+          initial="initial"
+          whileInView="animate"
+          viewport={{ once: true, margin: "-100px" }}
+          variants={fadeIn}
+        >
           <div className="max-w-7xl mx-auto">
             <div className="grid md:grid-cols-2 gap-16 items-center">
               {/* Left: Images */}
@@ -604,10 +635,16 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </section>
+        </motion.section>
 
         {/* CEO Statement Section */}
-        <section className="py-20 px-6 bg-white">
+        <motion.section
+          className="py-20 px-6 bg-white"
+          initial="initial"
+          whileInView="animate"
+          viewport={{ once: true, margin: "-100px" }}
+          variants={fadeIn}
+        >
           <div className="max-w-6xl mx-auto">
             <motion.div
               initial="initial"
@@ -682,10 +719,16 @@ export default function Home() {
               </motion.div>
             </motion.div>
           </div>
-        </section>
+        </motion.section>
 
         {/* Impact Section */}
-        <section className="py-20 px-6 bg-[#0066CC] rounded-xl text-white">
+        <motion.section
+          className="py-20 px-6 bg-[#0066CC] rounded-xl text-white"
+          initial="initial"
+          whileInView="animate"
+          viewport={{ once: true, margin: "-100px" }}
+          variants={fadeIn}
+        >
           <div className="max-w-7xl mx-auto">
             <div className="text-white/80 text-sm font-semibold mb-6 uppercase tracking-wider">
               03/ IMPACT
@@ -745,10 +788,16 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </section>
+        </motion.section>
 
         {/* Selected Work Section */}
-        <section className="py-20 px-6 bg-white text-[#14212DB2]">
+        <motion.section
+          className="py-20 px-6 bg-white text-[#14212DB2]"
+          initial="initial"
+          whileInView="animate"
+          viewport={{ once: true, margin: "-100px" }}
+          variants={fadeIn}
+        >
           <div className="max-w-7xl mx-auto">
             <div className="mb-12">
               <div className="text-[#FF6B35] text-sm font-semibold mb-6 uppercase tracking-wider">
@@ -986,7 +1035,7 @@ export default function Home() {
               </div>
             </div> */}
           </div>
-        </section>
+        </motion.section>
 
         {/* Stats Section - Removed old duplicate */}
 
@@ -997,7 +1046,13 @@ export default function Home() {
         {/* Case Studies Grid - Removed old duplicate */}
 
         {/* Team Section */}
-        <section className="py-20 px-6">
+        <motion.section
+          className="py-20 px-6"
+          initial="initial"
+          whileInView="animate"
+          viewport={{ once: true, margin: "-100px" }}
+          variants={fadeIn}
+        >
           <div className="max-w-7xl mx-auto">
             <div className="text-[#FF6B35] text-sm font-semibold mb-6 uppercase tracking-wider">
               05/ TEAM
@@ -1082,7 +1137,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </section>
+        </motion.section>
 
         {/* CTA Section */}
         {/* <section className="py-20 px-6 bg-[#0066CC] text-white my-8 rounded-2xl">
