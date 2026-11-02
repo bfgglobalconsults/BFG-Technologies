@@ -29,13 +29,36 @@ export default function DriveResultsPage() {
       title: "Email Marketing",
       description:
         "Build direct relationships with your audience through personalized email campaigns that nurture leads, drive conversions and create loyal customers.",
+      icon: (
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          width="24"
+          height="24"
+          fill="#FF6B35"
+        >
+          <path d="M3 3H21C21.5523 3 22 3.44772 22 4V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3ZM20 7.23792L12.0718 14.338L4 7.21594V19H20V7.23792ZM4.51146 5L12.0619 11.662L19.501 5H4.51146Z"></path>
+        </svg>
+      ),
     },
+
     {
       id: 2,
       number: "02",
       title: "Analytics & Insights",
       description:
         "Turn data into actionable insights. We track, measure and report on what matters most—giving you clarity on performance and confidence in your decisions.",
+      icon: (
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          width="32"
+          height="32"
+          fill="rgba(236,85,14,1)"
+        >
+          <path d="M2 13H8V21H2V13ZM9 3H15V21H9V3ZM16 8H22V21H16V8Z"></path>
+        </svg>
+      ),
     },
   ];
 
@@ -66,7 +89,7 @@ export default function DriveResultsPage() {
   ];
 
   return (
-    <div className="px-6 bg-white">
+    <div className="px-6 md:px-15 bg-white">
       <div className="min-h-screen bg-white">
         {/* Hero Section */}
         <motion.section
@@ -87,13 +110,13 @@ export default function DriveResultsPage() {
             </motion.div>
 
             <motion.h1
-              className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-black mb-6 leading-tight"
+              className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-black mb-6 leading-tight"
               variants={fadeIn}
             >
               EVERY MARKETING
             </motion.h1>
             <motion.h1
-              className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-black mb-8 leading-tight"
+              className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-black mb-8 leading-tight"
               variants={fadeIn}
             >
               ACTIVITY NEEDS A PURPOSE.
@@ -201,15 +224,7 @@ export default function DriveResultsPage() {
                 >
                   <div className="flex justify-between items-start mb-6">
                     <div className="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 24 24"
-                        width="24"
-                        height="24"
-                        fill="#FF6B35"
-                      >
-                        <path d="M3 3H21C21.5523 3 22 3.44772 22 4V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3ZM20 7.23792L12.0718 14.338L4 7.21594V19H20V7.23792ZM4.51146 5L12.0619 11.662L19.501 5H4.51146Z"></path>
-                      </svg>
+                     {service.icon}
                     </div>
                     <span className="text-2xl font-bold text-gray-300">
                       {service.number}

@@ -11,7 +11,7 @@ export default function OurStory() {
   };
 
   return (
-    <div className="px-6  bg-white">
+    <div className="px-6 md:px-15 bg-white">
       <div className="min-h-screen bg-white">
         {/* <Header /> */}
 
@@ -46,29 +46,27 @@ export default function OurStory() {
                     DESIGNED FOR <span className="text-[#FF6B35]">GROWTH.</span>
                   </h1>
                   <p className="text-gray-600 text-base md:text-lg">
-                    BFG Technologies was founded on a simple belief: African
-                    brands deserve to be seen, heard and chosen. <br/><br/>
-                    
-                     Across Africa,
-                    ambitious businesses, entrepreneurs and public figures are
-                    creating exceptional products, services and ideas. Yet
-                    having something valuable to offer does not automatically
-                    translate into visibility, influence or commercial success.<br/><br/>
-                    In today&apos;s digital-first world, brands must compete for
-                    attention. They must know how to position themselves, tell
-                    compelling stories, reach the right audiences, build
-                    communities, establish trust and ultimately turn attention
-                    into action.
+                    BFG Technologies sits at the intersection of digital
+                    marketing, creativity and technology. We don&apos;t believe
+                    digital marketing should simply generate impressions, likes
+                    or followers. It should build influence. And influence
+                    should create measurable opportunities for growth.
                   </p>
                 </div>
                 <div className="flex flex-wrap items-center gap-3 md:gap-6 mt-6 md:mt-8 text-xs sm:text-sm md:text-base">
-                  <span className="text-gray-400 font-semibold">STRATEGY</span>
+                  <span className="text-gray-400 font-semibold">
+                    AFRICAN FOCUS
+                  </span>
                   <span className="text-gray-400">→</span>
-                  <span className="text-[#FF6B35] font-semibold">CREATIVE</span>
+                  <span className="text-[#FF6B35] font-semibold">
+                    DIGITAL INFLUENCE
+                  </span>
+                  {/* <span className="text-gray-400">→</span>
+                  <span className="text-gray-400 font-semibold">CONTENT</span> */}
                   <span className="text-gray-400">→</span>
-                  <span className="text-gray-400 font-semibold">CONTENT</span>
-                  <span className="text-gray-400">→</span>
-                  <span className="text-[#0066CC] font-semibold">GROWTH</span>
+                  <span className="text-[#0066CC] font-semibold">
+                    MEASURABLE GROWTH
+                  </span>
                 </div>
               </div>
               <div>
@@ -211,10 +209,10 @@ export default function OurStory() {
                   <span className="text-[#0066CC]">SIMPLE BELIEF.</span>
                 </h2>
                 <p className="text-gray-600 text-sm md:text-base mb-4 md:mb-6 leading-relaxed">
-                  BFG Technologies began with a belief we couldn&apos;t shake: the
-                  businesses with the most to offer are rarely the ones people
-                  hear about. Great work was everywhere — great visibility was
-                  not.
+                  BFG Technologies began with a belief we couldn&apos;t shake:
+                  the businesses with the most to offer are rarely the ones
+                  people hear about. Great work was everywhere — great
+                  visibility was not.
                 </p>
                 <p className="text-gray-600 text-sm md:text-base mb-4 md:mb-6 leading-relaxed">
                   So we set out to build a different kind of agency, one that
@@ -554,13 +552,15 @@ export default function OurStory() {
                       </svg>
                     </div>
                     <div>
-                      <span className="text-[#EC550E] text-sm">01</span>
+                      <p className="text-[#EC550E] text-sm">01</p>
                       <h3 className="text-2xl font-bold">OUR MISSION</h3>
                     </div>
                   </div>
                   <p className="text-[#1A1A1A] text-lg leading-relaxed">
-                    To help businesses use digital marketing to become more
-                    visible, more connected and more effective.
+                    To help African businesses and individual thought leaders
+                    build influential digital brands that attract the right
+                    audiences, create meaningful engagement and convert
+                    attention into measurable growth.
                   </p>
                 </div>
 
@@ -579,14 +579,13 @@ export default function OurStory() {
                       </svg>
                     </div>
                     <div>
-                      <span className="text-[#037BD1] text-sm">02</span>
+                      <p className="text-[#037BD1] text-sm">02</p>
                       <h3 className="text-2xl font-bold">OUR VISION</h3>
                     </div>
                   </div>
                   <p className="text-[#1A1A1A] text-lg leading-relaxed">
-                    To build a digital marketing agency that helps African
-                    businesses connect, grow and thrive in an increasingly
-                    digital world.
+                    To become a leading digital marketing agency shaping the
+                    brands and personalities influencing Africa and the world
                   </p>
                 </div>
               </div>

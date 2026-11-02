@@ -25,7 +25,17 @@ export default function ServicesPage() {
       itemNo: "01",
       title: "DIGITAL STRATEGY",
       details: "Building a clear digital direction around your business goals.",
-      icon: "",
+      icon: (
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          width="32"
+          height="32"
+          fill="rgba(3,123,209,1)"
+        >
+          <path d="M2 8.99374C2 5.68349 4.67654 3 8.00066 3H15.9993C19.3134 3 22 5.69478 22 8.99374V21H8.00066C4.68659 21 2 18.3052 2 15.0063V8.99374ZM20 19V8.99374C20 6.79539 18.2049 5 15.9993 5H8.00066C5.78458 5 4 6.78458 4 8.99374V15.0063C4 17.2046 5.79512 19 8.00066 19H20ZM14 11H16V13H14V11ZM8 11H10V13H8V11Z"></path>
+        </svg>
+      ),
       link: "",
     },
     {
@@ -34,7 +44,17 @@ export default function ServicesPage() {
       title: "PAID ADS",
       details:
         "Reaching the right audience through targeted advertising campaigns.",
-      icon: "",
+      icon: (
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          width="32"
+          height="32"
+          fill="rgba(3,123,209,1)"
+        >
+          <path d="M12.598 16 9.39893 8H7.39893L5.39893 13 5.39795 13.002 4.19897 16H6.35303L6.75293 15H10.043L10.443 16H12.598ZM7.552 13 8.39893 10.8851 9.24402 13H7.552ZM17 8H19V16H16C14.3431 16 13 14.6569 13 13 13 11.3431 14.3431 10 16 10H17V8ZM16 12C15.4478 12 15 12.4478 15 13 15 13.5522 15.4478 14 16 14H17V12H16ZM21 3H3C2.44775 3 2 3.44775 2 4V20C2 20.5522 2.44775 21 3 21H21C21.5522 21 22 20.5522 22 20V4C22 3.44775 21.5522 3 21 3ZM4 19V5H20V19H4Z"></path>
+        </svg>
+      ),
       link: "",
     },
     {
@@ -42,7 +62,17 @@ export default function ServicesPage() {
       itemNo: "03",
       title: "SEO SEARCH",
       details: "Improving your visibility where customers are searching.",
-      icon: "",
+      icon: (
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          width="32"
+          height="32"
+          fill="rgba(3,123,209,1)"
+        >
+          <path d="M8 3C4.13401 3 1 6.13401 1 10C1 13.866 4.13401 17 8 17H9.07089C9.02417 16.6734 9 16.3395 9 16C9 15.6605 9.02417 15.3266 9.07089 15H8C5.23858 15 3 12.7614 3 10C3 7.23858 5.23858 5 8 5H16C18.7614 5 21 7.23858 21 10C21 10.3428 20.9655 10.6775 20.8998 11.0008C21.4853 11.5748 21.9704 12.2508 22.3264 13C22.7583 12.0907 23 11.0736 23 10C23 6.13401 19.866 3 16 3H8ZM11 16C11 13.2386 13.2386 11 16 11C18.7614 11 21 13.2386 21 16C21 17.0191 20.6951 17.967 20.1716 18.7574L22.7071 21.2929L21.2929 22.7071L18.7574 20.1716C17.967 20.6951 17.0191 21 16 21C13.2386 21 11 18.7614 11 16Z"></path>
+        </svg>
+      ),
       link: "",
     },
     {
@@ -51,7 +81,17 @@ export default function ServicesPage() {
       title: "DIGITAL CAMPAIGNS",
       details:
         "Creating focused campaigns designed to generate attention and action.",
-      icon: "",
+      icon: (
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          width="32"
+          height="32"
+          fill="rgba(3,123,209,1)"
+        >
+          <path d="M9 1V3H15V1H17V3H21C21.5523 3 22 3.44772 22 4V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3H7V1H9ZM20 11H4V19H20V11ZM8 13V15H6V13H8ZM13 13V15H11V13H13ZM18 13V15H16V13H18ZM7 5H4V9H20V5H17V7H15V5H9V7H7V5Z"></path>
+        </svg>
+      ),
       link: "",
     },
   ];
@@ -63,7 +103,17 @@ export default function ServicesPage() {
       title: "SOCIAL MEDIA",
       details:
         "Building an active presence and meaningful audience connections.",
-      icon: "",
+      icon: (
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          width="32"
+          height="32"
+          fill="rgba(3,123,209,1)"
+        >
+          <path d="M5.23379 7.72989C6.65303 5.48625 9.15342 4 12.0002 4C14.847 4 17.3474 5.48625 18.7667 7.72989L20.4569 6.66071C18.6865 3.86199 15.5612 2 12.0002 2C8.43928 2 5.31393 3.86199 3.54356 6.66071L5.23379 7.72989ZM12.0002 20C9.15342 20 6.65303 18.5138 5.23379 16.2701L3.54356 17.3393C5.31393 20.138 8.43928 22 12.0002 22C15.5612 22 18.6865 20.138 20.4569 17.3393L18.7667 16.2701C17.3474 18.5138 14.847 20 12.0002 20ZM12 12C13.6569 12 15 10.6569 15 9C15 7.34315 13.6569 6 12 6C10.3431 6 9 7.34315 9 9C9 10.6569 10.3431 12 12 12ZM12 13C14.2091 13 16 14.7909 16 17H8C8 14.7909 9.79086 13 12 13ZM6 12C6 13.6569 4.65685 15 3 15C1.34315 15 0 13.6569 0 12C0 10.3431 1.34315 9 3 9C4.65685 9 6 10.3431 6 12ZM21 15C22.6569 15 24 13.6569 24 12C24 10.3431 22.6569 9 21 9C19.3431 9 18 10.3431 18 12C18 13.6569 19.3431 15 21 15Z"></path>
+        </svg>
+      ),
       link: "",
     },
     {
@@ -72,7 +122,17 @@ export default function ServicesPage() {
       title: "CONTENT MARKETING",
       details:
         "Creating useful content that keeps your brand relevant and engaging.",
-      icon: "",
+      icon: (
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          width="32"
+          height="32"
+          fill="rgba(3,123,209,1)"
+        >
+          <path d="M15.2427 4.5115L8.50547 11.2487L7.79836 13.37L6.7574 14.411L9.58583 17.2394L10.6268 16.1985L12.7481 15.4914L19.4853 8.75414L15.2427 4.5115ZM21.6066 8.04704C21.9972 8.43756 21.9972 9.07073 21.6066 9.46125L13.8285 17.2394L11.7071 17.9465L10.2929 19.3607C9.90241 19.7513 9.26925 19.7513 8.87872 19.3607L4.63608 15.1181C4.24556 14.7276 4.24556 14.0944 4.63608 13.7039L6.0503 12.2897L6.7574 10.1684L14.5356 2.39018C14.9261 1.99966 15.5593 1.99966 15.9498 2.39018L21.6066 8.04704ZM15.2427 7.33993L16.6569 8.75414L11.7071 13.7039L10.2929 12.2897L15.2427 7.33993ZM4.28253 16.8859L7.11096 19.7143L5.69674 21.1285L1.4541 19.7143L4.28253 16.8859Z"></path>
+        </svg>
+      ),
       link: "",
     },
     {
@@ -81,7 +141,17 @@ export default function ServicesPage() {
       title: "PERSONAL BRANDING",
       details:
         "Helping individuals build a clear and recognizable digital presence.",
-      icon: "",
+      icon: (
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          width="32"
+          height="32"
+          fill="rgba(3,123,209,1)"
+        >
+          <path d="M12 14V16C8.68629 16 6 18.6863 6 22H4C4 17.5817 7.58172 14 12 14ZM12 13C8.685 13 6 10.315 6 7C6 3.685 8.685 1 12 1C15.315 1 18 3.685 18 7C18 10.315 15.315 13 12 13ZM12 11C14.21 11 16 9.21 16 7C16 4.79 14.21 3 12 3C9.79 3 8 4.79 8 7C8 9.21 9.79 11 12 11ZM14.5946 18.8115C14.5327 18.5511 14.5 18.2794 14.5 18C14.5 17.7207 14.5327 17.449 14.5945 17.1886L13.6029 16.6161L14.6029 14.884L15.5952 15.4569C15.9883 15.0851 16.4676 14.8034 17 14.6449V13.5H19V14.6449C19.5324 14.8034 20.0116 15.0851 20.4047 15.4569L21.3971 14.8839L22.3972 16.616L21.4055 17.1885C21.4673 17.449 21.5 17.7207 21.5 18C21.5 18.2793 21.4673 18.551 21.4055 18.8114L22.3972 19.3839L21.3972 21.116L20.4048 20.543C20.0117 20.9149 19.5325 21.1966 19.0001 21.355V22.5H17.0001V21.3551C16.4677 21.1967 15.9884 20.915 15.5953 20.5431L14.603 21.1161L13.6029 19.384L14.5946 18.8115ZM18 19.5C18.8284 19.5 19.5 18.8284 19.5 18C19.5 17.1716 18.8284 16.5 18 16.5C17.1716 16.5 16.5 17.1716 16.5 18C16.5 18.8284 17.1716 19.5 18 19.5Z"></path>
+        </svg>
+      ),
       link: "",
     },
     {
@@ -90,13 +160,23 @@ export default function ServicesPage() {
       title: "INFLUENCER MARKETING",
       details:
         "Connecting brands with creators who can reach the right audiences.",
-      icon: "",
+      icon: (
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          width="32"
+          height="32"
+          fill="rgba(3,123,209,1)"
+        >
+          <path d="M7.29117 20.8242L2 22L3.17581 16.7088C2.42544 15.3056 2 13.7025 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22C10.2975 22 8.6944 21.5746 7.29117 20.8242ZM7.58075 18.711L8.23428 19.0605C9.38248 19.6745 10.6655 20 12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 13.3345 4.32549 14.6175 4.93949 15.7657L5.28896 16.4192L4.63416 19.3658L7.58075 18.711ZM7 12H9C9 13.6569 10.3431 15 12 15C13.6569 15 15 13.6569 15 12H17C17 14.7614 14.7614 17 12 17C9.23858 17 7 14.7614 7 12Z"></path>
+        </svg>
+      ),
       link: "",
     },
   ];
 
   return (
-    <div className="px-6 bg-white">
+    <div className="px-6 md:px-15 bg-white">
       <div className="min-h-screen bg-white">
         {/* Hero Section */}
 
@@ -303,15 +383,7 @@ export default function ServicesPage() {
                 >
                   <div className="flex justify-between items-start mb-6">
                     <div className="w-12 h-12 bg-[#E3F2FD] rounded-lg flex items-center justify-center">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 24 24"
-                        width="24"
-                        height="24"
-                        fill="#037BD1"
-                      >
-                        <path d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM8.82843 10.5858L7.41421 12L12 16.5858L16.5858 12L15.1716 10.5858L13 12.7574V6H11V12.7574L8.82843 10.5858Z"></path>
-                      </svg>
+                     {growth.icon}
                     </div>
                     <span className="text-2xl font-semibold text-black">
                       {growth.itemNo}
@@ -394,15 +466,7 @@ export default function ServicesPage() {
                 >
                   <div className="flex justify-between items-start mb-6">
                     <div className="w-12 h-12 bg-[#E3F2FD] rounded-lg flex items-center justify-center">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 24 24"
-                        width="24"
-                        height="24"
-                        fill="#037BD1"
-                      >
-                        <path d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM8.82843 10.5858L7.41421 12L12 16.5858L16.5858 12L15.1716 10.5858L13 12.7574V6H11V12.7574L8.82843 10.5858Z"></path>
-                      </svg>
+                    {growth.icon}
                     </div>
                     <span className="text-2xl font-semibold text-black">
                       {growth.itemNo}
@@ -454,7 +518,7 @@ export default function ServicesPage() {
 
         {/* Turn Digital Activity Section */}
         <motion.section
-          className="py-20 px-6 bg-black"
+          className="py-20 px-6 bg-black rounded-lg"
           initial="initial"
           whileInView="animate"
           viewport={{ once: true }}

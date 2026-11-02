@@ -12,7 +12,7 @@ export default function PortfolioPage() {
   };
 
   return (
-    <div className="px-6  bg-white">
+    <div className="px-6 md:px-15 bg-white">
       <div className="min-h-screen bg-white">
         {/* Hero Section */}
         <motion.section

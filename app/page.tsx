@@ -153,7 +153,7 @@ export default function Home() {
                 to grow.
               </h2>
             </div>
-            <div className="flex items-end">
+            <div className="">
               <p className="text-[#14212DB2] text-md">
                 Full-funnel digital marketing -- from first impression to loyal
                 customer. Pick a lane, or let us build the whole roadmap.
@@ -595,10 +595,14 @@ export default function Home() {
                 </h2>
 
                 <p className="text-[#14212DB2] text-lg mb-8 leading-relaxed">
-                  BFG Technologies is a digital marketing agency focused on
-                  helping businesses build growth systems that bring in
-                  consistent leads, loyal customers, and long-term results that
-                  actually matter - and create measurable growth.
+                  BFG Technologies is an African-focused digital marketing
+                  agency helping businesses, entrepreneurs, executives and
+                  public figures build influential brands and turn digital
+                  attention into measurable growth. We combine strategy, human
+                  creativity, data and technology to help our clients become
+                  more visible, connect meaningfully with the audiences that
+                  matter and convert that attention into customers,
+                  opportunities and lasting influence.
                 </p>
 
                 <div className="space-y-4 mb-8">

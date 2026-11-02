@@ -260,10 +260,12 @@ const Footer = () => {
 
           {/* Bottom Section */}
           <div className="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-gray-200">
-            <p className="text-gray-500 text-sm mb-4 md:mb-0">
-              2026 BFG Technology. All rights reserved.
-            </p>
-            <div className="w-[250px] md:w-[350px] lg:w-[400px] h-auto">
+            <div className="">
+              <p className="text-gray-500 text-sm mb-4 md:mb-0">
+                2026 BFG Technology. All rights reserved.
+              </p>
+            </div>
+            <div className="w-[250px] md:w-[400px] lg:w-[550px] h-auto">
               <Link href="/">
                 <Image
                   src={BFGLogo}
