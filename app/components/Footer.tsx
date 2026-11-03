@@ -4,6 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import BFGLogo from "../../public/assets/footer-logo.png";
+import LogoReveal from "./LogoReveal";
 import ContactModal from "./ContactModal";
 
 const Footer = () => {
@@ -23,7 +24,7 @@ const Footer = () => {
             </h2>
             <button
               onClick={() => setIsModalOpen(true)}
-              className="bg-[#FF6B35] text-white px-10 py-4 rounded-lg hover:bg-orange-600 text-md md:text-lg font-semibold"
+              className="bg-[#FF6B35] text-white px-10 py-4 rounded-2xl hover:bg-orange-600 text-md md:text-lg font-semibold"
             >
               Start a Conversation
             </button>
@@ -265,15 +266,24 @@ const Footer = () => {
                 2026 BFG Technology. All rights reserved.
               </p>
             </div>
-            <div className="w-[250px] md:w-[400px] lg:w-[550px] h-auto">
-              <Link href="/">
+            <div className="">
+                <LogoReveal
+          logoSrc="/assets/logo.png"
+          photoSrc="/assets/reveal-photo.jpg"
+          color="#111827"
+          logoWidth={502}
+          logoHeight={294}
+          label="Your Company name"
+          className="w-[min(70vw,420px)]"
+        />
+              {/* <Link href="/">
                 <Image
                   src={BFGLogo}
                   className="w-full h-full"
                   alt="BFG Logo"
                   priority
                 />
-              </Link>
+              </Link> */}
             </div>
           </div>
         </div>

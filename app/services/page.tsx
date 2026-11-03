@@ -382,7 +382,7 @@ export default function ServicesPage() {
                   className="bg-white rounded-2xl p-8 shadow-sm border border-gray-100"
                 >
                   <div className="flex justify-between items-start mb-6">
-                    <div className="w-12 h-12 bg-[#E3F2FD] rounded-lg flex items-center justify-center">
+                    <div className="w-12 h-12 bg-[#E3F2FD] rounded-2xl flex items-center justify-center">
                      {growth.icon}
                     </div>
                     <span className="text-2xl font-semibold text-black">
@@ -416,7 +416,7 @@ export default function ServicesPage() {
             {/* growvisibility detail page */}
             <div className="mt-12 text-center">
               <Link href="/services/grow-visibility">
-                <button className="bg-[#037BD1] text-white px-8 py-4 rounded-lg font-semibold hover:bg-[#0266a8] transition-colors inline-flex items-center gap-2">
+                <button className="bg-[#037BD1] text-white px-8 py-4 rounded-2xl font-semibold hover:bg-[#0266a8] transition-colors inline-flex items-center gap-2">
                   VIEW SERVICES
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -465,7 +465,7 @@ export default function ServicesPage() {
                   className="bg-white rounded-2xl p-8 shadow-sm border border-gray-100"
                 >
                   <div className="flex justify-between items-start mb-6">
-                    <div className="w-12 h-12 bg-[#E3F2FD] rounded-lg flex items-center justify-center">
+                    <div className="w-12 h-12 bg-[#E3F2FD] rounded-2xl flex items-center justify-center">
                     {growth.icon}
                     </div>
                     <span className="text-2xl font-semibold text-black">
@@ -499,7 +499,7 @@ export default function ServicesPage() {
             {/* build connection detail page */}
             <div className="mt-12 text-center">
               <Link href="/services/build-connection">
-                <button className="bg-[#EC550E] text-white px-8 py-4 rounded-lg font-semibold hover:bg-[#d64a0c] transition-colors inline-flex items-center gap-2">
+                <button className="bg-[#EC550E] text-white px-8 py-4 rounded-2xl font-semibold hover:bg-[#d64a0c] transition-colors inline-flex items-center gap-2">
                   VIEW SERVICES
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -518,7 +518,7 @@ export default function ServicesPage() {
 
         {/* Turn Digital Activity Section */}
         <motion.section
-          className="py-20 px-6 bg-black rounded-lg"
+          className="py-20 px-6 bg-black rounded-2xl"
           initial="initial"
           whileInView="animate"
           viewport={{ once: true }}
@@ -549,7 +549,7 @@ export default function ServicesPage() {
                   Turning direct communication into stronger customer
                   relationships.
                 </p>
-                <Link href="" className="my-4">
+                <Link href="/services/drive-results" className="my-4">
                   <div className="flex gap-3">
                     <p className="text-[#EC550E]">EXPLORE SERVICE</p>
 
@@ -574,7 +574,7 @@ export default function ServicesPage() {
                 <p className="text-gray-400 mb-2">
                   Using data to understand performance and improve decisions.
                 </p>
-                <Link href="" className="my-4">
+                <Link href="/services/drive-results" className="my-4">
                   <div className="flex gap-3">
                     <p className="text-[#EC550E]">EXPLORE SERVICE</p>
 
@@ -592,9 +592,9 @@ export default function ServicesPage() {
               </div>
             </div>
             {/* drive results detail page */}
-            <div className="mt-12 text-center">
+            {/* <div className="mt-12 text-center">
               <Link href="/services/drive-results">
-                <button className="bg-[#FF6B35] text-white px-8 py-4 rounded-lg font-semibold hover:bg-[#e55a2a] transition-colors inline-flex items-center gap-2">
+                <button className="bg-[#FF6B35] text-white px-8 py-4 rounded-2xl font-semibold hover:bg-[#e55a2a] transition-colors inline-flex items-center gap-2">
                   VIEW SERVICES
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -607,7 +607,7 @@ export default function ServicesPage() {
                   </svg>
                 </button>
               </Link>
-            </div>
+            </div> */}
           </div>
         </motion.section>
         {/* Think Deeply Section */}
@@ -663,8 +663,8 @@ export default function ServicesPage() {
               </div>
             </div>
             <p className="text-[#1A1A1A] text-lg leading-relaxed">
-              To help businesses use digital marketing to become more visible,
-              more connected and more effective.
+              To help African businesses and individual thought leaders build influential digital brands that attract the right audiences, create meaningful engagement and convert attention into measurable growth.
+
             </p>
           </div>
 
@@ -688,8 +688,8 @@ export default function ServicesPage() {
               </div>
             </div>
             <p className="text-[#1A1A1A] text-lg leading-relaxed">
-              To build a digital marketing agency that helps African businesses
-              connect, grow and thrive in an increasingly digital world.
+              To become a leading digital marketing agency shaping the brands and personalities influencing Africa and the world.
+
             </p>
           </div>
         </motion.section>

@@ -149,7 +149,7 @@ export default function BuildConnectionPage() {
 
             <motion.button
               onClick={() => setIsModalOpen(true)}
-              className="bg-[#EC550E] text-white px-8 py-4 rounded-lg font-semibold hover:bg-[#d64a0c] transition-colors"
+              className="bg-[#EC550E] text-white px-8 py-4 rounded-2xl font-semibold hover:bg-[#d64a0c] transition-colors"
               variants={fadeIn}
             >
               START A PROJECT
@@ -189,7 +189,7 @@ export default function BuildConnectionPage() {
                 <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-black mb-6 uppercase">
                   Attention without connection
                 </h2>
-                <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-8 uppercase">
+                <h2 className="text-3xl md:text-4xl lg:text-5xl text-black font-bold mb-8 uppercase">
                   is just <span className="text-[#EC550E]">noise.</span>
                 </h2>
               </motion.div>
@@ -240,7 +240,7 @@ export default function BuildConnectionPage() {
                   variants={fadeIn}
                 >
                   <div className="flex justify-between items-start mb-6">
-                    <div className="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center">
+                    <div className="w-12 h-12 bg-orange-100 rounded-2xl flex items-center justify-center">
                       {service.icon}
                     </div>
                     <span className="text-2xl font-bold text-gray-300">
@@ -276,7 +276,7 @@ export default function BuildConnectionPage() {
 
         {/* Benefits Section */}
         <motion.section
-          className="py-12 md:py-20 px-4 md:px-6 bg-black text-white"
+          className="py-12 md:py-20 px-4 md:px-6 bg-black rounded-2xl text-white"
           initial="initial"
           whileInView="animate"
           viewport={{ once: true }}
