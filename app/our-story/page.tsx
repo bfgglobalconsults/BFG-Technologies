@@ -55,17 +55,17 @@ export default function OurStory() {
                 </div>
                 <div className="flex flex-wrap items-center gap-3 md:gap-6 mt-6 md:mt-8 text-xs sm:text-sm md:text-base">
                   <span className="text-gray-400 font-semibold">
-                    AFRICAN FOCUS
+                    FOCUS
                   </span>
                   <span className="text-gray-400">→</span>
                   <span className="text-[#FF6B35] font-semibold">
-                    DIGITAL INFLUENCE
+                    INFLUENCE
                   </span>
                   {/* <span className="text-gray-400">→</span>
                   <span className="text-gray-400 font-semibold">CONTENT</span> */}
                   <span className="text-gray-400">→</span>
                   <span className="text-[#0066CC] font-semibold">
-                    MEASURABLE GROWTH
+                GROWTH
                   </span>
                 </div>
               </div>

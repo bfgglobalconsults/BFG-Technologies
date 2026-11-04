@@ -5,35 +5,67 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 
 export default function PortfolioPage() {
-  const fadeIn = {
-    initial: { opacity: 0, y: 20 },
+  const slideInLeft = {
+    initial: { opacity: 0, x: -100 },
+    animate: { opacity: 1, x: 0 },
+    transition: { duration: 0.8, ease: "easeOut" },
+  };
+
+  const slideInRight = {
+    initial: { opacity: 0, x: 100 },
+    animate: { opacity: 1, x: 0 },
+    transition: { duration: 0.8, ease: "easeOut" },
+  };
+
+  const fadeInUp = {
+    initial: { opacity: 0, y: 60 },
     animate: { opacity: 1, y: 0 },
-    transition: { duration: 0.6 },
+    transition: { duration: 0.8, ease: "easeOut" },
+  };
+
+  const scaleIn = {
+    initial: { opacity: 0, scale: 0.8 },
+    animate: { opacity: 1, scale: 1 },
+    transition: { duration: 0.8, ease: "easeOut" },
+  };
+
+  const staggerContainer = {
+    animate: {
+      transition: {
+        staggerChildren: 0.2,
+      },
+    },
   };
 
   return (
     <div className="px-6 md:px-15 bg-white">
       <div className="min-h-screen bg-white">
         {/* Hero Section */}
-        <motion.section
-          className="pt-18 md:pt-20 py-12 md:py-22 px-4 md:px-6"
-          initial="initial"
-          animate="animate"
-          variants={fadeIn}
-        >
-          <div className="max-w-7xl mx-auto">
-            <div className="flex gap-3 items-center px-6 py-16 text-[#14212DB2]">
+        <section className="pt-18 md:pt-20 py-12 md:py-22 px-4 md:px-6">
+          <motion.div
+            className="max-w-7xl mx-auto"
+            initial="initial"
+            animate="animate"
+            variants={staggerContainer}
+          >
+            <motion.div
+              className="flex gap-3 items-center px-6 py-16 text-[#14212DB2]"
+              variants={slideInLeft}
+            >
               <span className="w-10 h-1 bg-[#EC550E] mb-4"></span>
               <h1 className="text-md font-semibold mb-4">PORTFOLIO/CLIENTS</h1>
-            </div>
+            </motion.div>
             <div className="grid md:grid-cols-2 gap-12">
-              <div>
+              <motion.div variants={slideInLeft}>
                 <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-black font-bold mb-4 md:mb-6">
                   WORK THAT MOVES BUSINESS{" "}
                   <span className="text-[#FF6B35]">FORWARD.</span>
                 </h1>
-              </div>
-              <div className="flex flex-col justify-end">
+              </motion.div>
+              <motion.div
+                className="flex flex-col justify-end"
+                variants={slideInRight}
+              >
                 <p className="text-gray-600 text-lg max-w-3xl">
                   Explore selected projects, campaigns and client stories
                   showing how BFG Technology approaches digital growth.
@@ -56,9 +88,9 @@ export default function PortfolioPage() {
                     </span>
                   </div>
                 </div>
-              </div>
+              </motion.div>
             </div>
-            <div className="mt-8">
+            <motion.div className="mt-8" variants={scaleIn}>
               <Image
                 src="/assets/portfolio-img.jpg"
                 alt="Team collaboration"
@@ -66,9 +98,9 @@ export default function PortfolioPage() {
                 height={600}
                 className="rounded-2xl w-full h-[400px] object-cover"
               />
-            </div>
-          </div>
-        </motion.section>
+            </motion.div>
+          </motion.div>
+        </section>
 
         {/* Every Project Starts With A Question */}
         <motion.section
