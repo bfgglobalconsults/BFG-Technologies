@@ -224,7 +224,7 @@ export default function DriveResultsPage() {
                 >
                   <div className="flex justify-between items-start mb-6">
                     <div className="w-12 h-12 bg-orange-100 rounded-2xl flex items-center justify-center">
-                     {service.icon}
+                      {service.icon}
                     </div>
                     <span className="text-2xl font-bold text-gray-300">
                       {service.number}

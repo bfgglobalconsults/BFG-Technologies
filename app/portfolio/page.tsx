@@ -3,26 +3,9 @@
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import { fadeIn, slideInLeft, slideInRight } from "../utils/animations";
 
 export default function PortfolioPage() {
-  const slideInLeft = {
-    initial: { opacity: 0, x: -100 },
-    animate: { opacity: 1, x: 0 },
-    transition: { duration: 0.8, ease: "easeOut" },
-  };
-
-  const slideInRight = {
-    initial: { opacity: 0, x: 100 },
-    animate: { opacity: 1, x: 0 },
-    transition: { duration: 0.8, ease: "easeOut" },
-  };
-
-  const fadeInUp = {
-    initial: { opacity: 0, y: 60 },
-    animate: { opacity: 1, y: 0 },
-    transition: { duration: 0.8, ease: "easeOut" },
-  };
-
   const scaleIn = {
     initial: { opacity: 0, scale: 0.8 },
     animate: { opacity: 1, scale: 1 },
@@ -455,23 +438,21 @@ export default function PortfolioPage() {
 
             <div className="grid md:grid-cols-3 gap-8 my-12">
               <div className="border-t p-4">
-                <div className="">OUTCOME METRIC</div>
+                <div className="">DIGITAL PLATFORMS LAUNCHED</div>
+                <div className="text-3xl font-bold my-4">3+ Brand Websites</div>
+              </div>
+              <div className="border-t p-4">
+                <div className="">MARKET RESEARCH DATA</div>
+
                 <div className="text-3xl font-bold my-4">
-                  [INSERT CONFIRMED RESULT]
+                  1,000+ Survey Responses
                 </div>
               </div>
               <div className="border-t p-4">
-                <div className="">OUTCOME METRIC</div>
+                <div className="">INVESTOR CONNECTIONS</div>
 
                 <div className="text-3xl font-bold my-4">
-                  [INSERT CONFIRMED RESULT]
-                </div>
-              </div>
-              <div className="border-t p-4">
-                <div className="">OUTCOME METRIC</div>
-
-                <div className="text-3xl font-bold my-4">
-                  [INSERT CONFIRMED RESULT]
+                  50+ Qualified Leads
                 </div>
               </div>
             </div>
@@ -510,13 +491,14 @@ export default function PortfolioPage() {
                     01
                   </div>
                   <h3 className="text-uppercase font-bold mb-3">
-                    [Approved testimonial to be added]
+                    Professional execution, clear results, and excellent
+                    communication throughout the project.
                   </h3>
                 </div>
                 <div>
-                  <p className="text-black">[Client name]</p>
+                  <p className="text-black">IWE Advisory</p>
                   <p className="text-gray-600">
-                    Build an active presence and meaningful connections.
+                    Brand launch and digital presence establishment.
                   </p>
                 </div>
                 <Link href="">
@@ -539,13 +521,14 @@ export default function PortfolioPage() {
                     02
                   </div>
                   <h3 className="text-uppercase font-bold mb-3">
-                    [Approved testimonial to be added]
+                    Strategic approach and targeted outreach that delivered
+                    meaningful investor connections.
                   </h3>
                 </div>
                 <div>
-                  <p className="text-black">[Client name]</p>
+                  <p className="text-black">FJ Global Properties</p>
                   <p className="text-gray-600">
-                    Build an active presence and meaningful connections.
+                    Investor outreach campaign and lead generation.
                   </p>
                 </div>
                 <Link href="">
@@ -568,13 +551,14 @@ export default function PortfolioPage() {
                     03
                   </div>
                   <h3 className="text-uppercase font-bold mb-3">
-                    [Approved testimonial to be added]
+                    Efficient campaign execution that exceeded data collection
+                    targets and delivered actionable insights.
                   </h3>
                 </div>
                 <div>
-                  <p className="text-black">[Client name]</p>
+                  <p className="text-black">BFG Global Consulting</p>
                   <p className="text-gray-600">
-                    Build an active presence and meaningful connections.
+                    Market research and survey acquisition campaign.
                   </p>
                 </div>
                 <Link href="">
@@ -597,13 +581,14 @@ export default function PortfolioPage() {
                     04
                   </div>
                   <h3 className="text-uppercase font-bold mb-3">
-                    [Approved testimonial to be added]
+                    Reliable partner who understands business objectives and
+                    delivers practical solutions that work.
                   </h3>
                 </div>
                 <div>
-                  <p className="text-black">[Client name]</p>
+                  <p className="text-black">Technology Startup</p>
                   <p className="text-gray-600">
-                    Build an active presence and meaningful connections.
+                    Digital strategy and growth marketing services.
                   </p>
                 </div>
                 <Link href="">

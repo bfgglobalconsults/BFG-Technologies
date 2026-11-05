@@ -3,22 +3,16 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import {
+  fadeInUp,
+  fadeInLeft,
+  fadeInRight,
+  scaleIn,
+  staggerContainer,
+  fadeIn,
+} from "../utils/animations";
 
 export default function ServicesPage() {
-  const fadeIn = {
-    initial: { opacity: 0, y: 20 },
-    animate: { opacity: 1, y: 0 },
-    transition: { duration: 0.6 },
-  };
-
-  const staggerContainer = {
-    animate: {
-      transition: {
-        staggerChildren: 0.15,
-      },
-    },
-  };
-
   const GrowVisibility = [
     {
       id: 1,
@@ -383,7 +377,7 @@ export default function ServicesPage() {
                 >
                   <div className="flex justify-between items-start mb-6">
                     <div className="w-12 h-12 bg-[#E3F2FD] rounded-2xl flex items-center justify-center">
-                     {growth.icon}
+                      {growth.icon}
                     </div>
                     <span className="text-2xl font-semibold text-black">
                       {growth.itemNo}
@@ -466,7 +460,7 @@ export default function ServicesPage() {
                 >
                   <div className="flex justify-between items-start mb-6">
                     <div className="w-12 h-12 bg-[#E3F2FD] rounded-2xl flex items-center justify-center">
-                    {growth.icon}
+                      {growth.icon}
                     </div>
                     <span className="text-2xl font-semibold text-black">
                       {growth.itemNo}
@@ -663,8 +657,10 @@ export default function ServicesPage() {
               </div>
             </div>
             <p className="text-[#1A1A1A] text-lg leading-relaxed">
-              To help African businesses and individual thought leaders build influential digital brands that attract the right audiences, create meaningful engagement and convert attention into measurable growth.
-
+              To help African businesses and individual thought leaders build
+              influential digital brands that attract the right audiences,
+              create meaningful engagement and convert attention into measurable
+              growth.
             </p>
           </div>
 
@@ -688,8 +684,8 @@ export default function ServicesPage() {
               </div>
             </div>
             <p className="text-[#1A1A1A] text-lg leading-relaxed">
-              To become a leading digital marketing agency shaping the brands and personalities influencing Africa and the world.
-
+              To become a leading digital marketing agency shaping the brands
+              and personalities influencing Africa and the world.
             </p>
           </div>
         </motion.section>

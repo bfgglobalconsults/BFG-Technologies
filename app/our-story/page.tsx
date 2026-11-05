@@ -54,9 +54,7 @@ export default function OurStory() {
                   </p>
                 </div>
                 <div className="flex flex-wrap items-center gap-3 md:gap-6 mt-6 md:mt-8 text-xs sm:text-sm md:text-base">
-                  <span className="text-gray-400 font-semibold">
-                    FOCUS
-                  </span>
+                  <span className="text-gray-400 font-semibold">FOCUS</span>
                   <span className="text-gray-400">→</span>
                   <span className="text-[#FF6B35] font-semibold">
                     INFLUENCE
@@ -64,9 +62,7 @@ export default function OurStory() {
                   {/* <span className="text-gray-400">→</span>
                   <span className="text-gray-400 font-semibold">CONTENT</span> */}
                   <span className="text-gray-400">→</span>
-                  <span className="text-[#0066CC] font-semibold">
-                GROWTH
-                  </span>
+                  <span className="text-[#0066CC] font-semibold">GROWTH</span>
                 </div>
               </div>
               <div>
@@ -455,7 +451,6 @@ export default function OurStory() {
                   </p>
                 </div>
               </div>
-
               <div className="bg-white rounded-xl md:rounded-2xl overflow-hidden">
                 <div className="aspect-square bg-gray-200">
                   <Image
@@ -475,7 +470,7 @@ export default function OurStory() {
                   </p>
                 </div>
               </div>
-
+              1468272 8ko^6TF^
               <div className="bg-white rounded-xl md:rounded-2xl overflow-hidden">
                 <div className="aspect-square bg-gray-200">
                   <Image
@@ -495,7 +490,6 @@ export default function OurStory() {
                   </p>
                 </div>
               </div>
-
               <div className="bg-white rounded-xl md:rounded-2xl overflow-hidden">
                 <div className="aspect-square bg-gray-200">
                   <Image
