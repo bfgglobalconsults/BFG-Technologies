@@ -180,7 +180,7 @@ export default function BuildConnectionPage() {
           className="py-12 md:py-20 px-4 md:px-6 bg-gray-50"
           initial="initial"
           whileInView="animate"
-          viewport={{ once: true }}
+          viewport={{ once: false }}
           variants={fadeIn}
         >
           <div className="max-w-7xl mx-auto">
@@ -216,7 +216,7 @@ export default function BuildConnectionPage() {
           className="py-12 md:py-20 px-4 md:px-6"
           initial="initial"
           whileInView="animate"
-          viewport={{ once: true }}
+          viewport={{ once: false }}
           variants={staggerContainer}
         >
           <div className="max-w-7xl mx-auto">
@@ -279,7 +279,7 @@ export default function BuildConnectionPage() {
           className="py-12 md:py-20 px-4 md:px-6 bg-black rounded-2xl text-white"
           initial="initial"
           whileInView="animate"
-          viewport={{ once: true }}
+          viewport={{ once: false }}
           variants={fadeIn}
         >
           <div className="max-w-7xl mx-auto">
@@ -333,7 +333,7 @@ export default function BuildConnectionPage() {
           className="py-12 md:py-20 px-4 md:px-6"
           initial="initial"
           whileInView="animate"
-          viewport={{ once: true }}
+          viewport={{ once: false }}
           variants={staggerContainer}
         >
           <div className="max-w-7xl mx-auto">

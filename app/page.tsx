@@ -4,16 +4,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import AnimatedCounter from "./components/AnimatedCounter";
-import {
-  fadeInUp,
-  fadeInLeft,
-  fadeInRight,
-  scaleIn,
-  staggerContainer,
-  slideUpLarge,
-  fadeIn,
-  bounceIn,
-} from "./utils/animations";
+import { staggerContainer, fadeIn } from "./utils/animations";
 
 export default function Home() {
   return (
@@ -24,7 +15,8 @@ export default function Home() {
           <motion.div
             className="max-w-7xl mx-auto text-center"
             initial="initial"
-            animate="animate"
+            whileInView="animate"
+            viewport={{ once: false, margin: "-50px" }}
             variants={staggerContainer}
           >
             {/* Trusted by Founders */}
@@ -134,7 +126,7 @@ export default function Home() {
           className="py-6 md:py-20 px-2 md:px-6 bg-white"
           initial="initial"
           whileInView="animate"
-          viewport={{ once: true, margin: "-100px" }}
+          viewport={{ once: false, margin: "-100px" }}
           variants={fadeIn}
         >
           <div className="text-[#FF6B35] text-sm font-semibold mb-4 uppercase tracking-wider">
@@ -163,7 +155,7 @@ export default function Home() {
           className="py-6 md:py-20 px-2 md:px-6 bg-[#F4F6F8] shadow-lg rounded-3xl mx-6 my-12"
           initial="initial"
           whileInView="animate"
-          viewport={{ once: true, margin: "-100px" }}
+          viewport={{ once: false, margin: "-100px" }}
           variants={fadeIn}
         >
           <div className="max-w-7xl mx-auto">
@@ -293,7 +285,7 @@ export default function Home() {
           className="py-20 px-6 bg-[#0066CC] text-white rounded-3xl mx-6 my-12"
           initial="initial"
           whileInView="animate"
-          viewport={{ once: true, margin: "-100px" }}
+          viewport={{ once: false, margin: "-100px" }}
           variants={fadeIn}
         >
           <div className="max-w-7xl mx-auto">
@@ -421,7 +413,7 @@ export default function Home() {
           className="py-20 px-6 bg-[#F4F6F8] shadow-lg rounded-3xl mx-6 my-12"
           initial="initial"
           whileInView="animate"
-          viewport={{ once: true, margin: "-100px" }}
+          viewport={{ once: false, margin: "-100px" }}
           variants={fadeIn}
         >
           <div className="max-w-7xl mx-auto">
@@ -552,7 +544,7 @@ export default function Home() {
           className="py-20 px-6 bg-white text-[#14212DB2]"
           initial="initial"
           whileInView="animate"
-          viewport={{ once: true, margin: "-100px" }}
+          viewport={{ once: false, margin: "-100px" }}
           variants={fadeIn}
         >
           <div className="max-w-7xl mx-auto">
@@ -642,14 +634,14 @@ export default function Home() {
           className="py-20 px-6 bg-white"
           initial="initial"
           whileInView="animate"
-          viewport={{ once: true, margin: "-100px" }}
+          viewport={{ once: false, margin: "-100px" }}
           variants={fadeIn}
         >
           <div className="max-w-6xl mx-auto">
             <motion.div
               initial="initial"
               whileInView="animate"
-              viewport={{ once: true }}
+              viewport={{ once: false }}
               variants={staggerContainer}
               className="grid md:grid-cols-2 gap-12 items-center"
             >
@@ -726,7 +718,7 @@ export default function Home() {
           className="py-20 px-6 bg-[#0066CC] rounded-xl text-white"
           initial="initial"
           whileInView="animate"
-          viewport={{ once: true, margin: "-100px" }}
+          viewport={{ once: false, margin: "-100px" }}
           variants={fadeIn}
         >
           <div className="max-w-7xl mx-auto">
@@ -795,7 +787,7 @@ export default function Home() {
           className="py-20 px-6 bg-white text-[#14212DB2]"
           initial="initial"
           whileInView="animate"
-          viewport={{ once: true, margin: "-100px" }}
+          viewport={{ once: false, margin: "-100px" }}
           variants={fadeIn}
         >
           <div className="max-w-7xl mx-auto">
@@ -1050,7 +1042,7 @@ export default function Home() {
           className="py-20 px-6"
           initial="initial"
           whileInView="animate"
-          viewport={{ once: true, margin: "-100px" }}
+          viewport={{ once: false, margin: "-100px" }}
           variants={fadeIn}
         >
           <div className="max-w-7xl mx-auto">

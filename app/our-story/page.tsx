@@ -16,11 +16,14 @@ export default function OurStory() {
         {/* <Header /> */}
 
         {/* Hero Section */}
-        <section className="pt-18 md:pt-20 py-12 md:py-22 px-4 md:px-6">
+        <motion.section
+          className="pt-18 md:pt-20 py-12 md:py-22 px-4 md:px-6"
+          initial="initial"
+          whileInView="animate"
+          viewport={{ once: false, amount: 0.3 }}
+        >
           <motion.div
             className="max-w-7xl mx-auto mt-8 md:mt-16"
-            initial="initial"
-            animate="animate"
             variants={{
               animate: { transition: { staggerChildren: 0.2 } },
             }}
@@ -78,14 +81,14 @@ export default function OurStory() {
               </div>
             </motion.div>
           </motion.div>
-        </section>
+        </motion.section>
 
         {/* Problem Statement */}
         <motion.section
           className="py-12 md:py-20 px-4 md:px-6 bg-white relative"
           initial="initial"
           whileInView="animate"
-          viewport={{ once: true }}
+          viewport={{ once: false }}
           variants={fadeIn}
         >
           <div className="absolute right-0 top-0 bottom-0 w-6 opacity-10 hidden md:block">
@@ -180,7 +183,7 @@ export default function OurStory() {
           className="py-12 md:py-20 bg-gray-50 px-4 md:px-6"
           initial="initial"
           whileInView="animate"
-          viewport={{ once: true }}
+          viewport={{ once: false }}
           variants={fadeIn}
         >
           <div className="max-w-7xl mx-auto">
@@ -294,7 +297,7 @@ export default function OurStory() {
           className="py-12 md:py-20 px-4 md:px-6 bg-black text-white"
           initial="initial"
           whileInView="animate"
-          viewport={{ once: true }}
+          viewport={{ once: false }}
           variants={fadeIn}
         >
           <div className="max-w-4xl">
@@ -320,7 +323,7 @@ export default function OurStory() {
           className="py-12 md:py-20 px-4 md:px-6"
           initial="initial"
           whileInView="animate"
-          viewport={{ once: true }}
+          viewport={{ once: false }}
           variants={{
             animate: { transition: { staggerChildren: 0.2 } },
           }}
@@ -401,7 +404,7 @@ export default function OurStory() {
           className="py-12 md:py-20 px-4 md:px-6 bg-gray-50"
           initial="initial"
           whileInView="animate"
-          viewport={{ once: true }}
+          viewport={{ once: false }}
           variants={fadeIn}
         >
           <div className="max-w-7xl mx-auto">
@@ -470,7 +473,7 @@ export default function OurStory() {
                   </p>
                 </div>
               </div>
-              1468272 8ko^6TF^
+
               <div className="bg-white rounded-xl md:rounded-2xl overflow-hidden">
                 <div className="aspect-square bg-gray-200">
                   <Image
@@ -518,7 +521,7 @@ export default function OurStory() {
           className="py-12 md:py-20 px-4 md:px-6"
           initial="initial"
           whileInView="animate"
-          viewport={{ once: true }}
+          viewport={{ once: false }}
           variants={fadeIn}
         >
           <div className="max-w-7xl mx-auto">

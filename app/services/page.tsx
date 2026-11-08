@@ -3,14 +3,7 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import {
-  fadeInUp,
-  fadeInLeft,
-  fadeInRight,
-  scaleIn,
-  staggerContainer,
-  fadeIn,
-} from "../utils/animations";
+import { staggerContainer, fadeIn } from "../utils/animations";
 
 export default function ServicesPage() {
   const GrowVisibility = [
@@ -179,7 +172,7 @@ export default function ServicesPage() {
           className="pt-18 md:pt-20 py-12 md:py-22 px-4 md:px-6"
           initial="initial"
           whileInView="animate"
-          viewport={{ once: true }}
+          viewport={{ once: false, amount: 0.2 }}
           variants={{
             animate: { transition: { staggerChildren: 0.2 } },
           }}
@@ -248,7 +241,7 @@ export default function ServicesPage() {
           className="py-12 md:py-20 px-4 md:px-6 bg-gray-50"
           initial="initial"
           whileInView="animate"
-          viewport={{ once: true }}
+          viewport={{ once: false }}
           variants={fadeIn}
         >
           <div className="max-w-7xl mx-auto">
@@ -274,7 +267,7 @@ export default function ServicesPage() {
           className="py-12 md:py-20 px-4 md:px-6 bg-gray-50"
           initial="initial"
           whileInView="animate"
-          viewport={{ once: true }}
+          viewport={{ once: false }}
         >
           <motion.div className="max-w-7xl mx-auto" variants={staggerContainer}>
             <div className="text-[#0066CC] text-xs md:text-sm font-semibold mb-3 md:mb-4 uppercase tracking-wider">
@@ -350,7 +343,7 @@ export default function ServicesPage() {
           className="py-20 px-6 bg-white"
           initial="initial"
           whileInView="animate"
-          viewport={{ once: true }}
+          viewport={{ once: false }}
           variants={fadeIn}
         >
           <div className="max-w-7xl mx-auto">
@@ -432,7 +425,7 @@ export default function ServicesPage() {
           className="py-20 px-6"
           initial="initial"
           whileInView="animate"
-          viewport={{ once: true }}
+          viewport={{ once: false }}
           variants={fadeIn}
         >
           <div className="max-w-7xl text-black mx-auto">
@@ -515,7 +508,7 @@ export default function ServicesPage() {
           className="py-20 px-6 bg-black rounded-2xl"
           initial="initial"
           whileInView="animate"
-          viewport={{ once: true }}
+          viewport={{ once: false }}
           variants={fadeIn}
         >
           <div className="max-w-7xl mx-auto">
@@ -609,7 +602,7 @@ export default function ServicesPage() {
           className="py-20 px-6"
           initial="initial"
           whileInView="animate"
-          viewport={{ once: true }}
+          viewport={{ once: false }}
           variants={fadeIn}
         >
           <div className="max-w-7xl text-black mx-auto">
@@ -634,7 +627,7 @@ export default function ServicesPage() {
           className="grid md:grid-cols-2 gap-10 px-6"
           initial="initial"
           whileInView="animate"
-          viewport={{ once: true }}
+          viewport={{ once: false }}
           variants={fadeIn}
         >
           {/* Mission Card */}

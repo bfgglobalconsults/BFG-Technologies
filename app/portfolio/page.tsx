@@ -24,13 +24,13 @@ export default function PortfolioPage() {
     <div className="px-6 md:px-15 bg-white">
       <div className="min-h-screen bg-white">
         {/* Hero Section */}
-        <section className="pt-18 md:pt-20 py-12 md:py-22 px-4 md:px-6">
-          <motion.div
-            className="max-w-7xl mx-auto"
-            initial="initial"
-            animate="animate"
-            variants={staggerContainer}
-          >
+        <motion.section
+          className="pt-18 md:pt-20 py-12 md:py-22 px-4 md:px-6"
+          initial="initial"
+          whileInView="animate"
+          viewport={{ once: false, amount: 0.3 }}
+        >
+          <motion.div className="max-w-7xl mx-auto" variants={staggerContainer}>
             <motion.div
               className="flex gap-3 items-center px-6 py-16 text-[#14212DB2]"
               variants={slideInLeft}
@@ -83,14 +83,14 @@ export default function PortfolioPage() {
               />
             </motion.div>
           </motion.div>
-        </section>
+        </motion.section>
 
         {/* Every Project Starts With A Question */}
         <motion.section
           className="py-20 px-6 bg-gray-50"
           initial="initial"
           whileInView="animate"
-          viewport={{ once: true, margin: "-100px" }}
+          viewport={{ once: false, margin: "-100px" }}
           variants={fadeIn}
         >
           <div className="max-w-7xl mx-auto">
@@ -118,7 +118,7 @@ export default function PortfolioPage() {
           className="py-20 px-6 bg-[#F4F6F8]"
           initial="initial"
           whileInView="animate"
-          viewport={{ once: true, margin: "-100px" }}
+          viewport={{ once: false, margin: "-100px" }}
           variants={fadeIn}
         >
           <section className="">
@@ -138,7 +138,13 @@ export default function PortfolioPage() {
             </div>
           </section>
           {/* Case Study 1 - IWE Advisory */}
-          <section className="py-20 px-6 bg-[#F4F6F8]">
+          <motion.section
+            className="py-20 px-6 bg-[#F4F6F8]"
+            initial="initial"
+            whileInView="animate"
+            viewport={{ once: false, amount: 0.2 }}
+            variants={fadeIn}
+          >
             <div className="max-w-7xl mx-auto">
               <div className="grid md:grid-cols-2 gap-12 items-center">
                 <div>
@@ -234,10 +240,16 @@ export default function PortfolioPage() {
                 </div>
               </div>
             </div>
-          </section>
+          </motion.section>
 
           {/* Case Study 2 - FJ Global Properties */}
-          <section className="py-20 px-6 bg-gray-50">
+          <motion.section
+            className="py-20 px-6 bg-gray-50"
+            initial="initial"
+            whileInView="animate"
+            viewport={{ once: false, amount: 0.2 }}
+            variants={fadeIn}
+          >
             <div className="max-w-7xl mx-auto">
               <div className="grid md:grid-cols-2 gap-12 items-center">
                 <div className="order-2 md:order-1">
@@ -310,10 +322,16 @@ export default function PortfolioPage() {
                 </div>
               </div>
             </div>
-          </section>
+          </motion.section>
 
           {/* Case Study 3 - BFG Global Consulting */}
-          <section className="py-20 px-6 bg-[#F4F6F8]">
+          <motion.section
+            className="py-20 px-6 bg-[#F4F6F8]"
+            initial="initial"
+            whileInView="animate"
+            viewport={{ once: false, amount: 0.2 }}
+            variants={fadeIn}
+          >
             <div className="max-w-7xl mx-auto">
               <div className="grid md:grid-cols-2 gap-12 items-center">
                 <div>
@@ -412,7 +430,7 @@ export default function PortfolioPage() {
                 </div>
               </div>
             </div>
-          </section>
+          </motion.section>
         </motion.section>
 
         {/* Results Section */}
@@ -420,7 +438,7 @@ export default function PortfolioPage() {
           className="py-20 px-6 bg-black text-white"
           initial="initial"
           whileInView="animate"
-          viewport={{ once: true, margin: "-100px" }}
+          viewport={{ once: false, margin: "-100px" }}
           variants={fadeIn}
         >
           <div className="max-w-7xl mx-auto">
@@ -464,7 +482,7 @@ export default function PortfolioPage() {
           className="py-20 px-6"
           initial="initial"
           whileInView="animate"
-          viewport={{ once: true, margin: "-100px" }}
+          viewport={{ once: false, margin: "-100px" }}
           variants={fadeIn}
         >
           <div className="max-w-7xl text-black mx-auto">

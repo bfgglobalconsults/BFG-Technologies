@@ -4,23 +4,10 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import ContactModal from "@/app/components/ContactModal";
+import { fadeIn, staggerContainer } from "@/app/utils/animations";
 
 export default function GrowVisibilityPage() {
   const [isModalOpen, setIsModalOpen] = useState(false);
-
-  const fadeIn = {
-    initial: { opacity: 0, y: 20 },
-    animate: { opacity: 1, y: 0 },
-    transition: { duration: 0.6 },
-  };
-
-  const staggerContainer = {
-    animate: {
-      transition: {
-        staggerChildren: 0.1,
-      },
-    },
-  };
 
   const services = [
     {
@@ -181,7 +168,7 @@ export default function GrowVisibilityPage() {
             className="py-12 md:py-20 px-4 md:px-6 bg-gray-50"
             initial="initial"
             whileInView="animate"
-            viewport={{ once: true }}
+            viewport={{ once: false }}
             variants={fadeIn}
           >
             <div className="max-w-7xl mx-auto">
@@ -216,7 +203,7 @@ export default function GrowVisibilityPage() {
             className="py-12 md:py-20 px-4 md:px-6"
             initial="initial"
             whileInView="animate"
-            viewport={{ once: true }}
+            viewport={{ once: false }}
             variants={staggerContainer}
           >
             <div className="max-w-7xl mx-auto">
@@ -279,7 +266,7 @@ export default function GrowVisibilityPage() {
             className="py-12 md:py-20 px-4 md:px-6 bg-black rounded-2xl text-white"
             initial="initial"
             whileInView="animate"
-            viewport={{ once: true }}
+            viewport={{ once: false }}
             variants={fadeIn}
           >
             <div className="max-w-7xl mx-auto">
@@ -334,7 +321,7 @@ export default function GrowVisibilityPage() {
             className="py-12 md:py-20 px-4 md:px-6"
             initial="initial"
             whileInView="animate"
-            viewport={{ once: true }}
+            viewport={{ once: false }}
             variants={staggerContainer}
           >
             <div className="max-w-7xl mx-auto">
